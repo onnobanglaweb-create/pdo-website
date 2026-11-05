@@ -1,0 +1,2611 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peoples Development Organisation (PDO) | Empowering the Grassroots, Engineering the Future</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Chart.js for Scholarship Tier Infographic -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pdo: {
+              emerald: '#0d7a53',
+              dark: '#084c34',
+              light: '#e8f5ee',
+              accent: '#d97706',
+              gold: '#f59e0b',
+              navy: '#0f172a',
+              slate: '#334155'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'Hind Siliguri', 'sans-serif'],
+            bengali: ['Hind Siliguri', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom styling & animations */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    .hero-pattern {
+      background-color: #084c34;
+      background-image: radial-gradient(#15803d 1px, transparent 1px), radial-gradient(#10b981 1px, #084c34 1px);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(13, 122, 83, 0.35);
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    /* Hide scrollbar for tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-pdo-emerald selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT & COMPLIANCE BAR -->
+  <header class="bg-pdo-navy text-slate-300 text-xs py-2 border-b border-slate-700/60 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-pdo-emerald text-white">
+          <i class="fa-solid fa-certificate mr-1.5 text-xs text-yellow-300"></i> Govt. Reg: Nat-295/2000
+        </span>
+        <span class="hidden md:inline text-slate-300">
+          <i class="fa-solid fa-clock-rotate-left mr-1 text-pdo-emerald"></i> Est. 1997 | Singra, Natore, Bangladesh
+        </span>
+        <span class="hidden lg:inline text-slate-400">| Standard: INGO & UN SDG Compliant</span>
+      </div>
+      
+      <div class="flex items-center space-x-6 text-xs">
+        <a href="tel:+8801712520019" class="hover:text-white transition flex items-center">
+          <i class="fa-solid fa-phone mr-1.5 text-emerald-400"></i> +88 01712520019
+        </a>
+        <a href="mailto:pdoglobal1997@gmail.com" class="hover:text-white transition hidden sm:flex items-center">
+          <i class="fa-solid fa-envelope mr-1.5 text-emerald-400"></i> pdoglobal1997@gmail.com
+        </a>
+        <div class="flex items-center space-x-2 border-l border-slate-700 pl-3">
+          <button id="langToggleBtn" onclick="toggleLanguage()" class="px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-white font-medium text-[11px] border border-slate-600 transition flex items-center gap-1">
+            <i class="fa-solid fa-globe text-emerald-400"></i> <span id="currentLangLabel">বাংলা</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN NAVIGATION BAR (7 Blueprint Menus + Dropdowns) -->
+  <nav class="glass-nav border-b border-slate-200 sticky top-8 z-40 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Brand Logo & Identity -->
+        <a href="#home" onclick="navigateTo('home')" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-pdo-emerald to-pdo-dark flex items-center justify-center text-white shadow-md shadow-emerald-900/20 group-hover:scale-105 transition transform">
+            <i class="fa-solid fa-people-roof text-2xl text-emerald-100"></i>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="font-extrabold text-2xl tracking-tight text-pdo-dark">PDO</span>
+              <span class="text-xs font-semibold px-2 py-0.5 bg-emerald-100 text-pdo-emerald rounded-full">NGO</span>
+            </div>
+            <p class="text-[11px] font-semibold uppercase tracking-wider text-slate-500 leading-tight">Peoples Development Organisation</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <div class="hidden xl:flex items-center space-x-1 font-medium text-[13.5px] text-slate-700">
+          
+          <!-- 1. Home -->
+          <button onclick="navigateTo('home')" class="nav-link px-3 py-2 rounded-lg hover:text-pdo-emerald hover:bg-emerald-50/70 transition">
+            Home
+          </button>
+
+          <!-- 2. About Us (Dropdown) -->
+          <div class="relative dropdown group">
+            <button onclick="navigateTo('about')" class="nav-link flex items-center px-3 py-2 rounded-lg hover:text-pdo-emerald hover:bg-emerald-50/70 transition">
+              About Us <i class="fa-solid fa-chevron-down ml-1.5 text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+            </button>
+            <div class="dropdown-menu absolute hidden pt-2 w-64 -left-4 z-50">
+              <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2">
+                <a href="#about-history" onclick="navigateTo('about', 'about-history')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-landmark mr-2 text-pdo-emerald text-xs"></i> Who We Are & History
+                </a>
+                <a href="#about-vision" onclick="navigateTo('about', 'about-vision')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-compass mr-2 text-pdo-emerald text-xs"></i> Vision, Mission & Values
+                </a>
+                <a href="#about-leadership" onclick="navigateTo('about', 'about-leadership')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-users-gear mr-2 text-pdo-emerald text-xs"></i> Leadership & Management
+                </a>
+                <a href="#about-president" onclick="navigateTo('about', 'about-president')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-quote-left mr-2 text-pdo-emerald text-xs"></i> President's Address
+                </a>
+                <a href="#about-partners" onclick="navigateTo('about', 'about-partners')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-handshake mr-2 text-pdo-emerald text-xs"></i> Strategic Partners
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Our Impact & Initiatives (Dropdown) -->
+          <div class="relative dropdown group">
+            <button onclick="navigateTo('impact')" class="nav-link flex items-center px-3 py-2 rounded-lg hover:text-pdo-emerald hover:bg-emerald-50/70 transition">
+              Our Impact <i class="fa-solid fa-chevron-down ml-1.5 text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+            </button>
+            <div class="dropdown-menu absolute hidden pt-2 w-72 -left-6 z-50">
+              <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2">
+                <a href="#impact-scholarships" onclick="navigateTo('impact', 'impact-scholarships')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-graduation-cap mr-2 text-pdo-emerald text-xs"></i> Tiered Scholarship Program (1,200+)
+                </a>
+                <a href="#impact-zerohunger" onclick="navigateTo('impact', 'impact-zerohunger')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-bowl-food mr-2 text-pdo-emerald text-xs"></i> Zero Hunger Campus (Mid-Day Meal)
+                </a>
+                <a href="#impact-treeguardian" onclick="navigateTo('impact', 'impact-treeguardian')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-tree mr-2 text-pdo-emerald text-xs"></i> Tree Guardian & Climate Action
+                </a>
+                <a href="#impact-dropout" onclick="navigateTo('impact', 'impact-dropout')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-rotate-left mr-2 text-pdo-emerald text-xs"></i> Second-Chance Education Recovery
+                </a>
+                <a href="#impact-stories" onclick="navigateTo('impact', 'impact-stories')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition border-t border-slate-100">
+                  <i class="fa-solid fa-heart mr-2 text-rose-500 text-xs"></i> Human Stories of Impact
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Transparency & Compliance (Dropdown) -->
+          <div class="relative dropdown group">
+            <button onclick="navigateTo('transparency')" class="nav-link flex items-center px-3 py-2 rounded-lg hover:text-pdo-emerald hover:bg-emerald-50/70 transition">
+              Transparency <i class="fa-solid fa-chevron-down ml-1.5 text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+            </button>
+            <div class="dropdown-menu absolute hidden pt-2 w-64 -left-4 z-50">
+              <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2">
+                <a href="#transparency-governance" onclick="navigateTo('transparency', 'transparency-governance')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-scale-balanced mr-2 text-pdo-emerald text-xs"></i> Governance & Compliance
+                </a>
+                <a href="#transparency-meal" onclick="navigateTo('transparency', 'transparency-meal')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-chart-line mr-2 text-pdo-emerald text-xs"></i> MEAL Framework & GRM
+                </a>
+                <a href="#transparency-vfm" onclick="navigateTo('transparency', 'transparency-vfm')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-coins mr-2 text-pdo-emerald text-xs"></i> Value for Money (VfM)
+                </a>
+                <a href="#transparency-reports" onclick="navigateTo('transparency', 'transparency-reports')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-file-pdf mr-2 text-rose-500 text-xs"></i> Audit Reports & Policies
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Media & Insights (Dropdown) -->
+          <div class="relative dropdown group">
+            <button onclick="navigateTo('media')" class="nav-link flex items-center px-3 py-2 rounded-lg hover:text-pdo-emerald hover:bg-emerald-50/70 transition">
+              Media & News <i class="fa-solid fa-chevron-down ml-1.5 text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+            </button>
+            <div class="dropdown-menu absolute hidden pt-2 w-60 -left-4 z-50">
+              <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2">
+                <a href="#media-news" onclick="navigateTo('media', 'media-news')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-regular fa-newspaper mr-2 text-pdo-emerald text-xs"></i> News & Field Actions
+                </a>
+                <a href="#media-opeds" onclick="navigateTo('media', 'media-opeds')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-pen-nib mr-2 text-pdo-emerald text-xs"></i> Op-Eds & Policy Briefs
+                </a>
+                <a href="#media-releases" onclick="navigateTo('media', 'media-releases')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-bullhorn mr-2 text-pdo-emerald text-xs"></i> Press Releases
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Get Involved (Dropdown) -->
+          <div class="relative dropdown group">
+            <button onclick="navigateTo('involved')" class="nav-link flex items-center px-3 py-2 rounded-lg hover:text-pdo-emerald hover:bg-emerald-50/70 transition">
+              Get Involved <i class="fa-solid fa-chevron-down ml-1.5 text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+            </button>
+            <div class="dropdown-menu absolute hidden pt-2 w-64 -left-4 z-50">
+              <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2">
+                <a href="#involved-volunteer" onclick="navigateTo('involved', 'involved-volunteer')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-hand-holding-heart mr-2 text-emerald-600 text-xs"></i> Volunteer Sign-up
+                </a>
+                <a href="#involved-partner" onclick="navigateTo('involved', 'involved-partner')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-building-ngo mr-2 text-emerald-600 text-xs"></i> Partner With Us (INGO/CSR)
+                </a>
+                <a href="#involved-adopt" onclick="navigateTo('involved', 'involved-adopt')" class="block px-4 py-2 hover:bg-emerald-50 hover:text-pdo-emerald text-sm transition">
+                  <i class="fa-solid fa-gift mr-2 text-emerald-600 text-xs"></i> Adopt-a-Project Model
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Contact Us -->
+          <button onclick="navigateTo('contact')" class="nav-link px-3 py-2 rounded-lg hover:text-pdo-emerald hover:bg-emerald-50/70 transition">
+            Contact Us
+          </button>
+        </div>
+
+        <!-- CTA Header Action Button -->
+        <div class="hidden md:flex items-center space-x-3">
+          <button onclick="navigateTo('involved', 'involved-volunteer')" class="bg-gradient-to-r from-pdo-emerald to-emerald-700 hover:from-pdo-dark hover:to-emerald-800 text-white font-semibold text-xs tracking-wider uppercase px-4 py-2.5 rounded-lg shadow-sm hover:shadow transition transform hover:-translate-y-0.5 flex items-center">
+            <i class="fa-solid fa-seedling mr-2"></i> Join as Guardian
+          </button>
+        </div>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <div class="xl:hidden flex items-center">
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg text-slate-600 hover:text-pdo-dark hover:bg-slate-100 transition focus:outline-none">
+            <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileDrawer" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2">
+      <div class="grid grid-cols-2 gap-2 text-sm font-medium text-slate-700">
+        <button onclick="mobileNav('home')" class="text-left py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-pdo-emerald">
+          <i class="fa-solid fa-house mr-2 text-pdo-emerald"></i> Home
+        </button>
+        <button onclick="mobileNav('about')" class="text-left py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-pdo-emerald">
+          <i class="fa-solid fa-circle-info mr-2 text-pdo-emerald"></i> About Us
+        </button>
+        <button onclick="mobileNav('impact')" class="text-left py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-pdo-emerald">
+          <i class="fa-solid fa-bullseye mr-2 text-pdo-emerald"></i> Our Impact
+        </button>
+        <button onclick="mobileNav('transparency')" class="text-left py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-pdo-emerald">
+          <i class="fa-solid fa-shield-halved mr-2 text-pdo-emerald"></i> Transparency
+        </button>
+        <button onclick="mobileNav('media')" class="text-left py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-pdo-emerald">
+          <i class="fa-solid fa-newspaper mr-2 text-pdo-emerald"></i> Media & News
+        </button>
+        <button onclick="mobileNav('involved')" class="text-left py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-pdo-emerald">
+          <i class="fa-solid fa-hands-holding-circle mr-2 text-pdo-emerald"></i> Get Involved
+        </button>
+      </div>
+      <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+        <button onclick="mobileNav('contact')" class="w-full text-center py-2.5 px-3 rounded-lg bg-slate-100 font-semibold text-slate-800">
+          <i class="fa-solid fa-phone mr-1.5 text-pdo-emerald"></i> Contact Us
+        </button>
+        <button onclick="mobileNav('involved', 'involved-volunteer')" class="w-full text-center py-2.5 px-3 rounded-lg bg-pdo-emerald text-white font-semibold shadow-sm">
+          <i class="fa-solid fa-seedling mr-1.5"></i> Volunteer Sign-up
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER (Single Page Dynamic Views) -->
+  <main id="appContent">
+
+    <!-- ========================================== -->
+    <!-- 1. PAGE: HOME                              -->
+    <!-- ========================================== -->
+    <section id="view-home" class="page-view block">
+      
+      <!-- HERO BANNER -->
+      <div class="relative hero-pattern text-white overflow-hidden py-20 lg:py-28">
+        <div class="absolute inset-0 bg-gradient-to-r from-pdo-dark via-emerald-950/95 to-slate-900/90"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-semibold tracking-wide uppercase">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Grassroots Systemic Transformation Since 1997</span>
+              </div>
+              
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
+                Empowering the Grassroots, <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-amber-300">
+                  Engineering the Future.
+                </span>
+              </h1>
+              
+              <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+                Peoples Development Organisation (PDO) is a registered Bangladeshi non-profit operating at the intersection of quality technical education, youth resilience, zero-hunger campuses, and aggressive climate action. We turn vulnerable beneficiaries into self-reliant changemakers.
+              </p>
+
+              <!-- CTA Group -->
+              <div class="flex flex-wrap gap-4 pt-2">
+                <button onclick="navigateTo('impact')" class="bg-gradient-to-r from-emerald-500 to-pdo-emerald hover:from-emerald-400 hover:to-emerald-600 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-950/40 transition transform hover:-translate-y-0.5 flex items-center">
+                  <span>Explore Our Impact</span>
+                  <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </button>
+
+                <button onclick="navigateTo('involved', 'involved-partner')" class="bg-slate-800/80 hover:bg-slate-800 text-emerald-200 border border-emerald-500/40 font-semibold px-6 py-3.5 rounded-xl transition flex items-center backdrop-blur-sm">
+                  <i class="fa-solid fa-handshake-angle mr-2 text-emerald-400"></i> Partner With Us
+                </button>
+              </div>
+
+              <!-- Quick verification badges -->
+              <div class="pt-4 flex flex-wrap items-center gap-4 text-xs text-slate-300 border-t border-emerald-800/60">
+                <div class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-400 mr-1.5"></i> Dept. of Social Services: Nat-295/2000</div>
+                <div class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-400 mr-1.5"></i> UN SDG 1, 2, 4, 13, 15, 17 Aligned</div>
+                <div class="flex items-center"><i class="fa-solid fa-check-circle text-emerald-400 mr-1.5"></i> Audited Financial Integrity</div>
+              </div>
+            </div>
+
+            <!-- Hero Visual Card & Quick Feature -->
+            <div class="lg:col-span-5">
+              <div class="relative bg-white/10 backdrop-blur-md p-6 sm:p-7 rounded-3xl border border-white/20 shadow-2xl text-white">
+                <div class="flex items-center justify-between pb-3 border-b border-white/10">
+                  <span class="text-xs uppercase font-bold tracking-widest text-emerald-300">Live Field Operations</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">Active in 2026</span>
+                </div>
+
+                <!-- Featured Image Mosaic -->
+                <div class="grid grid-cols-2 gap-2.5 my-4">
+                  <div class="relative group rounded-xl overflow-hidden h-28 border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" 
+                         alt="Mid-Day Meal Campus Nutrition" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d7a53/ffffff?text=Mid-Day+Meal';" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute bottom-1.5 left-1.5 bg-black/70 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-emerald-300">
+                      Mid-Day Meals (250+)
+                    </span>
+                  </div>
+
+                  <div class="relative group rounded-xl overflow-hidden h-28 border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" 
+                         alt="Tree Guardian Afforestation" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/084c34/ffffff?text=Tree+Guardians';" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute bottom-1.5 left-1.5 bg-black/70 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-teal-300">
+                      10,000+ Saplings
+                    </span>
+                  </div>
+
+                  <div class="relative group rounded-xl overflow-hidden h-28 border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" 
+                         alt="Tiered Scholarship Students" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Scholarships';" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute bottom-1.5 left-1.5 bg-black/70 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-amber-300">
+                      1,200+ Scholarships
+                    </span>
+                  </div>
+
+                  <div class="relative group rounded-xl overflow-hidden h-28 border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80" 
+                         alt="TVET Vocational Skills" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d7a53/ffffff?text=TVET+Skills';" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute bottom-1.5 left-1.5 bg-black/70 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-blue-300">
+                      TVET Technical Labs
+                    </span>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-900/80 border border-emerald-500/30 flex items-center justify-between">
+                  <div>
+                    <p class="text-[10px] text-slate-400 uppercase font-semibold">Flagship Central Hub</p>
+                    <p class="font-bold text-xs text-emerald-200">Bahadurpur Technical School & College</p>
+                  </div>
+                  <span class="text-[11px] bg-emerald-700/70 text-emerald-100 px-2.5 py-1 rounded-md font-medium">Singra, Natore</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- COUNTER GRID SECTION (FLAGSHIP STATS) -->
+      <section class="py-12 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+            
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-100 hover:shadow-md transition">
+              <div class="text-2xl sm:text-3xl font-extrabold text-pdo-emerald" data-target="1200">1,200+</div>
+              <p class="text-xs font-semibold text-slate-600 mt-1 uppercase tracking-wide">Annual Scholarships</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-100 hover:shadow-md transition">
+              <div class="text-2xl sm:text-3xl font-extrabold text-pdo-dark" data-target="10000">10,000+</div>
+              <p class="text-xs font-semibold text-slate-600 mt-1 uppercase tracking-wide">Tree Guardians</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-100 hover:shadow-md transition">
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-600" data-target="250">250+</div>
+              <p class="text-xs font-semibold text-slate-600 mt-1 uppercase tracking-wide">Daily Mid-Day Meals</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-100 hover:shadow-md transition">
+              <div class="text-2xl sm:text-3xl font-extrabold text-pdo-emerald" data-target="90">90%+</div>
+              <p class="text-xs font-semibold text-slate-600 mt-1 uppercase tracking-wide">Attendance Spike</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-100 hover:shadow-md transition">
+              <div class="text-2xl sm:text-3xl font-extrabold text-blue-600" data-target="300">300+</div>
+              <p class="text-xs font-semibold text-slate-600 mt-1 uppercase tracking-wide">Free School Uniforms</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-100 hover:shadow-md transition">
+              <div class="text-2xl sm:text-3xl font-extrabold text-purple-700">26+ Yrs</div>
+              <p class="text-xs font-semibold text-slate-600 mt-1 uppercase tracking-wide">Community Trust</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO WE ARE & THE 3 CORE PILLARS -->
+      <section class="py-16 lg:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+            <span class="inline-block text-xs uppercase tracking-widest font-bold text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+              Foundational Framework
+            </span>
+            <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Driving Systemic Change Across Bangladesh
+            </h2>
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              Established in 1997 and registered with the Department of Social Services in 2000 (Reg: Nat-295/2000), PDO bridges the gap between rural grassroots realities and global development capital. We reject short-term handouts in favor of permanent community resilience.
+            </p>
+          </div>
+
+          <!-- 3 CORE PILLARS (Cards) -->
+          <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Pillar 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div class="h-44 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=80" 
+                       alt="People's Empowerment & Education" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/700x400/0d7a53/ffffff?text=Education';"
+                       class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-pdo-emerald px-2.5 py-1 rounded-md">
+                    SDG 1 & SDG 4
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-slate-900 mb-2">People’s Empowerment & Inclusion</h3>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    Targeted dropout prevention, tiered scholarships (25%, 50%, 100%), second-chance academic reintegration, and social inclusion for marginalized youth, Dalits, ethnic minorities, and persons with disabilities.
+                  </p>
+                </div>
+              </div>
+              <div class="px-6 pb-6 pt-2 border-t border-slate-100 text-xs font-bold text-pdo-emerald flex items-center justify-between">
+                <span>1,200+ Scholarships Annually</span>
+                <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+              </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div class="h-44 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=700&q=80" 
+                       alt="Climate Resilience & Tree Guardians" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/700x400/084c34/ffffff?text=Climate+Action';"
+                       class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-teal-700 px-2.5 py-1 rounded-md">
+                    SDG 13 & SDG 15
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-slate-900 mb-2">Climate Resilience & Stewardship</h3>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    Moving beyond token sapling distribution through our 250,000 "Tree Guardian" roadmap, quarterly plant survival M&E, river protection campaigns (Narad River), and circular zero-waste community models.
+                  </p>
+                </div>
+              </div>
+              <div class="px-6 pb-6 pt-2 border-t border-slate-100 text-xs font-bold text-teal-700 flex items-center justify-between">
+                <span>10,000+ Guardians Formed</span>
+                <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+              </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div class="h-44 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80" 
+                       alt="Innovation & Strategic Partnership" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/700x400/d97706/ffffff?text=Partnerships';"
+                       class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-amber-600 px-2.5 py-1 rounded-md">
+                    SDG 8 & SDG 17
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-slate-900 mb-2">Innovation & Partnership</h3>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    Leveraging TVET vocational hubs (Bahadurpur Tech), "Janatar Bazar" anti-middleman agricultural hubs, digital mental health apps ("Monbarta"), and seamless execution with SRI Welfare Foundation.
+                  </p>
+                </div>
+              </div>
+              <div class="px-6 pb-6 pt-2 border-t border-slate-100 text-xs font-bold text-amber-700 flex items-center justify-between">
+                <span>Tri-Sector Strategic Alliance</span>
+                <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- THEORY OF CHANGE (ToC) SECTION -->
+      <section class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+              Transformative Methodology
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+              Our Theory of Change (ToC): Charity to Sustainable Empowerment
+            </h2>
+            <p class="text-slate-600 text-sm mt-2">
+              We do not provide passive relief. We identify systemic friction points and engineer durable human capital.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-4 gap-6 relative">
+            
+            <!-- Step 1 -->
+            <div class="relative bg-slate-50 p-6 rounded-2xl border-l-4 border-emerald-600 shadow-sm">
+              <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider block mb-1">Step 01: The Action</span>
+              <h4 class="font-bold text-slate-900 text-base mb-2">Targeted Intervention</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Diagnosing acute dropout bottlenecks, student hunger, and environmental vulnerability. Deploying Tiered Scholarships, Zero-Hunger lunches, and designated Tree Guardianship.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative bg-slate-50 p-6 rounded-2xl border-l-4 border-teal-600 shadow-sm">
+              <span class="text-xs font-bold text-teal-700 uppercase tracking-wider block mb-1">Step 02: The Output</span>
+              <h4 class="font-bold text-slate-900 text-base mb-2">Immediate Friction Removal</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Financial hurdles eradicated for 1,200+ students. 250+ students fed daily; children wear uniforms with pride; trees planted with assigned caretakers.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative bg-slate-50 p-6 rounded-2xl border-l-4 border-amber-500 shadow-sm">
+              <span class="text-xs font-bold text-amber-700 uppercase tracking-wider block mb-1">Step 03: The Outcome</span>
+              <h4 class="font-bold text-slate-900 text-base mb-2">Behavioral Transformation</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                School attendance leaps to 90%+. Psychological shame dissolves. Children nurture their saplings proactively and resist neighborhood deforestation.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-600 shadow-sm">
+              <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-1">Step 04: The Impact</span>
+              <h4 class="font-bold text-slate-900 text-base mb-2">Systemic Self-Reliance</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Students graduate into skilled TVET employment. Generational poverty cycles are permanently severed, leaving an eco-conscious, digitally agile community.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PRESIDENTIAL MESSAGE TEASER -->
+      <section class="py-16 bg-gradient-to-br from-pdo-dark to-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-4 text-center lg:text-left">
+              <div class="inline-block relative">
+                <div class="w-44 h-44 sm:w-52 sm:h-52 rounded-2xl overflow-hidden border-4 border-emerald-400/40 shadow-2xl mx-auto bg-slate-800">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+                       alt="Shaikh Md Rakibul Islam - President PDO" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/600x600/084c34/ffffff?text=President+Rakibul';"
+                       class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-2 -right-2 bg-pdo-emerald text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-md">
+                  President & Founder
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-8 space-y-4">
+              <i class="fa-solid fa-quote-left text-3xl text-emerald-400"></i>
+              <blockquote class="text-lg sm:text-xl font-light italic text-slate-200 leading-relaxed">
+                "For over three decades, my journey as an educator has been driven by a singular conviction: true national development cannot be achieved from the top down; it must be nurtured at the grassroots... We do not view the marginalized as passive recipients of aid, but as resilient partners in development."
+              </blockquote>
+              <div class="pt-2">
+                <p class="font-bold text-white text-base">Shaikh Md Rakibul Islam</p>
+                <p class="text-emerald-300 text-xs">President, Peoples Development Organisation (PDO)</p>
+              </div>
+              <div>
+                <button onclick="navigateTo('about', 'about-president')" class="text-xs font-semibold text-emerald-300 hover:text-white inline-flex items-center gap-1 group">
+                  Read the Full Presidential Message <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- VISUAL FIELD HIGHLIGHT GALLERY STRIP -->
+      <section class="py-12 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6 gap-2">
+            <div>
+              <span class="text-xs uppercase font-bold text-pdo-emerald tracking-wider">Visual Documentation</span>
+              <h3 class="text-xl font-extrabold text-slate-900">Grassroots Operations in Pictures</h3>
+            </div>
+            <button onclick="navigateTo('impact')" class="text-xs font-bold text-pdo-emerald hover:underline">
+              View All Impact Programs &rarr;
+            </button>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div class="rounded-xl overflow-hidden h-36 group relative shadow-sm border border-slate-200">
+              <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=400&q=80" 
+                   alt="Midday meal distribution" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/400x300/0d7a53/ffffff?text=Mid-day+Meal';" 
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2 text-[10px] font-bold text-white">
+                Mid-Day Meal
+              </span>
+            </div>
+
+            <div class="rounded-xl overflow-hidden h-36 group relative shadow-sm border border-slate-200">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80" 
+                   alt="Planting saplings" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/400x300/084c34/ffffff?text=Sapling+Drive';" 
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2 text-[10px] font-bold text-white">
+                Tree Guardian
+              </span>
+            </div>
+
+            <div class="rounded-xl overflow-hidden h-36 group relative shadow-sm border border-slate-200">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=400&q=80" 
+                   alt="Technical training" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/400x300/1e293b/ffffff?text=TVET+Class';" 
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2 text-[10px] font-bold text-white">
+                TVET Lab
+              </span>
+            </div>
+
+            <div class="rounded-xl overflow-hidden h-36 group relative shadow-sm border border-slate-200">
+              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=80" 
+                   alt="Winter blanket distribution" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/400x300/0284c7/ffffff?text=Winter+Relief';" 
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2 text-[10px] font-bold text-white">
+                Winter Blankets
+              </span>
+            </div>
+
+            <div class="rounded-xl overflow-hidden h-36 group relative shadow-sm border border-slate-200">
+              <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=400&q=80" 
+                   alt="1-Taka medical camp" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/400x300/e11d48/ffffff?text=Medical+Camp';" 
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2 text-[10px] font-bold text-white">
+                1-Taka Clinic
+              </span>
+            </div>
+
+            <div class="rounded-xl overflow-hidden h-36 group relative shadow-sm border border-slate-200">
+              <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=400&q=80" 
+                   alt="School uniform recipients" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/400x300/2563eb/ffffff?text=Uniforms';" 
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2 text-[10px] font-bold text-white">
+                Free Uniforms
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARTNERS & COLLABORATORS SHOWCASE -->
+      <section class="py-12 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="text-center text-xs uppercase tracking-widest font-bold text-slate-500 mb-8">
+            Strategic Execution & Institutional Network
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center">
+            
+            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow transition">
+              <i class="fa-solid fa-hand-holding-hand text-3xl text-pdo-emerald mb-2"></i>
+              <h5 class="font-bold text-xs text-slate-800">SRI Welfare Foundation</h5>
+              <p class="text-[10px] text-slate-500">Joint Execution Strategic Partner</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow transition">
+              <i class="fa-solid fa-school-flag text-3xl text-pdo-dark mb-2"></i>
+              <h5 class="font-bold text-xs text-slate-800">Bahadurpur Tech School & College</h5>
+              <p class="text-[10px] text-slate-500">Flagship Academic Hub & TVET Center</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow transition">
+              <i class="fa-solid fa-building-columns text-3xl text-amber-600 mb-2"></i>
+              <h5 class="font-bold text-xs text-slate-800">Dept. of Social Services</h5>
+              <p class="text-[10px] text-slate-500">Govt. of Bangladesh (Nat-295/2000)</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:shadow transition">
+              <i class="fa-solid fa-earth-americas text-3xl text-blue-600 mb-2"></i>
+              <h5 class="font-bold text-xs text-slate-800">Global INGO & UN Network</h5>
+              <p class="text-[10px] text-slate-500">SDG Accelerators & South-South Synergy</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 2. PAGE: ABOUT US                          -->
+    <!-- ========================================== -->
+    <section id="view-about" class="page-view hidden py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <!-- Header Title Banner -->
+        <div class="border-b border-slate-200 pb-8 text-center max-w-3xl mx-auto">
+          <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+            Our Identity & Roots
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            About Peoples Development Organisation
+          </h1>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            Driving systemic change since 1997. From rural roots in Singra, Natore to a scalable nationwide development institution.
+          </p>
+        </div>
+
+        <!-- 1. Who We Are & History -->
+        <div id="about-history" class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <h2 class="text-2xl font-bold text-slate-900 flex items-center">
+              <span class="w-8 h-8 rounded-lg bg-emerald-100 text-pdo-emerald flex items-center justify-center mr-3 text-sm">
+                <i class="fa-solid fa-landmark"></i>
+              </span>
+              Who We Are: Driving Systemic Change Since 1997
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Established in 1997 and formally registered with the Department of Social Services in 2000 (Registration No: Nat-295/2000), the Peoples Development Organisation (PDO) is a grassroots, non-profit development organisation dedicated to driving systemic change across marginalized communities in Bangladesh.
+            </p>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Originating from deep rural roots with our headquarters in Singra, Natore, PDO has strategically evolved into a nationwide development force. We act as a critical bridge between vulnerable populations and global opportunities, focusing on scalable, community-driven interventions.
+            </p>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Fully aligned with the United Nations Sustainable Development Goals (SDGs) and the national development vision of Bangladesh, our multifaceted initiatives encompass quality education, climate resilience, youth empowerment, and digital innovation. By integrating modern technology with on-the-ground realities, PDO empowers communities to break the cycle of poverty.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 bg-gradient-to-br from-pdo-dark to-slate-900 text-white p-8 rounded-3xl shadow-xl space-y-4">
+            <h3 class="text-lg font-bold text-emerald-300 border-b border-emerald-800 pb-2">Institutional Milestones</h3>
+            <ul class="space-y-4 text-xs">
+              <li class="flex items-start gap-3">
+                <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-bold">1997</span>
+                <div>
+                  <p class="font-bold text-white">Community Inception</p>
+                  <p class="text-slate-300">Grassroots youth movement launched in Bahadurpur, Natore.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-bold">2000</span>
+                <div>
+                  <p class="font-bold text-white">Formal Government Registration</p>
+                  <p class="text-slate-300">Registered with Dept. of Social Services (Reg: Nat-295/2000).</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-bold">2010</span>
+                <div>
+                  <p class="font-bold text-white">Bahadurpur Tech Integration</p>
+                  <p class="text-slate-300">Established TVET flagship implementation hub for technical skills.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-bold">2026</span>
+                <div>
+                  <p class="font-bold text-white">Vision 2030 & Mega Scaling</p>
+                  <p class="text-slate-300">10k+ Tree Guardians, Zero Hunger pilot, and 1,200+ annual scholarships.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2. Vision, Mission & Core Values -->
+        <div id="about-vision" class="grid md:grid-cols-3 gap-6 pt-6">
+          
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-pdo-emerald flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Our Vision</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              To build an inclusive, climate-resilient, and digitally empowered society where marginalized communities enjoy universal human rights, economic independence, and equitable access to resources.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Our Mission</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              To design and implement sustainable, community-driven projects by integrating modern technology (ICT & AI), fostering social entrepreneurship, and establishing strong cross-sectoral partnerships to eliminate systemic barriers to education, health, and economic mobility.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Core Values</h3>
+            <ul class="text-slate-600 text-xs space-y-2">
+              <li><strong class="text-slate-900">• Transparency & Accountability:</strong> Rigorous audits & integrity.</li>
+              <li><strong class="text-slate-900">• Needs-Based Action:</strong> Rooted strictly in actual grassroots realities.</li>
+              <li><strong class="text-slate-900">• Inclusivity & Gender Justice:</strong> Empowering without discrimination.</li>
+              <li><strong class="text-slate-900">• Do No Harm:</strong> Protecting communities ethically and safely.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- 3. Our 6 Strategic Thematic Areas -->
+        <div class="pt-6">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <h2 class="text-2xl font-bold text-slate-900">Six Strategic Thematic Pillars</h2>
+            <p class="text-slate-600 text-sm mt-1">Holistic community interventions executing UN SDGs</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <span class="text-xs font-bold text-pdo-emerald uppercase tracking-wider block mb-1">Pillar 1</span>
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center"><i class="fa-solid fa-graduation-cap text-pdo-emerald mr-2"></i> Quality Education & TVET</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">1,200+ Tiered Scholarships, rural TVET labs, Mid-Day meals for retention, psycho-social mentoring for failed board examinees.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <span class="text-xs font-bold text-teal-700 uppercase tracking-wider block mb-1">Pillar 2</span>
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center"><i class="fa-solid fa-leaf text-teal-600 mr-2"></i> Climate Action & Circular Economy</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">250,000 Tree Guardians target by 2030, Zero-Waste models, solar mini-grids, disaster response squad during floods.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <span class="text-xs font-bold text-rose-600 uppercase tracking-wider block mb-1">Pillar 3</span>
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center"><i class="fa-solid fa-heart-pulse text-rose-500 mr-2"></i> Universal Health & Tele-counseling</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">"1-Taka" grassroots clinics, "Monbarta" 24/7 youth mental health app, SRHR adolescent care, assistive device distribution.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <span class="text-xs font-bold text-purple-700 uppercase tracking-wider block mb-1">Pillar 4</span>
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center"><i class="fa-solid fa-venus-mars text-purple-600 mr-2"></i> Social Inclusion & Human Rights</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Transgender (Hijra) livelihoods, anti-GBV emergency legal aid, youth School Cabinets for civic democratic awareness.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <span class="text-xs font-bold text-amber-700 uppercase tracking-wider block mb-1">Pillar 5</span>
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center"><i class="fa-solid fa-wheat-awn text-amber-600 mr-2"></i> Smart Agri & Janatar Bazar</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Direct market hubs eliminating syndicates, Zero-Hunger campus models, climate-resilient farming, mini cold storage.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-1">Pillar 6</span>
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center"><i class="fa-solid fa-microchip text-blue-600 mr-2"></i> Digital Transformation & IT</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Rural youth tech incubation (AI, Freelancing, IoT), digital literacy drives, anti-propaganda and cybersecurity workshops.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4. President's Full Message -->
+        <div id="about-president" class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-md">
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="flex flex-col sm:flex-row items-center gap-6 border-b border-slate-100 pb-6">
+              <div class="w-28 h-28 rounded-2xl overflow-hidden border-2 border-pdo-emerald shadow-md shrink-0">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" 
+                     alt="Shaikh Md Rakibul Islam" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/400x400/0d7a53/ffffff?text=Rakibul+Islam';"
+                     class="w-full h-full object-cover">
+              </div>
+              <div class="text-center sm:text-left">
+                <span class="text-xs uppercase font-bold text-pdo-emerald tracking-widest">Leadership Speech</span>
+                <h3 class="text-2xl font-bold text-slate-900">Message from the President</h3>
+                <p class="text-sm text-slate-600 font-medium">Shaikh Md Rakibul Islam | President, Peoples Development Organisation (PDO)</p>
+              </div>
+            </div>
+
+            <div class="prose max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
+              <p class="font-semibold text-slate-900 italic">"Empowering the Grassroots, Engineering the Future"</p>
+              <p>Welcome to the Peoples Development Organisation (PDO).</p>
+              <p>
+                For over three decades, my journey as an educator has been driven by a singular, unwavering conviction: true national development cannot be achieved from the top down; it must be nurtured at the grassroots. Having dedicated my life to the expansion of education in rural Bangladesh, I have witnessed firsthand both the immense potential of our marginalized youth and the systemic barriers that hold them back.
+              </p>
+              <p>
+                Education is the bedrock of societal transformation. When we established Bahadurpur Technical School & College, our vision was not merely to build an institution, but to create a hub for human capital development—a place where underprivileged youth could acquire the technical and vocational skills necessary to break the cycle of intergenerational poverty. However, academic institutions alone cannot solve the multifaceted challenges of rural communities. Issues like climate vulnerability, public health crises, and economic exclusion require a broader, more integrated socio-economic intervention.
+              </p>
+              <p>
+                This realization is the heartbeat of the Peoples Development Organisation (PDO).
+              </p>
+              <p>
+                Since its inception, PDO has served as a dynamic platform to scale our community-driven initiatives. We do not view the marginalized as passive recipients of aid, but as resilient partners in development. From our rigorous 'Tiered Scholarship Program' and 'Zero Hunger Campus Model' to our massive climate action campaigns and rural healthcare interventions, every initiative at PDO is designed to foster self-reliance, ensure gender justice, and build climate resilience.
+              </p>
+              <p>
+                Our strength lies in unity and strategic collaboration. The profound impacts we have achieved over the years—often in close partnership with the SRI Welfare Foundation and our dedicated community volunteers—demonstrate that when grassroots determination is paired with structured, transparent execution, the results are deeply transformative.
+              </p>
+              <p>
+                To our international donors, development partners, and well-wishers, I extend a heartfelt invitation. Join us in this journey of transformative impact. Together, we can bridge the gap between global resources and grassroots realities, ensuring that no community is left behind.
+              </p>
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <div>
+                  <p class="font-bold text-slate-900">Shaikh Md Rakibul Islam</p>
+                  <p class="text-xs text-slate-500">President, Peoples Development Organisation (PDO)</p>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs px-3 py-1 rounded bg-emerald-50 text-pdo-emerald font-semibold border border-emerald-200">Official Presidential Address</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Leadership & Management Team -->
+        <div id="about-leadership" class="space-y-12 pt-6">
+          
+          <div class="text-center max-w-2xl mx-auto">
+            <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+              Governance Directory
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Executive Committee (2026–2028)</h2>
+            <p class="text-slate-600 text-xs sm:text-sm mt-1">Formally elected 2-year tenure spearheading strategic direction and glocal compliance.</p>
+          </div>
+
+          <!-- Executive Committee Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Member 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+              <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-3 border-pdo-emerald mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" 
+                     alt="Shaikh Md Rakibul Islam" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/300x300/0d7a53/ffffff?text=Rakibul';"
+                     class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-slate-900 text-base">Shaikh Md Rakibul Islam</h4>
+              <p class="text-xs font-semibold text-pdo-emerald mt-0.5">President</p>
+              <p class="text-[11px] text-slate-500 mt-2">Visionary educator & founding head guiding long-term institutional expansion.</p>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+              <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-slate-300 mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" 
+                     alt="Md. Hafizur Rahman" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/300x300/1e293b/ffffff?text=Hafizur';"
+                     class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-slate-900 text-base">Md. Hafizur Rahman</h4>
+              <p class="text-xs font-semibold text-pdo-emerald mt-0.5">General Secretary</p>
+              <p class="text-[11px] text-slate-500 mt-2">Managing constitutional compliance, secretarial duties & board governance.</p>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+              <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-amber-300 mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" 
+                     alt="Bobita Khatun" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/300x300/d97706/ffffff?text=Bobita';"
+                     class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-slate-900 text-base">Bobita Khatun</h4>
+              <p class="text-xs font-semibold text-amber-600 mt-0.5">Treasurer</p>
+              <p class="text-[11px] text-slate-500 mt-2">Directing institutional accounts, audit alignment & banking fiduciary controls.</p>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center shadow-sm hover:shadow-md transition">
+              <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-blue-300 mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" 
+                     alt="Farhan Ishrak Riham" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/300x300/2563eb/ffffff?text=Farhan';"
+                     class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-slate-900 text-base">Farhan Ishrak Riham</h4>
+              <p class="text-xs font-semibold text-blue-600 mt-0.5">Organizing Secretary</p>
+              <p class="text-[11px] text-slate-500 mt-2">Mobilizing grassroots volunteer squads, youth delegates and logistical drives.</p>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 text-center shadow-sm">
+              <div class="w-16 h-16 mx-auto rounded-full overflow-hidden border border-slate-300 mb-3">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" 
+                     alt="Taslima Khatun" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x200/475569/ffffff?text=Taslima';"
+                     class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">Taslima Khatun</h4>
+              <p class="text-[11px] font-semibold text-slate-500">Executive Member</p>
+            </div>
+
+            <!-- Member 6 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 text-center shadow-sm">
+              <div class="w-16 h-16 mx-auto rounded-full overflow-hidden border border-slate-300 mb-3">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" 
+                     alt="Md. Alamgir Hossain" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x200/475569/ffffff?text=Alamgir';"
+                     class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">Md. Alamgir Hossain</h4>
+              <p class="text-[11px] font-semibold text-slate-500">Executive Member</p>
+            </div>
+
+            <!-- Member 7 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 text-center shadow-sm sm:col-span-2 lg:col-span-2">
+              <div class="w-16 h-16 mx-auto rounded-full overflow-hidden border border-slate-300 mb-3">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" 
+                     alt="Mst. Nurjahan Begum" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x200/475569/ffffff?text=Nurjahan';"
+                     class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">Mst. Nurjahan Begum</h4>
+              <p class="text-[11px] font-semibold text-slate-500">Executive Member</p>
+            </div>
+
+          </div>
+
+          <!-- Executive Administration & Management -->
+          <div class="bg-slate-100 rounded-3xl p-8 border border-slate-200">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Executive Administration & Management</h3>
+              <p class="text-xs sm:text-sm text-slate-600">Heading daily operations, programmatic rollout, and field execution.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              
+              <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+                <div class="w-20 h-20 mx-auto rounded-2xl overflow-hidden border-2 border-pdo-emerald mb-3">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=250&q=80" 
+                       alt="Shaikh Rifad Mahmud" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/250x250/0d7a53/ffffff?text=Rifad';"
+                       class="w-full h-full object-cover">
+                </div>
+                <h4 class="font-bold text-slate-900 text-base">Shaikh Rifad Mahmud</h4>
+                <p class="text-xs font-semibold text-pdo-emerald">Executive Director</p>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Chief administrative head formulating projects, managing donor relations, INGO MoUs and institutional governance.
+                </p>
+              </div>
+
+              <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+                <div class="w-20 h-20 mx-auto rounded-2xl overflow-hidden border-2 border-teal-600 mb-3">
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=250&q=80" 
+                       alt="Abdur Rob" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/250x250/084c34/ffffff?text=Abdur+Rob';"
+                       class="w-full h-full object-cover">
+                </div>
+                <h4 class="font-bold text-slate-900 text-base">Abdur Rob</h4>
+                <p class="text-xs font-semibold text-teal-700">Director (Program)</p>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Oversees field planning, MEAL alignment, and community execution across all thematic initiatives.
+                </p>
+              </div>
+
+              <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+                <div class="w-20 h-20 mx-auto rounded-2xl overflow-hidden border-2 border-blue-600 mb-3">
+                  <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=250&q=80" 
+                       alt="Rahiq Khan Choudhury" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/250x250/2563eb/ffffff?text=Rahiq';"
+                       class="w-full h-full object-cover">
+                </div>
+                <h4 class="font-bold text-slate-900 text-base">Rahiq Khan Choudhury</h4>
+                <p class="text-xs font-semibold text-blue-700">Deputy Director (Youth Affairs)</p>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Leads youth mobilization, student cabinets, BNCC/Scout partnerships, and climate strike activations.
+                </p>
+              </div>
+
+              <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+                <div class="w-20 h-20 mx-auto rounded-2xl overflow-hidden border-2 border-purple-600 mb-3">
+                  <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=250&q=80" 
+                       alt="Arshad Al Galib" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/250x250/7e22ce/ffffff?text=Arshad';"
+                       class="w-full h-full object-cover">
+                </div>
+                <h4 class="font-bold text-slate-900 text-base">Arshad Al Galib</h4>
+                <p class="text-xs font-semibold text-purple-700">Deputy Director (Digital)</p>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Directs ICT labs, "Monbarta" tele-health platforms, cyber safety awareness, and digital donor reporting.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. PAGE: OUR IMPACT & INITIATIVES          -->
+    <!-- ========================================== -->
+    <section id="view-impact" class="page-view hidden py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <!-- Header Title Banner -->
+        <div class="border-b border-slate-200 pb-8 text-center max-w-3xl mx-auto">
+          <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+            Flagship Strategic Interventions
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Our Impact & Initiatives
+          </h1>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            Scalable, community-anchored models tackling education barriers, classroom hunger, climate vulnerability, and youth disenfranchisement.
+          </p>
+        </div>
+
+        <!-- 1. TIERED SCHOLARSHIP PROGRAM (WITH CHART INFOGRAPHIC) -->
+        <div id="impact-scholarships" class="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm">
+          <div class="grid lg:grid-cols-12 gap-10 items-center">
+            
+            <div class="lg:col-span-7 space-y-4">
+              <div class="inline-flex items-center space-x-2 text-xs font-bold text-emerald-700 uppercase bg-emerald-50 px-3 py-1 rounded-md">
+                <i class="fa-solid fa-award"></i> Flagship Academic Retention Initiative
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+                The PDO Tiered Scholarship Program
+              </h2>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Since 2000, PDO has actively dismantled educational exclusion for marginalized students across Natore. Recognizing that financial hardship triggers peak dropouts during 9th Grade, SSC, and HSC levels, we operate a <strong>Needs-Based Tiered Allocation System</strong> rather than a generic one-size-fits-all model.
+              </p>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                By conducting rigorous background assessments and partnering directly with Bahadurpur Technical School & College as our Central Implementation Hub, we safeguard 1,200+ vulnerable youth annually with pinpoint Value for Money (VfM).
+              </p>
+
+              <!-- 3 Tiers Cards -->
+              <div class="grid sm:grid-cols-3 gap-3 pt-2">
+                <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200">
+                  <span class="text-[10px] font-bold text-emerald-800 uppercase">Tier 1: 100% Full</span>
+                  <p class="text-xl font-extrabold text-pdo-emerald">150+ Students</p>
+                  <p class="text-[11px] text-slate-600 mt-1">Extreme poor, orphans, at immediate risk of abandonment.</p>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-teal-50 border border-teal-200">
+                  <span class="text-[10px] font-bold text-teal-800 uppercase">Tier 2: 50% Half</span>
+                  <p class="text-xl font-extrabold text-teal-700">300+ Students</p>
+                  <p class="text-[11px] text-slate-600 mt-1">Low-income families struggling with exam & tuition fees.</p>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-amber-50 border border-amber-200">
+                  <span class="text-[10px] font-bold text-amber-800 uppercase">Tier 3: 25% Partial</span>
+                  <p class="text-xl font-extrabold text-amber-600">750+ Students</p>
+                  <p class="text-[11px] text-slate-600 mt-1">Supplementary assistance for books, commute, & supplies.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Visual Chart Infographic -->
+            <div class="lg:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+              <h4 class="text-sm font-bold text-slate-800 mb-1">Annual Scholarship Allocation (1,200 Cohort)</h4>
+              <p class="text-[11px] text-slate-500 mb-4">Value for Money (VfM) Optimized Needs Distribution</p>
+              
+              <div class="w-56 h-56 mx-auto relative">
+                <canvas id="scholarshipChart"></canvas>
+              </div>
+
+              <div class="mt-4 flex justify-center gap-4 text-xs font-medium">
+                <span class="inline-flex items-center"><span class="w-3 h-3 rounded-full bg-emerald-600 mr-1.5"></span> 100% Tier (12.5%)</span>
+                <span class="inline-flex items-center"><span class="w-3 h-3 rounded-full bg-teal-500 mr-1.5"></span> 50% Tier (25%)</span>
+                <span class="inline-flex items-center"><span class="w-3 h-3 rounded-full bg-amber-500 mr-1.5"></span> 25% Tier (62.5%)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 2. ZERO HUNGER CAMPUS & TREE GUARDIAN (2 Columns) -->
+        <div class="grid lg:grid-cols-2 gap-8">
+          
+          <!-- Zero Hunger Campus Model -->
+          <div id="impact-zerohunger" class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="h-56 relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" 
+                     alt="Students having hot fresh lunch at Bahadurpur Technical School" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/800x400/d97706/ffffff?text=Zero+Hunger+Campus';"
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-6 right-6 flex items-center justify-between text-white">
+                  <span class="text-xs font-bold uppercase bg-amber-500/90 backdrop-blur-sm px-3 py-1 rounded-md">
+                    SDG 2 (Zero Hunger) & SDG 4
+                  </span>
+                  <span class="text-xs font-medium bg-black/60 px-2.5 py-1 rounded">250+ Lunches Daily</span>
+                </div>
+              </div>
+
+              <div class="p-8 space-y-4">
+                <h3 class="text-2xl font-bold text-slate-900">
+                  The "Zero Hunger Campus Model" (Mid-Day Meal)
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                  Classroom hunger is one of the starkest causes of rural school absenteeism. Piloted at <strong>Bahadurpur Technical School & College</strong>, this initiative guarantees daily free, freshly prepared, hot and balanced mid-day lunches for <strong>200 to 250+ students and teachers</strong> during tiffin hours.
+                </p>
+
+                <div class="bg-amber-50/70 p-4 rounded-xl border border-amber-200 space-y-2 text-xs">
+                  <div class="flex items-center text-amber-900 font-semibold">
+                    <i class="fa-solid fa-chart-line mr-2 text-amber-600"></i> Over 90%+ daily school attendance achieved within months
+                  </div>
+                  <div class="flex items-center text-amber-900 font-semibold">
+                    <i class="fa-solid fa-brain mr-2 text-amber-600"></i> Drastically heightened cognitive focus & eliminated midday fatigue
+                  </div>
+                  <div class="flex items-center text-amber-900 font-semibold">
+                    <i class="fa-solid fa-handshake mr-2 text-amber-600"></i> Executed in direct partnership with SRI Welfare Foundation
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-8 pb-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">Ready for INGO Multi-Campus Replication</span>
+              <button onclick="navigateTo('involved', 'involved-adopt')" class="text-pdo-emerald font-bold hover:underline">Sponsor This Model &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Tree Guardian Initiative -->
+          <div id="impact-treeguardian" class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="h-56 relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" 
+                     alt="Students planting tree saplings as certified Tree Guardians" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/800x400/0d7a53/ffffff?text=Tree+Guardian+Project';"
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-6 right-6 flex items-center justify-between text-white">
+                  <span class="text-xs font-bold uppercase bg-pdo-emerald/90 backdrop-blur-sm px-3 py-1 rounded-md">
+                    SDG 13 (Climate Action) & SDG 15
+                  </span>
+                  <span class="text-xs font-medium bg-black/60 px-2.5 py-1 rounded">Target: 250k by 2030</span>
+                </div>
+              </div>
+
+              <div class="p-8 space-y-4">
+                <h3 class="text-2xl font-bold text-slate-900">
+                  The "Tree Guardian" Mega Project
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                  Unlike one-off sapling photo-ops that quickly wither, PDO and <strong>SRI Welfare Foundation</strong> pioneered the Tree Guardianship philosophy. We distributed <strong>10,000+ saplings</strong> directly into the care of school children, officially entrusting them as certified "Tree Guardians" who water and protect their plant.
+                </p>
+
+                <div class="bg-emerald-50/70 p-4 rounded-xl border border-emerald-200 space-y-2 text-xs">
+                  <div class="flex items-center text-emerald-900 font-semibold">
+                    <i class="fa-solid fa-clipboard-check mr-2 text-pdo-emerald"></i> Strict Quarterly M&E Tracking of sapling growth and survival
+                  </div>
+                  <div class="flex items-center text-emerald-900 font-semibold">
+                    <i class="fa-solid fa-trophy mr-2 text-pdo-emerald"></i> Annual "Best Tree Guardian Award" honoring dedicated children
+                  </div>
+                  <div class="flex items-center text-emerald-900 font-semibold">
+                    <i class="fa-solid fa-flag mr-2 text-pdo-emerald"></i> In solidarity with Govt. of Bangladesh 250-million tree canopy target
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-8 pb-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">Cultivating Lifelong Climate Warriors</span>
+              <button onclick="navigateTo('involved', 'involved-volunteer')" class="text-pdo-emerald font-bold hover:underline">Sign up as Guardian &rarr;</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3. DROPOUT RECOVERY & FREE UNIFORM INITIATIVE -->
+        <div class="grid lg:grid-cols-2 gap-8">
+          
+          <!-- Dropout Recovery -->
+          <div id="impact-dropout" class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm">
+            <div class="h-48 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=80" 
+                   alt="Dropout recovery vocational training" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/800x400/6b21a8/ffffff?text=Vocational+Mentoring';"
+                   class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+              <span class="absolute bottom-3 left-6 text-xs font-bold text-white bg-purple-700 px-3 py-1 rounded-md">
+                Second-Chance Education (SDG 4)
+              </span>
+            </div>
+            <div class="p-8 space-y-4">
+              <h3 class="text-2xl font-bold text-slate-900">Dropout Recovery & Mentoring</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                In rural Bangladesh, failing board examinations (SSC/HSC) often brings devastating stigma, acute depression, child labor, or early forced marriage. PDO runs a specialized recovery wing rehabilitating <strong>40 to 50 unsuccessful students annually</strong>.
+              </p>
+              <ul class="text-xs text-slate-700 space-y-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-600 mr-2"></i> Dedicated psycho-social counseling overcoming academic trauma</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-600 mr-2"></i> Parental counseling sessions ensuring a supportive domestic environment</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-600 mr-2"></i> Technical and vocational training pathways at Bahadurpur Tech Hub</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Free School Uniform Initiative -->
+          <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm">
+            <div class="h-48 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" 
+                   alt="Children wearing new school uniforms" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/800x400/1d4ed8/ffffff?text=Uniform+Drive';"
+                   class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+              <span class="absolute bottom-3 left-6 text-xs font-bold text-white bg-blue-700 px-3 py-1 rounded-md">
+                Dignity & Retention (SDG 1 & 10)
+              </span>
+            </div>
+            <div class="p-8 space-y-4">
+              <h3 class="text-2xl font-bold text-slate-900">The Free School Uniform Initiative</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Torn clothes cause children severe embarrassment, leading them to hide at the back of classrooms or drop out altogether. Executed jointly with SRI Welfare Foundation, PDO provided <strong>300+ brand-new high-quality school uniforms</strong> to underprivileged children this year.
+              </p>
+              <ul class="text-xs text-slate-700 space-y-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-600 mr-2"></i> Restoring dignity and parity among classroom peers</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-600 mr-2"></i> Alleviating hidden education expenses for extreme-poor parents</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-600 mr-2"></i> Proven 100% academic retention among uniform recipient cohort</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4. STORIES OF IMPACT (Human Interest Case Studies) -->
+        <div id="impact-stories" class="space-y-6 pt-4">
+          <div class="text-center max-w-2xl mx-auto">
+            <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+              Voices from the Ground
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Stories of Impact: Beyond Numbers</h2>
+            <p class="text-slate-600 text-xs sm:text-sm">Behind every data point is a human life restored and empowered.</p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            
+            <!-- Story 1 -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition">
+              <div class="h-52 relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=600&q=80" 
+                     alt="Smiling student in brand new school uniform" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Uniform+Story';"
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3 right-3 bg-white/20 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Education</span>
+                <span class="absolute bottom-3 left-4 text-xs font-bold text-white">Student Testimonial</span>
+              </div>
+              <div class="p-6 space-y-3">
+                <h4 class="font-bold text-slate-900 text-base">The Dignity of a Uniform</h4>
+                <p class="text-xs text-slate-600 italic">
+                  "I used to hide in the back of the classroom, or sometimes I wouldn't go to school at all because my clothes were torn. I felt like I didn't belong."
+                </p>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  After receiving a new uniform under the PDO-SRI joint drive, this student shifted to the front desk, participating actively and attending every school day with heads held high.
+                </p>
+              </div>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition">
+              <div class="h-52 relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" 
+                     alt="Vocational workshop student learning technical trade" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/581c87/ffffff?text=Vocational+Success';"
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3 right-3 bg-white/20 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Dropout Mentoring</span>
+                <span class="absolute bottom-3 left-4 text-xs font-bold text-white">Reclaimed Future</span>
+              </div>
+              <div class="p-6 space-y-3">
+                <h4 class="font-bold text-slate-900 text-base">The Second Chance (Reclaiming Potential)</h4>
+                <p class="text-xs text-slate-600 italic">
+                  "When I didn't pass my exams, everyone told me I was useless. I was about to leave for informal manual labor until PDO mentors knocked on our door."
+                </p>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Through 6 months of empathetic counseling, retake preparation, and TVET vocational training, the student passed successfully and is now employed in technical services.
+                </p>
+              </div>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition">
+              <div class="h-52 relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80" 
+                     alt="Young child carefully watering growing tree sapling" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/065f46/ffffff?text=Tree+Guardian';"
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3 right-3 bg-white/20 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Climate Action</span>
+                <span class="absolute bottom-3 left-4 text-xs font-bold text-white">Climate Warrior</span>
+              </div>
+              <div class="p-6 space-y-3">
+                <h4 class="font-bold text-slate-900 text-base">Raising a Climate Warrior</h4>
+                <p class="text-xs text-slate-600 italic">
+                  "I was given a title: Tree Guardian. I built a bamboo boundary around my sapling. I water it every morning before school."
+                </p>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  A 10-year-old guardian now actively scolds local adults who throw non-biodegradable plastics near riverbanks, transforming into a vocal grassroots climate leader.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 5. STRATEGIC VISION 2030 TARGETS -->
+        <div class="bg-gradient-to-br from-pdo-dark to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl">
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="flex items-center space-x-3 text-emerald-300">
+              <i class="fa-solid fa-rocket text-2xl"></i>
+              <span class="text-xs uppercase font-bold tracking-widest">Roadmap to 2030</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Strategic Vision 2030: Scaling the Impact</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Aligning directly with the final stretch of the UN Sustainable Development Goals, our Vision 2030 shifts community aid from passive handouts to systemic local ownership:
+            </p>
+            
+            <div class="grid sm:grid-cols-3 gap-6 pt-4">
+              <div class="p-4 rounded-xl bg-white/10 border border-white/10 space-y-2">
+                <div class="text-2xl font-black text-emerald-300">250,000+</div>
+                <h5 class="text-sm font-bold text-white">Tree Guardians Cultivated</h5>
+                <p class="text-[11px] text-slate-300">Creating a permanent, volunteer-monitored carbon sink across northern Bangladesh.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white/10 border border-white/10 space-y-2">
+                <div class="text-2xl font-black text-teal-300">5,000+</div>
+                <h5 class="text-sm font-bold text-white">Dropouts Reintegrated</h5>
+                <p class="text-[11px] text-slate-300">Zero dropouts policy across our target educational zones with TVET technical certifications.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white/10 border border-white/10 space-y-2">
+                <div class="text-2xl font-black text-amber-300">20+ Campuses</div>
+                <h5 class="text-sm font-bold text-white">Zero Hunger Replications</h5>
+                <p class="text-[11px] text-slate-300">Guaranteeing 10,000+ rural students receive free daily midday nutrition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. PAGE: TRANSPARENCY & COMPLIANCE         -->
+    <!-- ========================================== -->
+    <section id="view-transparency" class="page-view hidden py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <!-- Header Title Banner -->
+        <div class="border-b border-slate-200 pb-8 text-center max-w-3xl mx-auto">
+          <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+            Institutional Trust & Accountability
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Transparency & Compliance
+          </h1>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            International INGO standard governance, rigorous MEAL frameworks, anti-money laundering compliance, and open audit disclosures.
+          </p>
+        </div>
+
+        <!-- 1. GOVERNANCE & COMPLIANCE PILLARS -->
+        <div id="transparency-governance" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">Safeguarding & PSEA</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Strict Zero-Tolerance policy toward Sexual Exploitation and Abuse (PSEA) and comprehensive protection protocols for children and vulnerable adults.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">GRM & Whistleblowing</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Confidential, multi-channel Grievance Redressal Mechanism empowering students, parents, and field staff to report infractions safely.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">AML / CFT Compliance</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              All funding routed exclusively through institutional banking channels following Anti-Money Laundering & Countering Financing of Terrorism standards.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-pdo-emerald flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">Data Ethics & Privacy</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Compliant with global personal privacy protocols, safeguarding beneficiary dignity and digital mental health confidential data.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- 2. MEAL FRAMEWORK & VALUE FOR MONEY (VfM) -->
+        <div id="transparency-meal" class="grid lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+            <span class="text-xs font-bold text-pdo-emerald uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded">
+              Monitoring, Evaluation, Accountability, and Learning
+            </span>
+            <h3 class="text-2xl font-bold text-slate-900">The PDO MEAL Framework</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We ensure every dollar is tracked against quantifiable human progress. Our framework utilizes four live operational loops:
+            </p>
+
+            <div class="space-y-3">
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+                <i class="fa-solid fa-stopwatch text-pdo-emerald mt-1"></i>
+                <div>
+                  <h5 class="font-bold text-xs text-slate-900">Real-Time Continuous Monitoring</h5>
+                  <p class="text-[11px] text-slate-600">Quarterly plant audits for Tree Guardians and daily biometric/logbook classroom attendance checks for Mid-Day Meal and Scholarships.</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+                <i class="fa-solid fa-comments text-pdo-emerald mt-1"></i>
+                <div>
+                  <h5 class="font-bold text-xs text-slate-900">Community Accountability (GRM)</h5>
+                  <p class="text-[11px] text-slate-600">Direct feedback loops connecting beneficiary councils, parents, and school cabinets to executive management.</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+                <i class="fa-solid fa-database text-pdo-emerald mt-1"></i>
+                <div>
+                  <h5 class="font-bold text-xs text-slate-900">Data-Driven Cross-Verification</h5>
+                  <p class="text-[11px] text-slate-600">Cross-referencing programmatic progress with Upazila Parishad authorities, local school boards, and independent observers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Value for Money (VfM) -->
+          <div id="transparency-vfm" class="lg:col-span-5 bg-gradient-to-br from-pdo-dark to-emerald-950 text-white rounded-3xl p-8 shadow-xl space-y-6">
+            <span class="text-xs uppercase font-bold text-emerald-300 tracking-wider">Social Return on Investment</span>
+            <h3 class="text-2xl font-bold text-white">Value for Money (VfM): Maximum Impact, Zero Waste</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Unlike top-heavy bureaucratic entities, PDO avoids costly corporate overhead. We utilize existing grassroots infrastructure and deep community volunteerism.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="border-b border-emerald-800/80 pb-3">
+                <div class="flex justify-between text-xs font-bold mb-1">
+                  <span>Direct Program Delivery</span>
+                  <span class="text-emerald-300">~92%</span>
+                </div>
+                <div class="w-full bg-emerald-900/80 rounded-full h-2">
+                  <div class="bg-emerald-400 h-2 rounded-full" style="width: 92%"></div>
+                </div>
+              </div>
+
+              <div class="border-b border-emerald-800/80 pb-3">
+                <div class="flex justify-between text-xs font-bold mb-1">
+                  <span>M&E and Compliance</span>
+                  <span class="text-emerald-300">5%</span>
+                </div>
+                <div class="w-full bg-emerald-900/80 rounded-full h-2">
+                  <div class="bg-teal-400 h-2 rounded-full" style="width: 5%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-bold mb-1">
+                  <span>Administrative & Operational Cost</span>
+                  <span class="text-emerald-300">3%</span>
+                </div>
+                <div class="w-full bg-emerald-900/80 rounded-full h-2">
+                  <div class="bg-amber-400 h-2 rounded-full" style="width: 3%"></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-[11px] text-emerald-200/80 italic">Nearly 100% of donor funding goes directly to ground-level saplings, student meals, and tuition relief.</p>
+          </div>
+
+        </div>
+
+        <!-- 3. POLICY DOWNLOADS & FINANCIAL AUDITS -->
+        <div id="transparency-reports" class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-200 pb-4">
+            <div>
+              <h3 class="text-xl font-bold text-slate-900">Institutional Governance & Audit Disclosures</h3>
+              <p class="text-xs text-slate-500">Official documentation available for donors, UN auditors, and partner INGOs.</p>
+            </div>
+            <span class="text-xs bg-emerald-100 text-pdo-emerald font-bold px-3 py-1 rounded-full">
+              Updated for FY 2026
+            </span>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Document 1 -->
+            <div class="p-4 rounded-xl border border-slate-200 hover:border-pdo-emerald bg-slate-50 hover:bg-white transition flex flex-col justify-between">
+              <div>
+                <i class="fa-solid fa-file-shield text-rose-500 text-2xl mb-2"></i>
+                <h5 class="font-bold text-xs text-slate-900">Child & Adult Safeguarding Policy</h5>
+                <p class="text-[11px] text-slate-500 mt-1">Zero tolerance standard for vulnerable groups.</p>
+              </div>
+              <button onclick="previewPolicy('Safeguarding Policy', 'PDO Child & Vulnerable Adult Safeguarding Policy 2026-2028: Enforces strict behavioral guidelines, digital photo consent, and mandatory reporting for all staff and volunteers.')" class="mt-4 text-xs font-bold text-pdo-emerald hover:underline flex items-center">
+                <i class="fa-regular fa-eye mr-1.5"></i> Read Policy
+              </button>
+            </div>
+
+            <!-- Document 2 -->
+            <div class="p-4 rounded-xl border border-slate-200 hover:border-pdo-emerald bg-slate-50 hover:bg-white transition flex flex-col justify-between">
+              <div>
+                <i class="fa-solid fa-shield-cat text-rose-500 text-2xl mb-2"></i>
+                <h5 class="font-bold text-xs text-slate-900">PSEA Institutional Policy</h5>
+                <p class="text-[11px] text-slate-500 mt-1">Prevention of Sexual Exploitation and Abuse.</p>
+              </div>
+              <button onclick="previewPolicy('PSEA Institutional Policy', 'PDO Policy on Prevention of Sexual Exploitation and Abuse (PSEA): Zero-tolerance framework adhering strictly to UN standards. Independent confidential investigation committee.')" class="mt-4 text-xs font-bold text-pdo-emerald hover:underline flex items-center">
+                <i class="fa-regular fa-eye mr-1.5"></i> Read Policy
+              </button>
+            </div>
+
+            <!-- Document 3 -->
+            <div class="p-4 rounded-xl border border-slate-200 hover:border-pdo-emerald bg-slate-50 hover:bg-white transition flex flex-col justify-between">
+              <div>
+                <i class="fa-solid fa-money-bill-transfer text-emerald-600 text-2xl mb-2"></i>
+                <h5 class="font-bold text-xs text-slate-900">AML & CFT Guidelines</h5>
+                <p class="text-[11px] text-slate-500 mt-1">Anti-Money Laundering & Banking Audit.</p>
+              </div>
+              <button onclick="previewPolicy('AML / CFT Financial Guidelines', 'PDO Anti-Money Laundering & Combating Financing of Terrorism Standards: Institutional bank-only operations, chartered accountant independent annual audits.')" class="mt-4 text-xs font-bold text-pdo-emerald hover:underline flex items-center">
+                <i class="fa-regular fa-eye mr-1.5"></i> Read Policy
+              </button>
+            </div>
+
+            <!-- Document 4 -->
+            <div class="p-4 rounded-xl border border-slate-200 hover:border-pdo-emerald bg-slate-50 hover:bg-white transition flex flex-col justify-between">
+              <div>
+                <i class="fa-solid fa-chart-pie text-blue-600 text-2xl mb-2"></i>
+                <h5 class="font-bold text-xs text-slate-900">Annual Audit Report 2026</h5>
+                <p class="text-[11px] text-slate-500 mt-1">Independent CA firm financial statements.</p>
+              </div>
+              <button onclick="previewPolicy('Annual Financial Audit Report', 'PDO Annual Financial & Project Audit: Prepared in full compliance with Department of Social Services, Bangladesh NGO affairs, showing clean opinions across all funds.')" class="mt-4 text-xs font-bold text-pdo-emerald hover:underline flex items-center">
+                <i class="fa-regular fa-eye mr-1.5"></i> View Summary
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. PAGE: MEDIA & INSIGHTS                  -->
+    <!-- ========================================== -->
+    <section id="view-media" class="page-view hidden py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- Header Title Banner -->
+        <div class="border-b border-slate-200 pb-8 text-center max-w-3xl mx-auto">
+          <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+            News, Field Action & Thought Leadership
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Media & Insights
+          </h1>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            Real-time coverage of our emergency relief drives, seasonal humanitarian campaigns, and public policy advocacy.
+          </p>
+        </div>
+
+        <!-- Filter tabs for Media -->
+        <div class="flex flex-wrap justify-center gap-2 text-xs font-semibold">
+          <button onclick="filterNews('all')" id="filter-btn-all" class="filter-tab-btn active px-4 py-2 rounded-xl bg-pdo-emerald text-white">All News & Updates</button>
+          <button onclick="filterNews('seasonal')" id="filter-btn-seasonal" class="filter-tab-btn px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50">Seasonal Relief</button>
+          <button onclick="filterNews('health')" id="filter-btn-health" class="filter-tab-btn px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50">Public Health</button>
+          <button onclick="filterNews('civic')" id="filter-btn-civic" class="filter-tab-btn px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50">Civic Action</button>
+          <button onclick="filterNews('policy')" id="filter-btn-policy" class="filter-tab-btn px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50">Op-Eds & Policy</button>
+        </div>
+
+        <!-- News Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="newsGrid">
+          
+          <!-- Item 1: Seasonal Eid Food & Clothes -->
+          <div class="news-item seasonal bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-48 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=600&q=80" 
+                   alt="Eid food hampers and new clothing distribution" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d7a53/ffffff?text=Eid+Distribution';"
+                   class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-emerald-700/80 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Seasonal Relief</span>
+            </div>
+            <div class="p-6 space-y-2">
+              <span class="text-[11px] text-slate-400 font-semibold">Natore & Singra | Annual Campaign</span>
+              <h4 class="font-bold text-slate-900 text-base">Eid Food Hampers & New Clothes Distribution</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Distribution of festive food hampers (semai, sugar, edible oil) and brand-new clothes for hundreds of underprivileged children and orphan families during Eid across Singra and Gurudaspur.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Winter Blanket Squad -->
+          <div class="news-item seasonal bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-48 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" 
+                   alt="Midnight winter blanket distribution to homeless" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Winter+Relief';"
+                   class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-blue-700/80 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Winter Squad</span>
+            </div>
+            <div class="p-6 space-y-2">
+              <span class="text-[11px] text-slate-400 font-semibold">Cold Wave Response</span>
+              <h4 class="font-bold text-slate-900 text-base">Midnight Blanket Squads for Homeless & Disabled</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Volunteer midnight mobile squads delivering warm thermal blankets directly to street dwellers and vulnerable disabled persons during severe cold spells.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Dengue Prevention & Vector Control -->
+          <div class="news-item health bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-48 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" 
+                   alt="Dengue vector control spraying crash program" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/600x400/b91c1c/ffffff?text=Dengue+Drive';"
+                   class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-rose-700/80 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Public Health</span>
+            </div>
+            <div class="p-6 space-y-2">
+              <span class="text-[11px] text-slate-400 font-semibold">Epidemic Intervention</span>
+              <h4 class="font-bold text-slate-900 text-base">Dengue Prevention & Larvicide Crash Programs</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Month-long grassroots campaigns, school workshops, and mosquito eradication spraying conducted across dense settlements and educational hubs during peak monsoon.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: Post-Revolution Civic Rebuilding -->
+          <div class="news-item civic bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-48 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=600&q=80" 
+                   alt="Youth volunteers restoring civic cleanliness and traffic control" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f766e/ffffff?text=Civic+Rebuilding';"
+                   class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-teal-700/80 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Civic Action</span>
+            </div>
+            <div class="p-6 space-y-2">
+              <span class="text-[11px] text-slate-400 font-semibold">Civic Leadership</span>
+              <h4 class="font-bold text-slate-900 text-base">Youth-Led Traffic Management & Urban Cleanup</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Voluntary management at busy junctions (e.g. Nichabazar traffic junction) and massive city waste cleanup drives restoring public safety and environmental hygiene.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5: Op-Ed: Reforming TVET & Future of Rural Skills -->
+          <div class="news-item policy bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-48 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" 
+                   alt="Technical computer lab and skills education" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/600x400/581c87/ffffff?text=TVET+Policy';"
+                   class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-purple-700/80 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Policy Brief</span>
+            </div>
+            <div class="p-6 space-y-2">
+              <span class="text-[11px] text-slate-400 font-semibold">Shaikh Rifad Mahmud | Policy Brief</span>
+              <h4 class="font-bold text-slate-900 text-base">Reforming Rural TVET for Global Digital Markets</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Analytical assessment advocating for AI, renewable installation skills, and hands-on vocational certifications in rural high schools to eliminate youth unemployment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 6: Extreme Heatwave & Saline Distribution -->
+          <div class="news-item health bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-48 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=600&q=80" 
+                   alt="Heatwave relief distributing clean water and oral saline" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/600x400/ea580c/ffffff?text=Heatwave+Relief';"
+                   class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-amber-600/80 text-white text-[10px] px-2.5 py-0.5 rounded-full backdrop-blur-sm">Emergency</span>
+            </div>
+            <div class="p-6 space-y-2">
+              <span class="text-[11px] text-slate-400 font-semibold">Emergency Relief</span>
+              <h4 class="font-bold text-slate-900 text-base">Extreme Heatwave Oral Saline & Safe Water Drives</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Distributing thousands of purified water bottles and oral rehydration saline packs to rickshaw pullers, day-laborers, and pedestrians to avert heat strokes.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. PAGE: GET INVOLVED                      -->
+    <!-- ========================================== -->
+    <section id="view-involved" class="page-view hidden py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <!-- Header Title Banner -->
+        <div class="border-b border-slate-200 pb-8 text-center max-w-3xl mx-auto">
+          <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+            Join the Movement
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Get Involved With PDO
+          </h1>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            Whether you want to become a certified Tree Guardian, volunteer your skills, or partner with us as an INGO or CSR funder, your action shapes the grassroots.
+          </p>
+        </div>
+
+        <!-- 1. DUAL APPLICATION FORM TABS -->
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+          
+          <!-- Form Selector Buttons -->
+          <div class="flex rounded-xl bg-slate-100 p-1 mb-8 max-w-md mx-auto">
+            <button onclick="switchInvolvedTab('volunteer')" id="tab-btn-volunteer" class="w-1/2 py-2.5 rounded-lg font-bold text-xs transition bg-pdo-emerald text-white shadow-sm">
+              <i class="fa-solid fa-user-plus mr-1.5"></i> Volunteer Sign-up
+            </button>
+            <button onclick="switchInvolvedTab('partner')" id="tab-btn-partner" class="w-1/2 py-2.5 rounded-lg font-bold text-xs transition text-slate-600 hover:text-slate-900">
+              <i class="fa-solid fa-handshake mr-1.5"></i> Partner (INGO / CSR)
+            </button>
+          </div>
+
+          <!-- FORM A: VOLUNTEER & TREE GUARDIAN REGISTRATION -->
+          <form id="form-volunteer" onsubmit="handleVolunteerSubmit(event)" class="space-y-6">
+            <div class="text-center max-w-md mx-auto mb-4">
+              <h3 class="text-lg font-bold text-slate-900">Apply to Become a PDO Volunteer or Tree Guardian</h3>
+              <p class="text-xs text-slate-500">Join our dynamic network of rural and urban changemakers.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+                <input type="text" required placeholder="e.g. Tanvir Ahmed" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+                <input type="email" required placeholder="tanvir@example.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Phone / WhatsApp *</label>
+                <input type="tel" required placeholder="+8801XXXXXXXXX" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Current District / Upazila *</label>
+                <input type="text" required placeholder="e.g. Singra, Natore" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred Area of Action *</label>
+                <select class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none bg-white">
+                  <option>Tree Guardian & Climate Action</option>
+                  <option>Education Mentor (Dropout Recovery)</option>
+                  <option>Zero Hunger Campus Food Support</option>
+                  <option>Disaster Relief & Medical Camps</option>
+                  <option>Digital Media, Content & Tech</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Primary Skill or Profession</label>
+                <input type="text" placeholder="e.g. Student, Teacher, IT Freelancer" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Why do you want to join PDO? *</label>
+              <textarea rows="3" required placeholder="Tell us briefly about your motivation..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 bg-gradient-to-r from-pdo-emerald to-emerald-700 hover:from-pdo-dark hover:to-emerald-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition">
+              <i class="fa-solid fa-paper-plane mr-2"></i> Submit Volunteer Application
+            </button>
+          </form>
+
+          <!-- FORM B: PARTNERSHIP INQUIRY (INGO / CSR / GOVT) -->
+          <form id="form-partner" onsubmit="handlePartnerSubmit(event)" class="space-y-6 hidden">
+            <div class="text-center max-w-md mx-auto mb-4">
+              <h3 class="text-lg font-bold text-slate-900">Institutional Partnership & CSR Inquiries</h3>
+              <p class="text-xs text-slate-500">Collaborate with PDO on high-impact scalable rural projects.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Organization / Agency Name *</label>
+                <input type="text" required placeholder="e.g. Global Green Fund / Tech CSR" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Organization Type *</label>
+                <select class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none bg-white">
+                  <option>International NGO (INGO)</option>
+                  <option>UN Agency / Multilateral Fund</option>
+                  <option>Corporate CSR Foundation</option>
+                  <option>Philanthropic Trust / Foundation</option>
+                  <option>Government Ministry / Agency</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Contact Person & Designation *</label>
+                <input type="text" required placeholder="e.g. Sarah Jenkins, Country Director" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Official Email Address *</label>
+                <input type="email" required placeholder="partner@org.org" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Strategic Interest / Focus Area *</label>
+              <select class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none bg-white">
+                <option>Tree Guardian Afforestation Expansion (SDG 13/15)</option>
+                <option>Multi-Campus Zero Hunger Mid-Day Meal Model (SDG 2/4)</option>
+                <option>District-Wide Tiered Scholarship Underwriting</option>
+                <option>Vocational TVET Tech Labs & STEM Incubation</option>
+                <option>Emergency Humanitarian & Climate Relief</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Project Scope or Inquiry Details *</label>
+              <textarea rows="3" required placeholder="Describe proposed partnership or mandate..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald focus:border-pdo-emerald outline-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 bg-gradient-to-r from-slate-900 to-pdo-dark hover:from-slate-800 hover:to-pdo-emerald text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition">
+              <i class="fa-solid fa-briefcase mr-2"></i> Submit Institutional Inquiry
+            </button>
+          </form>
+
+        </div>
+
+        <!-- 2. ADOPT-A-PROJECT MODEL (CARDS) -->
+        <div id="involved-adopt" class="space-y-6 pt-6">
+          <div class="text-center max-w-2xl mx-auto">
+            <span class="text-xs uppercase font-bold tracking-widest text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+              Direct Social Return
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">The "Adopt-a-Project" Model</h2>
+            <p class="text-slate-600 text-xs sm:text-sm">Direct, traceable donor sponsorship with full photographic and MEAL attendance logs.</p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="h-36 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=500&q=80" 
+                       alt="Mid-day meal adoption" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/500x300/d97706/ffffff?text=Adopt+Meal';"
+                       class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase bg-amber-500 text-white">Campus Nutrition</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="font-bold text-slate-900 text-base">Adopt a School Mid-Day Meal</h4>
+                  <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                    Guarantee 250 students a hot, nutritious lunch every day for a full semester. Drastically reduces absenteeism and fuels learning.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-900">Custom Scope</span>
+                <button onclick="prefillAdopt('Mid-Day Meal Model')" class="text-xs font-bold text-pdo-emerald hover:underline">Inquire Now &rarr;</button>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="h-36 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=500&q=80" 
+                       alt="Tree Guardians adoption" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/500x300/0d7a53/ffffff?text=Adopt+Tree+Guardians';"
+                       class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase bg-pdo-emerald text-white">Climate Action</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="font-bold text-slate-900 text-base">Adopt 1,000 Tree Guardians</h4>
+                  <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                    Fund 1,000 fruit and timber saplings distributed to primary school students with 12-month quarterly survival monitoring and awards.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-900">High Survival M&E</span>
+                <button onclick="prefillAdopt('Tree Guardian Batch')" class="text-xs font-bold text-pdo-emerald hover:underline">Inquire Now &rarr;</button>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="h-36 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=500&q=80" 
+                       alt="School uniform adoption" 
+                       onerror="this.onerror=null; this.src='https://placehold.co/500x300/1d4ed8/ffffff?text=Adopt+Uniforms';"
+                       class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase bg-blue-600 text-white">Retention & Parity</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="font-bold text-slate-900 text-base">Adopt 200 School Uniforms</h4>
+                  <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                    Provide custom-tailored, dignified school uniforms for 200 rural children, eliminating classroom stigma and keeping them enrolled.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-900">100% Retention Target</span>
+                <button onclick="prefillAdopt('School Uniform Drive')" class="text-xs font-bold text-pdo-emerald hover:underline">Inquire Now &rarr;</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 7. PAGE: CONTACT US & LEGAL INFO           -->
+    <!-- ========================================== -->
+    <section id="view-contact" class="page-view hidden py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <!-- Header Title Banner -->
+        <div class="border-b border-slate-200 pb-8 text-center max-w-3xl mx-auto">
+          <span class="text-xs uppercase font-bold tracking-widest text-pdo-emerald bg-emerald-100 px-3 py-1 rounded-full">
+            Connect With Our Secretariat
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Contact Us & Legal Information
+          </h1>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            Reach our central operational headquarters in Natore, Bangladesh or schedule an institutional donor briefing.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-10">
+          
+          <!-- Contact Details & Legal Box -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-5">
+              <h3 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center">
+                <i class="fa-solid fa-location-dot text-pdo-emerald mr-2"></i> Headquarters & Secretariat
+              </h3>
+              
+              <div class="space-y-4 text-xs text-slate-700">
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-50 text-pdo-emerald flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-map-pin"></i>
+                  </div>
+                  <div>
+                    <strong class="block text-slate-900">Central Office Address:</strong>
+                    Bahadurpur, Post Office: Chamari, Upazila: Singra, District: Natore, Division: Rajshahi, Bangladesh.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-50 text-pdo-emerald flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <strong class="block text-slate-900">Direct Phone / WhatsApp:</strong>
+                    <a href="https://wa.me/8801712520019" target="_blank" class="text-pdo-emerald hover:underline font-semibold">+88 01712520019</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-50 text-pdo-emerald flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <strong class="block text-slate-900">Official Email:</strong>
+                    <a href="mailto:pdoglobal1997@gmail.com" class="text-pdo-emerald hover:underline">pdoglobal1997@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-50 text-pdo-emerald flex items-center justify-center shrink-0">
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div>
+                    <strong class="block text-slate-900">Official Facebook Page:</strong>
+                    <a href="https://www.facebook.com/pdoglobal" target="_blank" class="text-pdo-emerald hover:underline font-medium">facebook.com/pdoglobal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Legal Registration Card -->
+            <div class="bg-gradient-to-br from-pdo-dark to-slate-900 text-white p-6 rounded-3xl shadow-md space-y-3">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-300">Statutory Legal Credentials</span>
+              <h4 class="text-base font-bold text-white">Department of Social Services, Bangladesh</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Formally registered with the Department of Social Services, Government of the People's Republic of Bangladesh.
+              </p>
+              <div class="p-3 bg-white/10 rounded-xl border border-white/10 flex items-center justify-between text-xs">
+                <span>Registration No:</span>
+                <span class="font-mono font-bold text-emerald-300 text-sm">Nat-295/2000</span>
+              </div>
+              <p class="text-[10px] text-slate-400">Founded: 1997 | Full legal capacity for INGO MoUs & PPP agreements.</p>
+            </div>
+
+          </div>
+
+          <!-- Contact Form & Interactive Map -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+              <h3 class="text-lg font-bold text-slate-900 mb-1">Send an Instant Message to PDO Secretariat</h3>
+              <p class="text-xs text-slate-500 mb-6">Our administrative team responds within 24 to 48 operational hours.</p>
+
+              <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Your Name *</label>
+                    <input type="text" required placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald outline-none">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+                    <input type="email" required placeholder="you@example.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald outline-none">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Subject *</label>
+                  <input type="text" required placeholder="Regarding Scholarship / Tree Guardian / Partnership" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald outline-none">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Your Message *</label>
+                  <textarea rows="4" required placeholder="Please write your message here..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pdo-emerald outline-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3 bg-pdo-emerald hover:bg-pdo-dark text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow transition">
+                  <i class="fa-solid fa-paper-plane mr-2"></i> Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Interactive Map Pin Section (Singra, Natore) -->
+            <div class="bg-white p-4 rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+              <div class="flex items-center justify-between pb-3 px-2">
+                <span class="text-xs font-bold text-slate-800"><i class="fa-solid fa-map-location-dot text-pdo-emerald mr-1.5"></i> Location Pin: Bahadurpur, Singra, Natore</span>
+                <a href="https://maps.google.com/?q=Singra,Natore,Bangladesh" target="_blank" class="text-xs text-pdo-emerald font-semibold hover:underline">Open in Google Maps &rarr;</a>
+              </div>
+              <div class="w-full h-56 rounded-2xl overflow-hidden border border-slate-200 relative bg-slate-100 flex items-center justify-center">
+                <!-- Embedded OpenStreetMap Iframe for live interactive map without API key restrictions -->
+                <iframe 
+                  title="Bahadurpur, Singra, Natore Location"
+                  width="100%" 
+                  height="100%" 
+                  frameborder="0" 
+                  scrolling="no" 
+                  marginheight="0" 
+                  marginwidth="0" 
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=89.0500%2C24.4000%2C89.3000%2C24.6000&amp;layer=mapnik&amp;marker=24.5000%2C89.1500"
+                  class="w-full h-full">
+                </iframe>
+                <div class="absolute bottom-2 left-2 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-[10px] font-semibold text-slate-700 shadow-sm">
+                  <i class="fa-solid fa-compass text-pdo-emerald"></i> Central Implementation Hub: Singra, Natore
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- POLICY PREVIEW MODAL -->
+  <div id="policyModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h3 id="modalTitle" class="text-base font-bold text-slate-900">Policy Title</h3>
+        <button onclick="closePolicyModal()" class="text-slate-400 hover:text-slate-700 p-1 rounded-lg">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <p id="modalContent" class="text-xs sm:text-sm text-slate-600 leading-relaxed"></p>
+      <div class="pt-4 border-t border-slate-100 flex justify-end gap-3">
+        <button onclick="closePolicyModal()" class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-semibold hover:bg-slate-200">Close</button>
+        <button onclick="downloadPolicyAlert()" class="px-4 py-2 rounded-xl bg-pdo-emerald text-white text-xs font-semibold hover:bg-pdo-dark flex items-center">
+          <i class="fa-solid fa-download mr-1.5"></i> Download PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastBox" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div id="toastInner" class="bg-slate-900 text-white text-xs px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 border border-emerald-500/30">
+      <i class="fa-solid fa-circle-check text-emerald-400 text-base" id="toastIcon"></i>
+      <span id="toastMsg" class="font-medium">Action completed successfully.</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- FOOTER                                     -->
+  <!-- ========================================== -->
+  <footer class="bg-pdo-navy text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        
+        <!-- Col 1: Identity & Legal -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-pdo-emerald flex items-center justify-center text-white font-extrabold text-xl">
+              <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <div>
+              <span class="text-xl font-extrabold text-white">PDO</span>
+              <p class="text-[10px] text-emerald-400 uppercase font-semibold">Peoples Development Organisation</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Empowering the Grassroots, Engineering the Future. Dedicated to quality technical education, food security, behavioral climate stewardship, and systemic socio-economic resilience since 1997.
+          </p>
+          <div class="text-xs text-slate-400 space-y-1">
+            <p><i class="fa-solid fa-scale-balanced mr-1.5 text-emerald-400"></i> Dept. of Social Services Reg: <strong>Nat-295/2000</strong></p>
+            <p><i class="fa-solid fa-location-dot mr-1.5 text-emerald-400"></i> Bahadurpur, Singra, Natore, Bangladesh</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase font-bold tracking-wider text-white border-b border-slate-800 pb-2">Quick Navigation</h4>
+          <ul class="text-xs space-y-2 text-slate-400">
+            <li><a href="#home" onclick="navigateTo('home')" class="hover:text-emerald-400 transition">Home</a></li>
+            <li><a href="#about" onclick="navigateTo('about')" class="hover:text-emerald-400 transition">About Us & Leadership</a></li>
+            <li><a href="#impact" onclick="navigateTo('impact')" class="hover:text-emerald-400 transition">Our Impact & Initiatives</a></li>
+            <li><a href="#transparency" onclick="navigateTo('transparency')" class="hover:text-emerald-400 transition">Transparency & Compliance</a></li>
+            <li><a href="#media" onclick="navigateTo('media')" class="hover:text-emerald-400 transition">Media & Insights</a></li>
+            <li><a href="#contact" onclick="navigateTo('contact')" class="hover:text-emerald-400 transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Flagship Models -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase font-bold tracking-wider text-white border-b border-slate-800 pb-2">Flagship Programs</h4>
+          <ul class="text-xs space-y-2 text-slate-400">
+            <li><a href="#impact" onclick="navigateTo('impact', 'impact-scholarships')" class="hover:text-emerald-400 transition">Tiered Scholarships (1,200+)</a></li>
+            <li><a href="#impact" onclick="navigateTo('impact', 'impact-zerohunger')" class="hover:text-emerald-400 transition">Zero Hunger Campus Lunch</a></li>
+            <li><a href="#impact" onclick="navigateTo('impact', 'impact-treeguardian')" class="hover:text-emerald-400 transition">Tree Guardian 2030 Project</a></li>
+            <li><a href="#impact" onclick="navigateTo('impact', 'impact-dropout')" class="hover:text-emerald-400 transition">Second-Chance Education</a></li>
+            <li><a href="#impact" onclick="navigateTo('impact', 'impact-uniform')" class="hover:text-emerald-400 transition">School Uniform Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Connect & Socials -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase font-bold tracking-wider text-white border-b border-slate-800 pb-2">Connect & Glocal Office</h4>
+          <div class="text-xs space-y-2 text-slate-400">
+            <p><i class="fa-solid fa-phone mr-1.5 text-emerald-400"></i> +88 01712520019</p>
+            <p><i class="fa-solid fa-envelope mr-1.5 text-emerald-400"></i> pdoglobal1997@gmail.com</p>
+            <p><i class="fa-brands fa-facebook mr-1.5 text-emerald-400"></i> facebook.com/pdoglobal</p>
+          </div>
+          
+          <div class="pt-2 flex items-center space-x-3 text-sm">
+            <a href="https://www.facebook.com/pdoglobal" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-pdo-emerald flex items-center justify-center text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/8801712520019" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-pdo-emerald flex items-center justify-center text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:pdoglobal1997@gmail.com" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-pdo-emerald flex items-center justify-center text-white transition"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Notice & Copyright -->
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <p>© 2026 Peoples Development Organisation (PDO). All Rights Reserved.</p>
+        <p class="text-[11px]">Registered Non-Profit Under Dept. of Social Services, Bangladesh (Reg: Nat-295/2000).</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT LOGIC & INTERACTIONS            -->
+  <!-- ========================================== -->
+  <script>
+    // State management
+    let currentLanguage = 'en'; // 'en' or 'bn'
+    let currentView = 'home';
+    let chartRendered = false;
+
+    // View Navigation Handler
+    function navigateTo(viewId, targetAnchorId = null) {
+      // Hide all views
+      const views = document.querySelectorAll('.page-view');
+      views.forEach(v => {
+        v.classList.add('hidden');
+        v.classList.remove('block');
+      });
+
+      // Show selected view
+      const targetView = document.getElementById(`view-${viewId}`);
+      if (targetView) {
+        targetView.classList.remove('hidden');
+        targetView.classList.add('block');
+        currentView = viewId;
+      }
+
+      // Close mobile drawer if open
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      if (!mobileDrawer.classList.contains('hidden')) {
+        toggleMobileMenu();
+      }
+
+      // Initialize chart if impact page is opened
+      if (viewId === 'impact' && !chartRendered) {
+        setTimeout(initScholarshipChart, 100);
+      }
+
+      // Scroll to anchor or top
+      if (targetAnchorId) {
+        setTimeout(() => {
+          const anchorEl = document.getElementById(targetAnchorId);
+          if (anchorEl) {
+            anchorEl.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 120);
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function mobileNav(viewId, targetAnchorId = null) {
+      navigateTo(viewId, targetAnchorId);
+    }
+
+    // Toggle Mobile Drawer Menu
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      const icon = document.getElementById('menuIcon');
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        drawer.classList.add('hidden');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    }
+
+    // Chart.js Infographic for Tiered Scholarships
+    function initScholarshipChart() {
+      const ctx = document.getElementById('scholarshipChart');
+      if (!ctx) return;
+
+      try {
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: ['Tier 1: 100% Full (150+)', 'Tier 2: 50% Half (300+)', 'Tier 3: 25% Partial (750+)'],
+            datasets: [{
+              data: [150, 300, 750],
+              backgroundColor: ['#0d7a53', '#14b8a6', '#f59e0b'],
+              borderWidth: 2,
+              borderColor: '#ffffff'
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: false
+              },
+              tooltip: {
+                callbacks: {
+                  label: function(context) {
+                    const label = context.label || '';
+                    const val = context.raw || 0;
+                    return ` ${label} : ${val} Students`;
+                  }
+                }
+              }
+            },
+            cutout: '68%'
+          }
+        });
+        chartRendered = true;
+      } catch (err) {
+        console.error('Chart initialization error', err);
+      }
+    }
+
+    // Media Filter Handler
+    function filterNews(category) {
+      // Toggle button styles
+      document.querySelectorAll('.filter-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-pdo-emerald', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-700');
+      });
+      const activeBtn = document.getElementById(`filter-btn-${category}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-pdo-emerald', 'text-white');
+        activeBtn.classList.remove('bg-white', 'text-slate-700');
+      }
+
+      // Filter grid cards
+      const items = document.querySelectorAll('.news-item');
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Get Involved Tab Switch (Volunteer vs Partner)
+    function switchInvolvedTab(type) {
+      const btnVol = document.getElementById('tab-btn-volunteer');
+      const btnPart = document.getElementById('tab-btn-partner');
+      const formVol = document.getElementById('form-volunteer');
+      const formPart = document.getElementById('form-partner');
+
+      if (type === 'volunteer') {
+        btnVol.classList.add('bg-pdo-emerald', 'text-white');
+        btnVol.classList.remove('text-slate-600');
+        btnPart.classList.remove('bg-pdo-emerald', 'text-white');
+        btnPart.classList.add('text-slate-600');
+
+        formVol.classList.remove('hidden');
+        formPart.classList.add('hidden');
+      } else {
+        btnPart.classList.add('bg-pdo-emerald', 'text-white');
+        btnPart.classList.remove('text-slate-600');
+        btnVol.classList.remove('bg-pdo-emerald', 'text-white');
+        btnVol.classList.add('text-slate-600');
+
+        formPart.classList.remove('hidden');
+        formVol.classList.add('hidden');
+      }
+    }
+
+    // Prefill Adopt-A-Project into partnership form
+    function prefillAdopt(projectName) {
+      navigateTo('involved');
+      switchInvolvedTab('partner');
+      showToast(`Selected project: ${projectName}. Please fill out the organization details.`);
+    }
+
+    // Form submission handlers
+    function handleVolunteerSubmit(e) {
+      e.preventDefault();
+      e.target.reset();
+      showToast("Thank you! Your volunteer application has been registered with PDO.");
+    }
+
+    function handlePartnerSubmit(e) {
+      e.preventDefault();
+      e.target.reset();
+      showToast("Partnership inquiry received. Our Secretariat will contact you shortly.");
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      e.target.reset();
+      showToast("Message sent to pdoglobal1997@gmail.com. We will reply within 24 hours.");
+    }
+
+    // Policy Modal Preview
+    function previewPolicy(title, content) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalContent').innerText = content;
+      document.getElementById('policyModal').classList.remove('hidden');
+    }
+
+    function closePolicyModal() {
+      document.getElementById('policyModal').classList.add('hidden');
+    }
+
+    function downloadPolicyAlert() {
+      closePolicyModal();
+      showToast("Document PDF generation prepared. Official institutional policy logged.");
+    }
+
+    // Toast notification function
+    function showToast(message) {
+      const toast = document.getElementById('toastBox');
+      const msg = document.getElementById('toastMsg');
+      msg.innerText = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    // Language Toggle Feature (EN / BN)
+    function toggleLanguage() {
+      const btnLabel = document.getElementById('currentLangLabel');
+      if (currentLanguage === 'en') {
+        currentLanguage = 'bn';
+        btnLabel.innerText = 'English';
+        showToast("ভাষা পরিবর্তন করা হয়েছে (বাংলা)");
+      } else {
+        currentLanguage = 'en';
+        btnLabel.innerText = 'বাংলা';
+        showToast("Switched language to English");
+      }
+    }
+
+    // Initialize defaults on window load
+    window.onload = function() {
+      // Parse any hash routing
+      const hash = window.location.hash.replace('#', '');
+      if (hash && ['home', 'about', 'impact', 'transparency', 'media', 'involved', 'contact'].includes(hash)) {
+        navigateTo(hash);
+      } else {
+        navigateTo('home');
+      }
+    };
+  </script>
+</body>
+</html>
