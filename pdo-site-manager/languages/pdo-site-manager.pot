@@ -1,0 +1,2925 @@
+# Copyright (C) 2026 Peoples Development Organisation
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: PDO Website Manager 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/onnobanglaweb-create/pdo-website/issues\n"
+"POT-Creation-Date: 2026-11-06 07:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: pdo-site-manager\n"
+
+#: pdo-site-manager/includes/class-schema.php:2992
+msgid "\"All\" filter label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3019
+msgid "\"Read more\" label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:505
+msgid "%s (copy)"
+msgstr ""
+
+#. translators: %s: number of drafts.
+#: pdo-site-manager/admin/views/overview.php:59
+msgid "%s draft"
+msgstr ""
+
+#. translators: %s: number of items.
+#: pdo-site-manager/admin/views/submissions.php:159
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of records.
+#: pdo-site-manager/admin/views/setup-wizard.php:78
+msgid "%s new record(s)"
+msgstr ""
+
+#. translators: %s: number of groups.
+#: pdo-site-manager/admin/views/tools.php:25
+msgid "%s settings group(s) imported."
+msgstr ""
+
+#. translators: %s: number of records.
+#: pdo-site-manager/admin/views/submissions.php:47
+msgid "%s submission updated."
+msgid_plural "%s submissions updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: total submissions.
+#: pdo-site-manager/admin/views/overview.php:82
+msgid "%s total"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:205
+msgid "(no subject)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:365
+msgid "(untitled item)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:287
+msgid "(Your message is stored safely in the PDO dashboard, but the email notification could not be delivered.)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:259
+msgid "1 column"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:260
+msgid "2 columns"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:261
+msgid "3 columns"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:262
+msgid "4 columns"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:263
+msgid "5 columns"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:264
+msgid "6 columns"
+msgstr ""
+
+#. translators: 1: site name, 2: form label.
+#: pdo-site-manager/includes/class-forms.php:343
+msgid "[%1$s] New %2$s"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:56
+msgid "About Page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:55
+msgid "About Page Manager"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:45 pdo-site-manager/includes/class-schema.php:1528
+msgid "About Us"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:67
+msgid "About Us page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:115 pdo-site-manager/includes/class-meta-boxes.php:346 pdo-site-manager/includes/class-schema.php:1058 pdo-site-manager/includes/class-schema.php:1179 pdo-site-manager/includes/class-schema.php:1922 pdo-site-manager/includes/class-schema.php:2641
+msgid "Accent colour"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:166
+msgid "Achievement"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:159
+msgid "Achievements"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:123
+msgid "Activate the PDO Modern theme under Appearance → Themes."
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:95
+msgid "Active theme"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:161
+msgid "Add achievement"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:675
+msgid "Add badge"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2602
+msgid "Add compliance card"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:207
+msgid "Add document link"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3048
+msgid "Add form field"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2721
+msgid "Add framework item"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1338
+msgid "Add gallery image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:736
+msgid "Add hero image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:182
+msgid "Add image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:336 pdo-site-manager/includes/class-sections.php:172
+msgid "Add item"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1638
+msgid "Add milestone"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:68
+msgid "Add new"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:216
+msgid "Add New"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:218 pdo-site-manager/includes/class-taxonomies.php:118
+msgid "Add New %s"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:997
+msgid "Add pillar card"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3439
+msgid "Add project card"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:272
+msgid "Add social link"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:407
+msgid "Add social profile"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1145
+msgid "Add stage"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:136 pdo-site-manager/includes/class-schema.php:842 pdo-site-manager/includes/class-schema.php:2811
+msgid "Add statistic"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3783
+msgid "Add string"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2453
+msgid "Add target"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1883
+msgid "Add thematic pillar"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2260
+msgid "Add tier"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1800
+msgid "Add value"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:833
+msgid "Add, edit, duplicate, hide and reorder as many statistics as you need."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3616
+msgid "Address, phone, email, social profiles and map settings live under PDO Website Manager → Organization."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3406
+msgid "Adopt-a-Project"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3409
+msgid "Adopt-a-Project model"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:85
+msgid "After the built-in sections"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:271
+msgid "Alignment"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:102
+msgid "All forms"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:110
+msgid "All statuses"
+msgstr ""
+
+#. translators: %s: organisation name.
+#: pdo-site-manager/admin/views/overview.php:25
+msgid "All website content for %s lives here, so it survives theme changes and updates."
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:477
+msgid "Allow in-page preview"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:73
+msgid "already present — nothing to do"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:192 pdo-site-manager/includes/class-schema.php:1353 pdo-site-manager/includes/class-sections.php:207
+msgid "Alt text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:94
+msgid "Amber / gold"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:890
+msgid "Animate the counter"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:152
+msgid "Apply"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2981
+msgid "Archive behaviour"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:513
+msgid "Article options"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2999
+msgid "Articles per page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:418
+msgid "Associated program"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:89
+msgid "Back to the list"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1616 pdo-site-manager/includes/class-schema.php:3298 pdo-site-manager/includes/class-sections.php:245
+msgid "Background"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2486
+msgid "Background accent"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:619
+msgid "Background image (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:612
+msgid "Background style"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2909
+msgid "Badge"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:412
+msgid "Badge / tag"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:582
+msgid "Badge icon"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:680
+msgid "Badge text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2975
+msgid "Banner image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1563
+msgid "Banner image (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2835
+msgid "Bar colour"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:86
+msgid "Before the built-in sections"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:377
+msgid "Beneficiary name or approved label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-i18n.php:68
+msgid "Bengali"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:538 pdo-site-manager/includes/class-schema.php:3798
+msgid "Bengali (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-i18n.php:355
+msgid "Bengali label (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:230 pdo-site-manager/includes/class-meta-boxes.php:295 pdo-site-manager/includes/class-meta-boxes.php:353 pdo-site-manager/includes/class-meta-boxes.php:424 pdo-site-manager/includes/class-meta-boxes.php:484 pdo-site-manager/includes/class-meta-boxes.php:509
+msgid "Bengali translation"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:139
+msgid "Bilingual mode"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:524
+msgid "Bilingual settings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:305
+msgid "Biography (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:95
+msgid "Blue"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:53
+msgid "Builds the primary menu with its dropdowns plus the two footer menus, including the Bengali labels."
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:136
+msgid "Bulk action"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:138
+msgid "Bulk actions"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1283 pdo-site-manager/includes/class-schema.php:3484 pdo-site-manager/includes/class-sections.php:154
+msgid "Button label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1290 pdo-site-manager/includes/class-sections.php:160
+msgid "Button URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3776
+msgid "Buttons, labels and notices used by the theme. Leave the Bengali column empty to fall back to English."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1459 pdo-site-manager/includes/class-sections.php:51
+msgid "Call to action"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:104
+msgid "Call-to-action label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:110
+msgid "Call-to-action URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:197 pdo-site-manager/includes/class-schema.php:1358
+msgid "Caption"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:757
+msgid "Caption / statistic label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:885
+msgid "Card background"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:20
+msgid "Categories & groups"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1364 pdo-site-manager/includes/class-schema.php:3459
+msgid "Category"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:110
+msgid "Center"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:382
+msgid "Changes saved and verified in the database."
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:49
+msgid "Chart / infographic"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2297
+msgid "Chart colour"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2251
+msgid "Chart subtitle"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2244
+msgid "Chart title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3075
+msgid "Checkbox"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3095
+msgid "Choices (one per line)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:287
+msgid "Choose icon"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:100
+msgid "Choose what to import"
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:293
+msgid "Clear"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1462
+msgid "Closing call-to-action"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:222
+msgid "Colour"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:257
+msgid "Column arrangement"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2117
+msgid "Columns on desktop"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2110
+msgid "Compact list"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2600
+msgid "Compliance cards"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:278
+msgid "Compliance statement"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:70 pdo-site-manager/includes/class-submissions.php:40
+msgid "Contact"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:356
+msgid "Contact channels"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3501 pdo-site-manager/includes/class-schema.php:3660 pdo-site-manager/includes/class-schema.php:3663
+msgid "Contact form"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3688
+msgid "Contact form fields"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:52
+msgid "Contact information"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:47
+msgid "Contact message"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:81
+msgid "Contact Page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:72
+msgid "Contact page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3615
+msgid "Contact page introduction"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:80
+msgid "Contact Page Manager"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3609
+msgid "Contact Us"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:137
+msgid "Content"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:55
+msgid "Content (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:293
+msgid "Copyright line"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:204
+msgid "Core identity"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:963
+msgid "Core pillars"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:966
+msgid "Core pillars section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1798
+msgid "Core values"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1785
+msgid "Core values heading"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1792
+msgid "Core values icon"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:25
+msgid "Creates Home, About, Impact, Transparency, Media, Get Involved and Contact and assigns the matching page templates. Existing pages with the same slug are reused."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:33
+msgid "Creates the Executive Committee and management records."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:29
+msgid "Creates the five flagship program records with their statistics and achievements."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:45
+msgid "Creates the four policy records. No file is attached — upload the real PDF on each record to switch the download button on."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:21
+msgid "Creates the news categories, program categories, team groups, partner categories and document categories."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:49
+msgid "Creates the six field-action and policy articles."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:37
+msgid "Creates the strategic partner records."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:41
+msgid "Creates the three human impact stories."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3491
+msgid "Custom button URL (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:491
+msgid "Custom map embed URL (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:92
+msgid "Dark green"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:77
+msgid "Dark green gradient"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:78
+msgid "Dark navy"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:111 pdo-site-manager/includes/class-dashboard.php:112
+msgid "Dashboard"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:62
+msgid "Data retention"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:93
+msgid "Database schema"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:407 pdo-site-manager/includes/class-schema.php:3072
+msgid "Date"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2064
+msgid "Date / tenure"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:74
+msgid "Default (white)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:535
+msgid "Default language"
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:370 pdo-site-manager/includes/class-fields.php:370
+msgid "Delete"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:70
+msgid "Delete all PDO content and settings when the plugin is deleted"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:150
+msgid "Delete permanently"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:604 pdo-site-manager/includes/class-schema.php:1028 pdo-site-manager/includes/class-schema.php:1167 pdo-site-manager/includes/class-schema.php:1476 pdo-site-manager/includes/class-schema.php:1654 pdo-site-manager/includes/class-schema.php:1811 pdo-site-manager/includes/class-schema.php:1905 pdo-site-manager/includes/class-schema.php:2197 pdo-site-manager/includes/class-schema.php:2237 pdo-site-manager/includes/class-schema.php:2291 pdo-site-manager/includes/class-schema.php:2443 pdo-site-manager/includes/class-schema.php:2474
+msgid "Description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:869
+msgid "Description (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:240
+msgid "Design & layout"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:106
+msgid "Design &amp; colors (Customizer)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:248 pdo-site-manager/includes/class-schema.php:1261 pdo-site-manager/includes/class-schema.php:2038
+msgid "Designation"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1370
+msgid "Destination URL (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2109
+msgid "Detailed cards"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2869
+msgid "Detailed explanation"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:139
+msgid "Disabled"
+msgstr ""
+
+#: pdo-site-manager/includes/class-setup-wizard.php:68
+msgid "Dismiss"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:234 pdo-site-manager/includes/class-meta-boxes.php:311 pdo-site-manager/includes/class-meta-boxes.php:363 pdo-site-manager/includes/class-meta-boxes.php:428 pdo-site-manager/includes/class-meta-boxes.php:500 pdo-site-manager/includes/class-meta-boxes.php:529
+msgid "Display"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:466
+msgid "Display the map"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2830
+msgid "Displayed value"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:332
+msgid "District"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:326
+msgid "Division"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:165
+msgid "Document"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:86
+msgid "Document Categories"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:85
+msgid "Document Category"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:437
+msgid "Document details"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:449
+msgid "Document file (PDF or other)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:50
+msgid "Document library"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2887
+msgid "Document library section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:254
+msgid "Document title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:489
+msgid "Document title (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2888
+msgid "Documents themselves are managed under PDO Website Manager → Documents."
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:471
+msgid "Download button text"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:40
+msgid "Download JSON"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:678
+msgid "Download PDF"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:36
+msgid "Downloads every PDO settings group as JSON. Posts, images and submissions are not included — use the normal WordPress exporter for those."
+msgstr ""
+
+#: pdo-site-manager/admin/views/reorder.php:38
+msgid "Drag the rows to set the order used on the website. Changes save automatically."
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:363
+msgid "Drag to reorder"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3073
+msgid "Dropdown"
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:369 pdo-site-manager/includes/class-fields.php:369 pdo-site-manager/includes/class-sections.php:479
+msgid "Duplicate"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:187
+msgid "Dynamic Section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:187
+msgid "Dynamic Sections"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:105
+msgid "Dynamic Sections Builder"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:124 pdo-site-manager/admin/views/reorder.php:61
+msgid "Edit"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:220 pdo-site-manager/includes/class-taxonomies.php:116
+msgid "Edit %s"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:96
+msgid "Edit page content"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:137 pdo-site-manager/includes/class-schema.php:3068
+msgid "Email"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:260
+msgid "Email (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:91
+msgid "Emerald (primary)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:529
+msgid "Enable English / Bengali switching"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:139 pdo-site-manager/includes/class-fields.php:154
+msgid "Enabled"
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:85 pdo-site-manager/includes/class-i18n.php:61 pdo-site-manager/includes/class-schema.php:537 pdo-site-manager/includes/class-schema.php:3793
+msgid "English"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:135
+msgid "Established"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:259
+msgid "Establishment year"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:73
+msgid "Every page (above content)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:74
+msgid "Every page (below content)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:49
+msgid "Excerpt (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:126
+msgid "Export CSV"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:35
+msgid "Export settings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:455
+msgid "External document URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:973 pdo-site-manager/includes/class-schema.php:1121 pdo-site-manager/includes/class-schema.php:1309 pdo-site-manager/includes/class-schema.php:1541 pdo-site-manager/includes/class-schema.php:2085 pdo-site-manager/includes/class-schema.php:2223 pdo-site-manager/includes/class-schema.php:2387 pdo-site-manager/includes/class-schema.php:2429 pdo-site-manager/includes/class-schema.php:2697 pdo-site-manager/includes/class-schema.php:2787 pdo-site-manager/includes/class-schema.php:3271 pdo-site-manager/includes/class-schema.php:3416
+msgid "Eyebrow label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:85 pdo-site-manager/includes/class-meta-boxes.php:518
+msgid "Fallback image URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:341
+msgid "Fallback logo URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:254 pdo-site-manager/includes/class-meta-boxes.php:391
+msgid "Fallback photo URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:122
+msgid "Feature this program"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:123
+msgid "Featured"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2205
+msgid "Featured banner image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1601
+msgid "Featured image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:80
+msgid "Featured image alt text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3053
+msgid "Field key"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3065
+msgid "Field type"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3102
+msgid "Field width"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:218
+msgid "File"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:127
+msgid "Fill in the Bengali fields — nothing is machine translated."
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:124
+msgid "Filter"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:34
+msgid "Finish the setup."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:285
+msgid "Footer legal notice"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1041
+msgid "Footer statistic"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:188 pdo-site-manager/includes/class-sections.php:53
+msgid "Form"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3332 pdo-site-manager/includes/class-schema.php:3381
+msgid "Form description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:379
+msgid "Form notification recipient"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:39 pdo-site-manager/includes/class-dashboard.php:131 pdo-site-manager/includes/class-dashboard.php:132
+msgid "Form Submissions"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3325 pdo-site-manager/includes/class-schema.php:3374 pdo-site-manager/includes/class-schema.php:3670
+msgid "Form title"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:100
+msgid "Form type"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:485
+msgid "Format: minLon,minLat,maxLon,maxLat"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2719
+msgid "Framework items"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:116 pdo-site-manager/admin/views/submissions.php:189
+msgid "From"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:318
+msgid "Full address"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2045
+msgid "Full message"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:246
+msgid "Full name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1999
+msgid "Full president's message"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3105
+msgid "Full width"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1299 pdo-site-manager/includes/class-sections.php:46
+msgid "Gallery"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1336
+msgid "Gallery images"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:76 pdo-site-manager/includes/class-importer.php:65 pdo-site-manager/includes/class-schema.php:3258
+msgid "Get Involved"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:75
+msgid "Get Involved Manager"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:71
+msgid "Get Involved page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:499
+msgid "Google Maps link"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2583
+msgid "Governance"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2586
+msgid "Governance & compliance cards"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3104
+msgid "Half width"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1161 pdo-site-manager/includes/class-schema.php:2024 pdo-site-manager/includes/class-schema.php:3278
+msgid "Heading"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:36
+msgid "Heading and description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:306
+msgid "Headquarters"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:565 pdo-site-manager/includes/class-sections.php:35
+msgid "Hero"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:625
+msgid "Hero buttons"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:79
+msgid "Hero dotted pattern"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:734
+msgid "Hero image mosaic"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:568
+msgid "Hero section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:714
+msgid "Hero visual panel"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:304 pdo-site-manager/includes/class-fields.php:367 pdo-site-manager/includes/class-meta-boxes.php:35 pdo-site-manager/includes/class-sections.php:305
+msgid "Hidden"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:312
+msgid "Hidden on desktop"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:326
+msgid "Hidden on mobile"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:319
+msgid "Hidden on tablet"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:34
+msgid "Hide from the website"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:311
+msgid "Hide on desktop"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:325
+msgid "Hide on mobile"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:318
+msgid "Hide on tablet"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:304
+msgid "Hide this section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:596
+msgid "Highlighted headline text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:40
+msgid "Home"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:51 pdo-site-manager/includes/class-schema.php:562 pdo-site-manager/includes/class-sections.php:66
+msgid "Homepage"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1302
+msgid "Homepage gallery strip"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:50
+msgid "Homepage Manager"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:806
+msgid "Hub label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:820
+msgid "Hub location"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:813
+msgid "Hub name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:75 pdo-site-manager/includes/class-meta-boxes.php:152 pdo-site-manager/includes/class-meta-boxes.php:172 pdo-site-manager/includes/class-meta-boxes.php:282 pdo-site-manager/includes/class-meta-boxes.php:460 pdo-site-manager/includes/class-schema.php:418 pdo-site-manager/includes/class-schema.php:686 pdo-site-manager/includes/class-schema.php:1017 pdo-site-manager/includes/class-schema.php:1174 pdo-site-manager/includes/class-schema.php:1588 pdo-site-manager/includes/class-schema.php:1661 pdo-site-manager/includes/class-schema.php:1817
+msgid "Icon"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:875
+msgid "Icon (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:336
+msgid "Icon (used when no logo is set)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:40
+msgid "Icon cards"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:201
+msgid "Identity"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2744
+msgid "Illustration (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:187 pdo-site-manager/includes/class-schema.php:741 pdo-site-manager/includes/class-schema.php:1002 pdo-site-manager/includes/class-schema.php:1343 pdo-site-manager/includes/class-schema.php:3293 pdo-site-manager/includes/class-schema.php:3444 pdo-site-manager/includes/class-sections.php:144 pdo-site-manager/includes/class-sections.php:197
+msgid "Image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1666 pdo-site-manager/includes/class-schema.php:1912 pdo-site-manager/includes/class-schema.php:2625
+msgid "Image (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:752 pdo-site-manager/includes/class-schema.php:1012 pdo-site-manager/includes/class-schema.php:3454
+msgid "Image alt text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:38
+msgid "Image and text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:41
+msgid "Image cards"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1606
+msgid "Image position"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:61
+msgid "Impact Page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:60
+msgid "Impact Page Manager"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:40 pdo-site-manager/includes/class-schema.php:2376 pdo-site-manager/includes/class-sections.php:48
+msgid "Impact stories"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:144
+msgid "Impact Stories"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2379
+msgid "Impact stories section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:144
+msgid "Impact Story"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:55
+msgid "Import"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:63
+msgid "Import finished."
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:47
+msgid "Import settings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2344
+msgid "Individual programs are managed under PDO Website Manager → Programs."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2380
+msgid "Individual stories are managed under PDO Website Manager → Impact Stories."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2078
+msgid "Individual team members are managed under PDO Website Manager → Team Members. Groups come from the Team Group taxonomy."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2876
+msgid "Infographic / supporting image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3497
+msgid "Inquiry form"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1624
+msgid "Institutional milestones"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3360 pdo-site-manager/includes/class-schema.php:3499
+msgid "Institutional partnership form"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:460
+msgid "Interactive map"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3772 pdo-site-manager/includes/class-schema.php:3775
+msgid "Interface strings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1531 pdo-site-manager/includes/class-schema.php:2173 pdo-site-manager/includes/class-schema.php:2548 pdo-site-manager/includes/class-schema.php:2801 pdo-site-manager/includes/class-schema.php:3261
+msgid "Introduction"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:575
+msgid "Introductory badge"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1555
+msgid "Introductory description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2017
+msgid "Introductory label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:170
+msgid "Items"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:523
+msgid "Kicker / location line"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:146 pdo-site-manager/includes/class-meta-boxes.php:212 pdo-site-manager/includes/class-meta-boxes.php:277 pdo-site-manager/includes/class-schema.php:412 pdo-site-manager/includes/class-schema.php:863 pdo-site-manager/includes/class-schema.php:2816 pdo-site-manager/includes/class-schema.php:3059
+msgid "Label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:521
+msgid "Language"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:283
+msgid "Large"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:472
+msgid "Latitude"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2106
+msgid "Layout"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:32 pdo-site-manager/includes/class-schema.php:2074
+msgid "Leadership"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2077
+msgid "Leadership & management"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3492
+msgid "Leave empty to open the selected inquiry form with the project pre-filled."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:380
+msgid "Leave empty to use the official email address."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:109 pdo-site-manager/includes/class-schema.php:1609
+msgid "Left"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3650
+msgid "Legal card description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3643
+msgid "Legal card title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:254
+msgid "Legal registration"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:75
+msgid "Light grey"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1047 pdo-site-manager/includes/class-schema.php:1323 pdo-site-manager/includes/class-sections.php:227
+msgid "Link label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1053 pdo-site-manager/includes/class-schema.php:1330 pdo-site-manager/includes/class-sections.php:233
+msgid "Link URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:401 pdo-site-manager/includes/class-sections.php:453
+msgid "Location"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:303
+msgid "Location & contact"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:248
+msgid "Logo symbol (used when no logo image is set)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3076
+msgid "Long text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:478
+msgid "Longitude"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3054
+msgid "Lowercase identifier stored with the submission. Leave empty to generate it from the label."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2190 pdo-site-manager/includes/class-schema.php:2565 pdo-site-manager/includes/class-schema.php:2960
+msgid "Main heading"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:588
+msgid "Main headline"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:67
+msgid "Manage"
+msgstr ""
+
+#. translators: %s: admin URL.
+#: pdo-site-manager/includes/class-forms.php:332
+msgid "Manage this submission: %s"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:457 pdo-site-manager/includes/class-sections.php:54
+msgid "Map"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:512
+msgid "Map caption"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:505
+msgid "Map pin label"
+msgstr ""
+
+#. translators: %s: status label.
+#: pdo-site-manager/admin/views/submissions.php:144
+msgid "Mark as %s"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1448
+msgid "Maximum partners to display"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2365
+msgid "Maximum programs to display"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:290
+msgid "Maximum records (dynamic listings)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2408
+msgid "Maximum stories to display"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2687 pdo-site-manager/includes/class-schema.php:2690
+msgid "MEAL framework"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:60 pdo-site-manager/includes/class-schema.php:2940
+msgid "Media & Insights"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:70
+msgid "Media & Insights page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:56
+msgid "Media & News"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:70
+msgid "Media & News Settings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2946
+msgid "Media page introduction"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:71
+msgid "Media Settings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:243
+msgid "Member details"
+msgstr ""
+
+#: pdo-site-manager/includes/class-i18n.php:361
+msgid "Menu icon (optional)"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:59
+msgid "Migrates the original PDO website into editable WordPress records. Every step is idempotent: running it again never duplicates content and never overwrites something you have edited."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1636
+msgid "Milestones"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1629
+msgid "Milestones heading"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:94
+msgid "Missing — deactivate and reactivate the plugin."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1778
+msgid "Mission card background"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1765
+msgid "Mission description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1752
+msgid "Mission heading"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1759
+msgid "Mission icon"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1773
+msgid "Mission image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1254 pdo-site-manager/includes/class-schema.php:2031
+msgid "Name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:300
+msgid "Name (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:107 pdo-site-manager/admin/views/setup-wizard.php:52
+msgid "Navigation menus"
+msgstr ""
+
+#: pdo-site-manager/includes/class-submissions.php:26
+msgid "New"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:222
+msgid "New %s"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:77
+msgid "New submissions"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:56
+msgid "News Article"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:48
+msgid "News articles"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:32
+msgid "News Categories"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:31
+msgid "News Category"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:40
+msgid "News Tag"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:41
+msgid "News Tags"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:120
+msgid "Next steps"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:230
+msgid "No %s found in Trash."
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:228
+msgid "No %s found."
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:129
+msgid "No pages have been created yet. Run the setup wizard."
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:196
+msgid "No submissions found."
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:280
+msgid "None"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:282
+msgid "Normal"
+msgstr ""
+
+#: pdo-site-manager/admin/views/reorder.php:51
+msgid "Nothing to reorder yet."
+msgstr ""
+
+#: pdo-site-manager/includes/class-rest.php:36
+msgid "Nothing to reorder."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3071
+msgid "Number"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:880
+msgid "Number colour"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:852
+msgid "Numeric value"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:217
+msgid "Numeric value (statistics & charts)"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:72
+msgid "Off by default: deactivating or deleting the plugin keeps your content safe."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:311
+msgid "Office name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:373
+msgid "Official email"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:361
+msgid "Official phone number"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:124
+msgid "Open Appearance → Customize to set the logos, colors, typography and section order."
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:247
+msgid "Open file"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:89
+msgid "Open inbox"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:36
+msgid "Open Setup Wizard"
+msgstr ""
+
+#: pdo-site-manager/includes/class-setup-wizard.php:67
+msgid "Open the Setup Wizard"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:386
+msgid "Opening / contact hours"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:484
+msgid "OpenStreetMap bounding box"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:223
+msgid "Or external URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:746 pdo-site-manager/includes/class-schema.php:1007 pdo-site-manager/includes/class-schema.php:1348 pdo-site-manager/includes/class-schema.php:3449 pdo-site-manager/includes/class-sections.php:202
+msgid "Or image URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1248 pdo-site-manager/includes/class-schema.php:2011
+msgid "Or photo URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:287 pdo-site-manager/includes/class-schema.php:43
+msgid "Order"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:241
+msgid "Order saved."
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:132
+msgid "Organisation snapshot"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:46 pdo-site-manager/includes/class-schema.php:198
+msgid "Organization"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:233
+msgid "Organization description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:45
+msgid "Organization Information"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:210
+msgid "Organization name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:241
+msgid "Organization type badge"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:50 pdo-site-manager/includes/class-schema.php:2170
+msgid "Our Impact"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:68
+msgid "Our Impact page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:763
+msgid "Overlay accent"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3612
+msgid "Page content"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:16
+msgid "Page content & settings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1534 pdo-site-manager/includes/class-schema.php:2176 pdo-site-manager/includes/class-schema.php:2551 pdo-site-manager/includes/class-schema.php:3264
+msgid "Page introduction"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3621
+msgid "Page label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2943
+msgid "Page settings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1548 pdo-site-manager/includes/class-schema.php:3628
+msgid "Page title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:727
+msgid "Panel tag"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:720
+msgid "Panel title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1594
+msgid "Paragraphs"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:122
+msgid "Partner"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:320
+msgid "Partner details"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:248
+msgid "Partner name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:358
+msgid "Partner name (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1434
+msgid "Partner records themselves are managed under PDO Website Manager → Partners."
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:331
+msgid "Partner website"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:36 pdo-site-manager/includes/class-content-types.php:122 pdo-site-manager/includes/class-schema.php:1430 pdo-site-manager/includes/class-sections.php:43
+msgid "Partners"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1433
+msgid "Partners showcase"
+msgstr ""
+
+#: pdo-site-manager/includes/class-submissions.php:42
+msgid "Partnership"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:68
+msgid "Partnership Categories"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:67
+msgid "Partnership Category"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3357
+msgid "Partnership form"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3399
+msgid "Partnership form fields"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:67
+msgid "Partnership inquiry"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:492
+msgid "Paste a Google Maps or OpenStreetMap embed URL to override the generated map."
+msgstr ""
+
+#: pdo-site-manager/pdo-site-manager.php:145
+msgid "PDO Dashboard"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:904
+msgid "PDO Footer Menu"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:925
+msgid "PDO Footer Programs"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:101
+msgid "PDO Manager"
+msgstr ""
+
+#: pdo-site-manager/includes/class-importer.php:786
+msgid "PDO Primary Menu"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:58
+msgid "PDO Setup Wizard"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:15
+msgid "PDO Tools"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:20 pdo-site-manager/includes/class-dashboard.php:100
+msgid "PDO Website Manager"
+msgstr ""
+
+#: pdo-site-manager/includes/class-setup-wizard.php:63
+msgid "PDO Website Manager is installed."
+msgstr ""
+
+#: pdo-site-manager/includes/class-submissions.php:28
+msgid "Pending"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2822
+msgid "Percentage"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:98
+msgid "Permalinks"
+msgstr ""
+
+#: pdo-site-manager/includes/class-rest.php:31
+msgid "Permission denied."
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:138 pdo-site-manager/includes/class-schema.php:3069
+msgid "Phone"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:265
+msgid "Phone (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2006
+msgid "Photo"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:396
+msgid "Photo alt text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1268
+msgid "Photo badge"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2108
+msgid "Photo grid"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:97
+msgid "PHP"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:106
+msgid "Pick the layout renderer used on the front end."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:995
+msgid "Pillar cards"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1888
+msgid "Pillar number / label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3083
+msgid "Placeholder"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:118
+msgid "Placement"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:98
+msgid "Plain — switch to a pretty structure for clean URLs."
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:389
+msgid "Please choose a file to import."
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:192
+msgid "Please choose one of the available options."
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:171
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:218
+msgid "Please review the highlighted fields."
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:92
+msgid "Plugin version"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:165
+msgid "Policies & Documents"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2884
+msgid "Policies & reports"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:44
+msgid "Policy & report library"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2630
+msgid "Policy link (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2635
+msgid "Policy link label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:344
+msgid "Post office / postal information"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:847
+msgid "Prefix"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1996
+msgid "President's message"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1236
+msgid "President's message teaser"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1243
+msgid "President's photo"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1233
+msgid "President's teaser"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:478
+msgid "Preview enabled"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:643
+msgid "Primary button icon"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:630 pdo-site-manager/includes/class-schema.php:1484
+msgid "Primary button label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:637 pdo-site-manager/includes/class-schema.php:1491
+msgid "Primary button URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:76
+msgid "Primary tint"
+msgstr ""
+
+#: pdo-site-manager/includes/class-submissions.php:29
+msgid "Processed"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:79
+msgid "Program"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:50
+msgid "Program Categories"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:49
+msgid "Program Category"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:64
+msgid "Program details"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:47
+msgid "Program listing"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:250
+msgid "Program name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:134
+msgid "Program statistics"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:28 pdo-site-manager/includes/class-content-types.php:79 pdo-site-manager/includes/class-schema.php:2340
+msgid "Programs"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2343
+msgid "Programs & initiatives section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3437
+msgid "Project cards"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:466
+msgid "Publication year"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:96
+msgid "Purple"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1275
+msgid "Quotation"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:384
+msgid "Quote"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3074
+msgid "Radio buttons"
+msgstr ""
+
+#: pdo-site-manager/includes/class-submissions.php:27
+msgid "Read"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:191
+msgid "Received"
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:136
+msgid "Registration"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:265
+msgid "Registration authority"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:272
+msgid "Registration number"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:205
+msgid "Related documents"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:180
+msgid "Related gallery images"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1917
+msgid "Related SDGs"
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:260
+msgid "Remove"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:239
+msgid "Remove this item?"
+msgstr ""
+
+#: pdo-site-manager/admin/views/reorder.php:37 pdo-site-manager/includes/class-dashboard.php:140 pdo-site-manager/includes/class-dashboard.php:141
+msgid "Reorder Content"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:125
+msgid "Replace the demo photographs with your own images in each record."
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:87
+msgid "Reply by email"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3089
+msgid "Required"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:393
+msgid "Response time statement"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:48
+msgid "Restores a previously exported JSON file. Every value is re-sanitised against the schema before it is stored."
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:97
+msgid "Results summary"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:55
+msgid "Rich text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:111 pdo-site-manager/includes/class-schema.php:1608
+msgid "Right"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:97
+msgid "Rose"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:115
+msgid "Run the import"
+msgstr ""
+
+#: pdo-site-manager/includes/class-setup-wizard.php:64
+msgid "Run the setup wizard once to create the pages, menus and starter content. Nothing that already exists will be overwritten."
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:35
+msgid "Run the setup wizard to create the pages, menus and starter content."
+msgstr ""
+
+#: pdo-site-manager/admin/views/settings-page.php:80
+msgid "Save Changes"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:73
+msgid "Save preference"
+msgstr ""
+
+#: pdo-site-manager/admin/views/settings-page.php:81
+msgid "Saving writes to the database and reports the verified result."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2272
+msgid "Scholarship percentage"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2216
+msgid "Scholarship programme"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2258
+msgid "Scholarship tiers (drives the chart)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2213
+msgid "Scholarships & chart"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1035
+msgid "SDG badge / category"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:91
+msgid "SDG references"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:226 pdo-site-manager/includes/class-taxonomies.php:112
+msgid "Search %s"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:240
+msgid "Search icons…"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:122
+msgid "Search name, email, content…"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:121
+msgid "Search submissions"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:662
+msgid "Secondary button icon"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:649 pdo-site-manager/includes/class-schema.php:1497
+msgid "Secondary button label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:656 pdo-site-manager/includes/class-schema.php:1504
+msgid "Secondary button URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:987 pdo-site-manager/includes/class-schema.php:1135 pdo-site-manager/includes/class-schema.php:1874 pdo-site-manager/includes/class-schema.php:2099 pdo-site-manager/includes/class-schema.php:2145 pdo-site-manager/includes/class-schema.php:2358 pdo-site-manager/includes/class-schema.php:2401 pdo-site-manager/includes/class-schema.php:2902 pdo-site-manager/includes/class-schema.php:3430
+msgid "Section description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1441
+msgid "Section heading"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:165
+msgid "Section items"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:498
+msgid "Section not found."
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:98
+msgid "Section setup"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:980 pdo-site-manager/includes/class-schema.php:1128 pdo-site-manager/includes/class-schema.php:1316 pdo-site-manager/includes/class-schema.php:1581 pdo-site-manager/includes/class-schema.php:1867 pdo-site-manager/includes/class-schema.php:2092 pdo-site-manager/includes/class-schema.php:2138 pdo-site-manager/includes/class-schema.php:2351 pdo-site-manager/includes/class-schema.php:2394 pdo-site-manager/includes/class-schema.php:2593 pdo-site-manager/includes/class-schema.php:2794 pdo-site-manager/includes/class-schema.php:2895
+msgid "Section title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:256
+msgid "Section title (admin reference)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:103
+msgid "Section type"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:133
+msgid "Security check failed. Please reload the page and try again."
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:186
+msgid "Select all"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:237 pdo-site-manager/includes/class-fields.php:257
+msgid "Select file"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:235 pdo-site-manager/includes/class-fields.php:257
+msgid "Select image"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:201
+msgid "Select submission"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:214
+msgid "Selected project"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:45
+msgid "Send Message"
+msgstr ""
+
+#: pdo-site-manager/admin/views/settings-page.php:37
+msgid "Settings sections"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:149 pdo-site-manager/includes/class-dashboard.php:150
+msgid "Setup Wizard"
+msgstr ""
+
+#: pdo-site-manager/includes/template-api.php:541
+msgid "Share by email"
+msgstr ""
+
+#: pdo-site-manager/includes/template-api.php:521
+msgid "Share on Facebook"
+msgstr ""
+
+#: pdo-site-manager/includes/template-api.php:531
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: pdo-site-manager/includes/template-api.php:536
+msgid "Share on WhatsApp"
+msgstr ""
+
+#: pdo-site-manager/includes/template-api.php:526
+msgid "Share on X"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:325 pdo-site-manager/includes/class-meta-boxes.php:442
+msgid "Short description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:350
+msgid "Short location label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:69
+msgid "Short name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:218
+msgid "Short name / abbreviation"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2916
+msgid "Show category filter"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:111
+msgid "Show on"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3013
+msgid "Show related articles"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3007
+msgid "Show social sharing links on single articles"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2986
+msgid "Show the category filter"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:61
+msgid "Show this section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2059
+msgid "Signature image (optional)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2052
+msgid "Signature name"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:98
+msgid "Slate"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:281
+msgid "Small"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:242
+msgid "Small badge shown beside the logo, e.g. \"NGO\"."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2183 pdo-site-manager/includes/class-schema.php:2558 pdo-site-manager/includes/class-schema.php:2953
+msgid "Small label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:270
+msgid "Social links"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:405
+msgid "Social media links"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:400
+msgid "Social profiles"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1155
+msgid "Stage label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1150
+msgid "Stage number"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1143
+msgid "Stages"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:829 pdo-site-manager/includes/class-schema.php:840 pdo-site-manager/includes/class-sections.php:39
+msgid "Statistics"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:129
+msgid "Statistics & achievements"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:832
+msgid "Statistics strip"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:108 pdo-site-manager/admin/views/submissions.php:190
+msgid "Status"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:77
+msgid "Story Categories"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:76
+msgid "Story Category"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:372
+msgid "Story details"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:252
+msgid "Story title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2128
+msgid "Strategic partners"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2131
+msgid "Strategic partners section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2451
+msgid "Strategic targets"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1860
+msgid "Strategic thematic pillars"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3788
+msgid "String key"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3781
+msgid "Strings"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2277
+msgid "Student count"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2285
+msgid "Student count label"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:187
+msgid "Subject"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:63
+msgid "Submission"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:94
+msgid "Submissions table"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:55 pdo-site-manager/includes/class-forms.php:65
+msgid "Submit"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3339 pdo-site-manager/includes/class-schema.php:3388 pdo-site-manager/includes/class-schema.php:3677
+msgid "Submit button label"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:81
+msgid "Submitted from"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:184
+msgid "Subtitle / label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3346 pdo-site-manager/includes/class-schema.php:3395 pdo-site-manager/includes/class-schema.php:3684
+msgid "Success message"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:858 pdo-site-manager/includes/class-schema.php:2463
+msgid "Suffix"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:494
+msgid "Summary (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3478
+msgid "Supporting statistic / caption"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2809
+msgid "Supporting statistics"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:80
+msgid "System status"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3318 pdo-site-manager/includes/class-schema.php:3367
+msgid "Tab label"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:226
+msgid "Tagline"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2458
+msgid "Target number"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2468
+msgid "Target title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:93
+msgid "Teal"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:58
+msgid "Team Group"
+msgstr ""
+
+#: pdo-site-manager/includes/class-taxonomies.php:59
+msgid "Team Groups"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:100
+msgid "Team Member"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:100
+msgid "Team Members"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:42
+msgid "Team members"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:45
+msgid "Testimonials"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3067
+msgid "Text"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:37
+msgid "Text and image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:252
+msgid "Text colour override"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:54
+msgid "Thank you — your application has been received."
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:64
+msgid "Thank you — your inquiry has been received."
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:44
+msgid "Thank you — your message has been received."
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:391
+msgid "That file is not a valid PDO settings export."
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:388
+msgid "The changes could not be written to the database. Nothing has been saved."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2261
+msgid "The doughnut chart and the percentages are generated from these records."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:715
+msgid "The image mosaic shown beside the headline."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:461
+msgid "The map is rendered from these values. Nothing is hardcoded in the theme."
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:242
+msgid "The new order could not be saved."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:205
+msgid "The organisation name and tagline used across the website, structured data and emails."
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:43
+msgid "The PDO Modern theme is not active. The plugin keeps storing your content, but the front-end layouts ship with that theme."
+msgstr ""
+
+#: pdo-site-manager/includes/class-submissions.php:91
+msgid "The submission could not be stored."
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:390
+msgid "The upload failed. Please try again."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:91
+msgid "The wizard has run before. You can safely run it again to add anything that is missing."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1857 pdo-site-manager/includes/class-schema.php:1881
+msgid "Thematic pillars"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1111
+msgid "Theory of Change"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1114
+msgid "Theory of Change section"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:202
+msgid "This field is required."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2266
+msgid "Tier title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:44
+msgid "Timeline"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1022 pdo-site-manager/includes/class-schema.php:1469 pdo-site-manager/includes/class-schema.php:1648 pdo-site-manager/includes/class-schema.php:1805 pdo-site-manager/includes/class-schema.php:1894 pdo-site-manager/includes/class-schema.php:2230 pdo-site-manager/includes/class-schema.php:2436 pdo-site-manager/includes/class-schema.php:2612 pdo-site-manager/includes/class-schema.php:2704 pdo-site-manager/includes/class-schema.php:2726 pdo-site-manager/includes/class-schema.php:3465
+msgid "Title"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:44
+msgid "Title (বাংলা)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:178
+msgid "Title / value"
+msgstr ""
+
+#: pdo-site-manager/admin/views/submissions.php:118
+msgid "To"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:152
+msgid "Too many submissions from this device. Please try again later."
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:158 pdo-site-manager/includes/class-dashboard.php:159
+msgid "Tools"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:86 pdo-site-manager/includes/class-schema.php:3769
+msgid "Translations"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:85
+msgid "Translations & Language"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:66 pdo-site-manager/includes/class-importer.php:55 pdo-site-manager/includes/class-schema.php:2545
+msgid "Transparency"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:65
+msgid "Transparency Manager"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:69
+msgid "Transparency page"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:80
+msgid "Transparent"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:452
+msgid "Type"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:127
+msgid "Unknown form."
+msgstr ""
+
+#: pdo-site-manager/includes/class-settings.php:381
+msgid "Unknown settings group."
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:275
+msgid "Unknown settings page."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:338
+msgid "Upazila"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:450
+msgid "Upload the real document. If no file and no external URL is provided, the download button is hidden automatically."
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:126
+msgid "Upload the real policy and audit PDFs on each document record."
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:288 pdo-site-manager/includes/class-schema.php:424 pdo-site-manager/includes/class-schema.php:3070
+msgid "URL"
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:379
+msgid "Use an anonymous label when the beneficiary has not consented to being named."
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:238
+msgid "Use this file"
+msgstr ""
+
+#: pdo-site-manager/includes/class-dashboard.php:236
+msgid "Use this image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:295
+msgid "Use {year} to insert the current year automatically."
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:173
+msgid "Used by card, statistic, timeline, gallery, testimonial and chart section types."
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:86 pdo-site-manager/includes/class-meta-boxes.php:255
+msgid "Used only when no featured image is set."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:747
+msgid "Used only when no Media Library image is selected."
+msgstr ""
+
+#: pdo-site-manager/includes/class-meta-boxes.php:141
+msgid "Value"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2777 pdo-site-manager/includes/class-schema.php:2780
+msgid "Value for Money"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:668 pdo-site-manager/includes/class-schema.php:673
+msgid "Verification badges"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:278
+msgid "Vertical padding"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:224
+msgid "View %s"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:298
+msgid "Visibility"
+msgstr ""
+
+#: pdo-site-manager/includes/class-content-types.php:288 pdo-site-manager/includes/class-content-types.php:304
+msgid "Visible"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:36
+msgid "Visible on the website"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1709
+msgid "Vision & values"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2419
+msgid "Vision 2030"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:2422
+msgid "Vision 2030 strategic targets"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1745
+msgid "Vision card background"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1732
+msgid "Vision description"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1719
+msgid "Vision heading"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1726
+msgid "Vision icon"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1740
+msgid "Vision image"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1712
+msgid "Vision, mission and values"
+msgstr ""
+
+#: pdo-site-manager/includes/class-submissions.php:41
+msgid "Volunteer"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:57
+msgid "Volunteer application"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3308 pdo-site-manager/includes/class-schema.php:3500
+msgid "Volunteer form"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3350
+msgid "Volunteer form fields"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:3311
+msgid "Volunteer registration form"
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:268
+msgid "We could not save your message because of a server error. Please try again or email us directly."
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:112 pdo-site-manager/admin/views/setup-wizard.php:24
+msgid "Website pages"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:367
+msgid "WhatsApp number (digits only)"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1571
+msgid "Who we are"
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1574
+msgid "Who we are & history"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:96
+msgid "WordPress"
+msgstr ""
+
+#: pdo-site-manager/admin/views/setup-wizard.php:17
+msgid "Writes the migrated texts, statistics, pillars, milestones and form definitions into the option groups. Groups you have already edited are never touched."
+msgstr ""
+
+#: pdo-site-manager/includes/class-schema.php:1643
+msgid "Year"
+msgstr ""
+
+#: pdo-site-manager/includes/class-sections.php:493
+msgid "You cannot duplicate this section."
+msgstr ""
+
+#: pdo-site-manager/includes/class-capabilities.php:110
+msgid "You do not have permission to manage PDO website content."
+msgstr ""
+
+#: pdo-site-manager/includes/class-capabilities.php:121
+msgid "You do not have permission to view PDO form submissions."
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:139
+msgid "Your submission was blocked by our spam filter."
+msgstr ""
+
+#: pdo-site-manager/includes/class-forms.php:145
+msgid "Your submission was blocked by our spam filter. Please try again."
+msgstr ""
+
+#: pdo-site-manager/includes/class-fields.php:86
+msgid "বাংলা"
+msgstr ""
+
+#: pdo-site-manager/includes/class-i18n.php:363 pdo-site-manager/includes/class-meta-boxes.php:618
+msgid "— none —"
+msgstr ""

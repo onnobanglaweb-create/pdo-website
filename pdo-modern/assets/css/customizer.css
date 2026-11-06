@@ -1,0 +1,183 @@
+/**
+ * PDO Modern – Customizer control styling.
+ */
+
+.pdo-customize-heading {
+	margin: 18px 0 6px;
+	padding: 8px 0 6px;
+	border-bottom: 1px solid #dcdcde;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #0d7a53;
+}
+
+.pdo-customize-heading__desc {
+	display: block;
+	margin-top: 4px;
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 0;
+	text-transform: none;
+	color: #646970;
+}
+
+/* Range ------------------------------------------------------------------ */
+
+.pdo-range {
+	display: block;
+}
+
+.pdo-range__label {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 8px;
+}
+
+.pdo-range__output {
+	flex: none;
+	padding: 1px 8px;
+	border-radius: 10px;
+	background: #f0f0f1;
+	font-size: 11px;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	color: #1d2327;
+}
+
+.pdo-range__row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 6px;
+}
+
+.pdo-range__slider {
+	flex: 1 1 auto;
+	width: 100%;
+	height: 4px;
+	appearance: none;
+	border-radius: 4px;
+	background: linear-gradient(to right, #0d7a53 var(--pdo-range-progress, 50%), #dcdcde var(--pdo-range-progress, 50%));
+	outline: none;
+	margin: 0;
+}
+
+.pdo-range__slider::-webkit-slider-thumb {
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #0d7a53;
+	border: 2px solid #fff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.pdo-range__slider::-moz-range-thumb {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #0d7a53;
+	border: 2px solid #fff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.pdo-range__slider:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 3px;
+}
+
+.pdo-range__reset {
+	flex: none;
+	padding: 0;
+	font-size: 15px;
+	line-height: 1;
+	color: #787c82;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.pdo-range__reset:hover,
+.pdo-range__reset:focus {
+	color: #d63638;
+}
+
+/* Sortable --------------------------------------------------------------- */
+
+.pdo-sortable {
+	margin-top: 6px;
+}
+
+.pdo-sortable__list {
+	margin: 8px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pdo-sortable__item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 4px;
+	padding: 8px 10px;
+	border: 1px solid #dcdcde;
+	border-left: 3px solid #0d7a53;
+	border-radius: 4px;
+	background: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.pdo-sortable__item.is-disabled {
+	border-left-color: #c3c4c7;
+	opacity: 0.6;
+}
+
+.pdo-sortable__handle {
+	cursor: grab;
+	color: #8c8f94;
+	background: none;
+	border: 0;
+	padding: 2px 4px;
+	line-height: 1;
+	font-size: 14px;
+}
+
+.pdo-sortable__handle:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 1px;
+}
+
+.pdo-sortable__label {
+	flex: 1 1 auto;
+}
+
+.pdo-sortable__toggle {
+	flex: none;
+	margin: 0;
+}
+
+.pdo-sortable__placeholder {
+	height: 36px;
+	margin-bottom: 4px;
+	border: 1px dashed #0d7a53;
+	border-radius: 4px;
+	background: #e8f5ee;
+}
+
+.pdo-sortable__help {
+	display: block;
+	margin-top: 8px;
+	font-size: 11px;
+	font-style: italic;
+	color: #646970;
+}
+
+.pdo-sortable__value {
+	display: none;
+}

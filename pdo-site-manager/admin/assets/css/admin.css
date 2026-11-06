@@ -1,0 +1,747 @@
+/**
+ * PDO Website Manager – admin styles.
+ */
+
+:root {
+	--pdo-admin-emerald: #0d7a53;
+	--pdo-admin-dark: #084c34;
+	--pdo-admin-light: #e8f5ee;
+	--pdo-admin-accent: #d97706;
+	--pdo-admin-navy: #0f172a;
+	--pdo-admin-slate: #334155;
+	--pdo-admin-border: #d7e3dc;
+	--pdo-admin-radius: 10px;
+}
+
+.pdo-wrap {
+	max-width: 1180px;
+}
+
+.pdo-page-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 4px;
+}
+
+.pdo-lede {
+	max-width: 70ch;
+	font-size: 14px;
+	color: var(--pdo-admin-slate);
+	margin-top: 0;
+}
+
+.pdo-notice {
+	border-left-color: var(--pdo-admin-emerald);
+}
+
+.pdo-tabs {
+	margin-bottom: 18px;
+}
+
+.pdo-tab-desc {
+	max-width: 70ch;
+	color: var(--pdo-admin-slate);
+}
+
+/* Panels ----------------------------------------------------------------- */
+
+.pdo-panel {
+	background: #fff;
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: var(--pdo-admin-radius);
+	margin: 0 0 20px;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.pdo-panel__head {
+	padding: 14px 18px;
+	border-bottom: 1px solid var(--pdo-admin-border);
+	background: linear-gradient(180deg, #fbfdfc, #f4faf7);
+	border-radius: var(--pdo-admin-radius) var(--pdo-admin-radius) 0 0;
+}
+
+.pdo-panel__head h2 {
+	margin: 0;
+	font-size: 15px;
+	color: var(--pdo-admin-dark);
+}
+
+.pdo-panel__head .description {
+	margin: 4px 0 0;
+	max-width: 80ch;
+}
+
+.pdo-panel__body {
+	padding: 18px;
+}
+
+/* Fields ----------------------------------------------------------------- */
+
+.pdo-field {
+	margin: 0 0 20px;
+}
+
+.pdo-field:last-child {
+	margin-bottom: 0;
+}
+
+.pdo-field__label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: var(--pdo-admin-navy);
+}
+
+.pdo-field__required {
+	color: #b32d2e;
+}
+
+.pdo-field__desc {
+	margin: 6px 0 0;
+	color: #64748b;
+	font-size: 12px;
+	max-width: 80ch;
+}
+
+.pdo-field input[type="text"],
+.pdo-field input[type="url"],
+.pdo-field input[type="email"],
+.pdo-field input[type="number"],
+.pdo-field textarea,
+.pdo-field select {
+	width: 100%;
+	max-width: 680px;
+}
+
+.pdo-field input[type="number"] {
+	max-width: 160px;
+}
+
+.pdo-field--checkbox .pdo-field__label {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 500;
+}
+
+.pdo-field--heading {
+	border-top: 1px dashed var(--pdo-admin-border);
+	padding-top: 16px;
+	margin-top: 22px;
+}
+
+.pdo-field--heading h3 {
+	margin: 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--pdo-admin-emerald);
+}
+
+/* Language tabs ---------------------------------------------------------- */
+
+.pdo-langtabs {
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.pdo-langtabs__nav {
+	display: flex;
+	gap: 0;
+	background: #f6faf8;
+	border-bottom: 1px solid var(--pdo-admin-border);
+}
+
+.pdo-langtabs__tab {
+	appearance: none;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid transparent;
+	padding: 8px 14px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 12px;
+	color: #64748b;
+}
+
+.pdo-langtabs__tab.is-active {
+	color: var(--pdo-admin-emerald);
+	border-bottom-color: var(--pdo-admin-emerald);
+	background: #fff;
+}
+
+.pdo-langtabs__panel {
+	padding: 12px;
+}
+
+.pdo-langtabs__panel[data-lang="bn"] textarea,
+.pdo-langtabs__panel[data-lang="bn"] input[type="text"] {
+	font-family: "Hind Siliguri", "Noto Sans Bengali", "SolaimanLipi", sans-serif;
+}
+
+/* Repeater --------------------------------------------------------------- */
+
+.pdo-repeater {
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: 8px;
+	background: #fcfdfd;
+}
+
+.pdo-repeater__head {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 14px;
+	border-bottom: 1px solid var(--pdo-admin-border);
+}
+
+.pdo-repeater__head h4 {
+	margin: 0;
+	font-size: 13px;
+	color: var(--pdo-admin-navy);
+}
+
+.pdo-repeater__count {
+	background: var(--pdo-admin-light);
+	color: var(--pdo-admin-dark);
+	border-radius: 999px;
+	padding: 1px 9px;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.pdo-repeater > .pdo-field__desc {
+	padding: 8px 14px 0;
+}
+
+.pdo-repeater__rows {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	min-height: 10px;
+}
+
+.pdo-repeater__row {
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: 6px;
+	background: #fff;
+}
+
+.pdo-repeater__row.is-hidden-row {
+	opacity: 0.65;
+	border-style: dashed;
+}
+
+.pdo-repeater__row-head {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 10px;
+}
+
+.pdo-repeater__handle {
+	cursor: grab;
+	color: #94a3b8;
+	font-size: 15px;
+	line-height: 1;
+	user-select: none;
+}
+
+.pdo-repeater__toggle {
+	flex: 1 1 auto;
+	text-align: left;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	padding: 2px 0;
+	font-weight: 600;
+	color: var(--pdo-admin-navy);
+}
+
+.pdo-repeater__toggle::before {
+	content: "\25B8";
+	display: inline-block;
+	margin-right: 8px;
+	color: #94a3b8;
+	transition: transform 0.15s ease;
+}
+
+.pdo-repeater__row.is-open .pdo-repeater__toggle::before {
+	transform: rotate(90deg);
+}
+
+.pdo-repeater__flag {
+	display: none;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	background: #fee2e2;
+	color: #991b1b;
+	padding: 2px 8px;
+	border-radius: 999px;
+}
+
+.pdo-repeater__row.is-hidden-row .pdo-repeater__flag {
+	display: inline-block;
+}
+
+.pdo-repeater__row-actions {
+	display: flex;
+	gap: 10px;
+	font-size: 12px;
+}
+
+.pdo-repeater__remove {
+	color: #b32d2e !important;
+}
+
+.pdo-repeater__row-body {
+	padding: 14px;
+	border-top: 1px solid #eef2f5;
+	display: grid;
+	gap: 16px;
+}
+
+.pdo-repeater__actions {
+	padding: 0 14px 14px;
+	margin: 0;
+}
+
+.pdo-repeater__placeholder {
+	border: 2px dashed var(--pdo-admin-emerald);
+	border-radius: 6px;
+	background: var(--pdo-admin-light);
+}
+
+.pdo-repeater .pdo-repeater {
+	background: #f8fbfa;
+}
+
+/* Media picker ----------------------------------------------------------- */
+
+.pdo-media {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	flex-wrap: wrap;
+}
+
+.pdo-media__preview img {
+	max-width: 160px;
+	height: auto;
+	border-radius: 6px;
+	border: 1px solid var(--pdo-admin-border);
+	display: block;
+}
+
+.pdo-media__file {
+	display: inline-block;
+	padding: 6px 10px;
+	background: var(--pdo-admin-light);
+	border-radius: 6px;
+	font-size: 12px;
+}
+
+.pdo-media__link {
+	display: inline-block;
+	margin-left: 8px;
+	font-size: 12px;
+}
+
+.pdo-media__actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.pdo-media__remove {
+	color: #b32d2e !important;
+}
+
+/* Icon picker ------------------------------------------------------------ */
+
+.pdo-iconpicker {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.pdo-iconpicker__toggle {
+	display: inline-flex !important;
+	align-items: center;
+	gap: 8px;
+	min-height: 32px;
+}
+
+.pdo-iconpicker__current svg {
+	display: block;
+	width: 20px;
+	height: 20px;
+	color: var(--pdo-admin-emerald);
+}
+
+.pdo-iconpicker__name {
+	font-size: 11px;
+	color: #64748b;
+}
+
+.pdo-iconpicker__panel {
+	position: absolute;
+	z-index: 100100;
+	width: 330px;
+	background: #fff;
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: 8px;
+	box-shadow: 0 10px 28px rgba(15, 23, 42, 0.14);
+	padding: 10px;
+}
+
+.pdo-iconpicker__search {
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.pdo-iconpicker__grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 4px;
+	max-height: 240px;
+	overflow-y: auto;
+}
+
+.pdo-iconpicker__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	background: #f8fafc;
+	cursor: pointer;
+	color: var(--pdo-admin-slate);
+}
+
+.pdo-iconpicker__item:hover,
+.pdo-iconpicker__item:focus {
+	background: var(--pdo-admin-light);
+	border-color: var(--pdo-admin-emerald);
+	color: var(--pdo-admin-dark);
+}
+
+.pdo-iconpicker__item.is-selected {
+	background: var(--pdo-admin-emerald);
+	color: #fff;
+}
+
+.pdo-iconpicker__item svg {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+/* Dashboard cards -------------------------------------------------------- */
+
+.pdo-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	gap: 14px;
+	margin: 18px 0 26px;
+}
+
+.pdo-card {
+	background: #fff;
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: var(--pdo-admin-radius);
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.pdo-card--accent {
+	border-color: var(--pdo-admin-accent);
+	background: #fffbf3;
+}
+
+.pdo-card__icon svg {
+	width: 26px;
+	height: 26px;
+	color: var(--pdo-admin-emerald);
+}
+
+.pdo-card__count {
+	display: block;
+	font-size: 26px;
+	font-weight: 800;
+	color: var(--pdo-admin-navy);
+	line-height: 1.1;
+}
+
+.pdo-card__label {
+	display: block;
+	font-weight: 600;
+	color: var(--pdo-admin-slate);
+}
+
+.pdo-card__meta {
+	display: block;
+	font-size: 12px;
+	color: #64748b;
+}
+
+.pdo-card__actions {
+	display: flex;
+	gap: 8px;
+	margin-top: auto;
+}
+
+.pdo-columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 22px;
+}
+
+.pdo-linklist {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fff;
+}
+
+.pdo-linklist li {
+	margin: 0;
+	padding: 9px 14px;
+	border-bottom: 1px solid #eef2f5;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.pdo-linklist li:last-child {
+	border-bottom: 0;
+}
+
+.pdo-linklist__edit {
+	font-size: 12px;
+	color: #64748b;
+}
+
+.pdo-kv {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: 8px;
+}
+
+.pdo-kv th,
+.pdo-kv td {
+	text-align: left;
+	padding: 9px 14px;
+	border-bottom: 1px solid #eef2f5;
+	vertical-align: top;
+}
+
+.pdo-kv th {
+	width: 36%;
+	color: var(--pdo-admin-slate);
+	font-weight: 600;
+}
+
+.pdo-kv tr:last-child th,
+.pdo-kv tr:last-child td {
+	border-bottom: 0;
+}
+
+/* Submissions ------------------------------------------------------------ */
+
+.pdo-submission-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	margin: 14px 0;
+}
+
+.pdo-badge {
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 999px;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	background: #e2e8f0;
+	color: #334155;
+}
+
+.pdo-badge--new {
+	background: var(--pdo-admin-light);
+	color: var(--pdo-admin-dark);
+}
+
+.pdo-badge--pending {
+	background: #fef3c7;
+	color: #92400e;
+}
+
+.pdo-badge--processed {
+	background: #dcfce7;
+	color: #166534;
+}
+
+.pdo-badge--draft {
+	background: #fee2e2;
+	color: #991b1b;
+}
+
+tr.pdo-status-new td,
+tr.pdo-status-new th {
+	font-weight: 600;
+}
+
+.pdo-submission-detail__actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 16px;
+}
+
+/* Setup wizard ----------------------------------------------------------- */
+
+.pdo-step {
+	display: flex;
+	gap: 12px;
+	padding: 12px;
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: 8px;
+	margin-bottom: 10px;
+	align-items: flex-start;
+	background: #fff;
+}
+
+.pdo-step span.description {
+	display: block;
+	font-weight: 400;
+	margin-top: 2px;
+}
+
+.pdo-report {
+	margin: 6px 0 0 18px;
+	list-style: disc;
+}
+
+.pdo-ol {
+	margin-left: 18px;
+}
+
+/* Reorder screen --------------------------------------------------------- */
+
+.pdo-reorder {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	max-width: 760px;
+}
+
+.pdo-reorder__item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px 12px;
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: 6px;
+	background: #fff;
+	margin: 0;
+}
+
+.pdo-reorder__handle {
+	cursor: grab;
+	color: #94a3b8;
+}
+
+.pdo-reorder__handle svg {
+	width: 16px;
+	height: 16px;
+	display: block;
+}
+
+.pdo-reorder__title {
+	flex: 1 1 auto;
+	font-weight: 600;
+}
+
+.pdo-reorder__edit {
+	font-size: 12px;
+}
+
+.pdo-reorder__placeholder {
+	border: 2px dashed var(--pdo-admin-emerald);
+	border-radius: 6px;
+	background: var(--pdo-admin-light);
+	height: 42px;
+}
+
+.pdo-reorder__status {
+	font-weight: 600;
+	color: var(--pdo-admin-emerald);
+	min-height: 20px;
+}
+
+.pdo-reorder__status.is-error {
+	color: #b32d2e;
+}
+
+/* Sticky save bar -------------------------------------------------------- */
+
+.pdo-sticky-actions {
+	position: sticky;
+	bottom: 0;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 12px 18px;
+	background: #fff;
+	border: 1px solid var(--pdo-admin-border);
+	border-radius: var(--pdo-admin-radius);
+	box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.07);
+	margin-bottom: 20px;
+}
+
+.pdo-sticky-actions__hint {
+	color: #64748b;
+	font-size: 12px;
+}
+
+/* Meta boxes ------------------------------------------------------------- */
+
+.pdo-metabox .pdo-field {
+	margin-bottom: 16px;
+}
+
+.pdo-metabox .pdo-field input[type="text"],
+.pdo-metabox .pdo-field input[type="url"],
+.pdo-metabox .pdo-field textarea,
+.pdo-metabox .pdo-field select {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 782px) {
+	.pdo-iconpicker__panel {
+		width: 100%;
+	}
+
+	.pdo-iconpicker__grid {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}

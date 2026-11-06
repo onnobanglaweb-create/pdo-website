@@ -1,0 +1,115 @@
+/**
+ * PDO Modern – block editor styles.
+ *
+ * Mirrors the front end so what an editor sees is what visitors get.
+ * The CSS custom properties are injected by pdo_modern_css_variables().
+ */
+
+.editor-styles-wrapper {
+	background: var(--pdo-body-bg);
+	color: var(--pdo-text);
+	font-family: var(--pdo-font-body);
+	font-size: var(--pdo-font-size);
+	line-height: var(--pdo-line-height);
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+	font-family: var(--pdo-font-heading);
+	font-weight: var(--pdo-heading-weight);
+	letter-spacing: var(--pdo-heading-track);
+	line-height: 1.18;
+	color: var(--pdo-heading);
+}
+
+.editor-styles-wrapper h1 { font-size: var(--pdo-text-4xl); }
+.editor-styles-wrapper h2 { font-size: var(--pdo-text-3xl); }
+.editor-styles-wrapper h3 { font-size: var(--pdo-text-2xl); }
+.editor-styles-wrapper h4 { font-size: var(--pdo-text-xl); }
+.editor-styles-wrapper h5 { font-size: var(--pdo-text-lg); }
+.editor-styles-wrapper h6 { font-size: var(--pdo-text-md); }
+
+.editor-styles-wrapper a {
+	color: var(--pdo-link);
+}
+
+.editor-styles-wrapper blockquote,
+.editor-styles-wrapper .wp-block-quote {
+	border-left: 4px solid var(--pdo-emerald);
+	background: var(--pdo-surface-alt);
+	padding: 1.2em 1.6em;
+	border-radius: 0 var(--pdo-radius-sm) var(--pdo-radius-sm) 0;
+	font-size: var(--pdo-text-lg);
+	color: var(--pdo-heading);
+}
+
+.editor-styles-wrapper .wp-block-pullquote {
+	border-top: 3px solid var(--pdo-accent);
+	border-bottom: 3px solid var(--pdo-accent);
+	color: var(--pdo-heading);
+}
+
+.editor-styles-wrapper .wp-block-button__link {
+	border-radius: var(--pdo-radius-pill);
+	background: var(--pdo-emerald);
+	font-family: var(--pdo-font-heading);
+	font-weight: 700;
+	padding: 0.82em 1.5em;
+}
+
+.editor-styles-wrapper .is-style-outline .wp-block-button__link {
+	background: transparent;
+	border: 2px solid var(--pdo-border-strong);
+	color: var(--pdo-heading);
+}
+
+.editor-styles-wrapper .wp-block-separator {
+	border-color: var(--pdo-border);
+}
+
+.editor-styles-wrapper .wp-block-table table {
+	border-collapse: collapse;
+}
+
+.editor-styles-wrapper .wp-block-table td,
+.editor-styles-wrapper .wp-block-table th {
+	border: 1px solid var(--pdo-border);
+	padding: 0.7em 0.9em;
+}
+
+.editor-styles-wrapper .wp-block-image img,
+.editor-styles-wrapper .wp-block-cover {
+	border-radius: var(--pdo-radius-sm);
+}
+
+.editor-styles-wrapper .wp-block-code {
+	background: var(--pdo-navy);
+	color: var(--pdo-text-on-dark);
+	border: 0;
+	border-radius: var(--pdo-radius-sm);
+	padding: 1.2em;
+}
+
+/* Editor width matches the front-end prose column. */
+.editor-styles-wrapper .wp-block {
+	max-width: 820px;
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"] {
+	max-width: var(--pdo-container);
+}
+
+.editor-styles-wrapper .wp-block[data-align="full"] {
+	max-width: none;
+}
+
+/* Bengali-aware editing. */
+.editor-styles-wrapper [lang="bn"],
+.editor-styles-wrapper .pdo-bn {
+	font-family: var(--pdo-font-bengali);
+	font-size: calc(var(--pdo-font-size) * var(--pdo-bengali-scale));
+}

@@ -1,0 +1,116 @@
+/**
+ * PDO Modern – print stylesheet.
+ */
+
+@page {
+	margin: 18mm 14mm;
+}
+
+body {
+	background: #fff !important;
+	color: #000 !important;
+	font-size: 11pt;
+	line-height: 1.5;
+}
+
+.pdo-topbar,
+.pdo-header__actions,
+.pdo-nav,
+.pdo-drawer,
+.pdo-search-panel,
+.pdo-totop,
+.pdo-share,
+.pdo-filters,
+.pdo-pagination,
+.pdo-cta,
+.pdo-breadcrumbs,
+.pdo-form,
+.pdo-sidebar,
+.pdo-postnav,
+#comments,
+.skip-link {
+	display: none !important;
+}
+
+.pdo-header {
+	border-bottom: 1pt solid #000;
+	position: static !important;
+}
+
+.pdo-header__inner {
+	min-height: 0;
+	padding-block: 6mm;
+}
+
+.pdo-section {
+	padding-block: 6mm;
+	page-break-inside: avoid;
+}
+
+.pdo-container {
+	max-width: none;
+	padding: 0;
+}
+
+.pdo-card,
+.pdo-stat,
+.pdo-doc,
+.pdo-person,
+.pdo-partner,
+.pdo-story,
+.pdo-stage {
+	box-shadow: none !important;
+	border: 0.5pt solid #999 !important;
+	break-inside: avoid;
+}
+
+.pdo-bg-dark,
+.pdo-bg-navy,
+.pdo-cta__inner {
+	background: #fff !important;
+	color: #000 !important;
+}
+
+.pdo-bg-dark *,
+.pdo-bg-navy * {
+	color: #000 !important;
+}
+
+h1, h2, h3, h4 {
+	break-after: avoid;
+	color: #000 !important;
+}
+
+img {
+	max-width: 100% !important;
+	break-inside: avoid;
+}
+
+a {
+	color: #000 !important;
+	text-decoration: underline;
+}
+
+.pdo-prose a[href^="http"]::after {
+	content: " (" attr(href) ")";
+	font-size: 8pt;
+	word-break: break-all;
+}
+
+.pdo-footer {
+	background: #fff !important;
+	color: #000 !important;
+	border-top: 1pt solid #000;
+	padding-top: 4mm;
+}
+
+.pdo-footer__grid,
+.pdo-footer__legal-nav,
+.pdo-socials {
+	display: none !important;
+}
+
+.pdo-footer__bottom {
+	border: 0;
+	padding: 2mm 0 0;
+}

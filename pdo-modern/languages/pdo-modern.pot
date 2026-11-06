@@ -1,0 +1,1273 @@
+# Copyright (C) 2026 Peoples Development Organisation
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: PDO Modern 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/onnobanglaweb-create/pdo-website/issues\n"
+"POT-Creation-Date: 2026-11-06 07:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: pdo-modern\n"
+
+#. translators: %s: comment count.
+#: pdo-modern/comments.php:21
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: program title.
+#: pdo-modern/single-pdo_story.php:73
+msgid "About the %s program"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:31
+msgid "Accent"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:32
+msgid "Accent (light wash)"
+msgstr ""
+
+#: pdo-modern/template-parts/pages/involved.php:162
+msgid "Adopt this project"
+msgstr ""
+
+#: pdo-modern/template-parts/pages/transparency.php:194
+msgid "All documents"
+msgstr ""
+
+#: pdo-modern/template-parts/components/news-filter.php:22
+msgid "All updates"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:49
+msgid "Alternate section background"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:367
+msgid "Applied automatically whenever Bengali content is rendered."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:571
+msgid "Archive layout"
+msgstr ""
+
+#: pdo-modern/template-parts/components/no-results.php:23
+msgid "Back to the homepage"
+msgstr ""
+
+#: pdo-modern/footer.php:207
+msgid "Back to top"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:401
+msgid "Base font size (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:366
+msgid "Bengali font"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:406
+msgid "Bengali size adjustment (%)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:555
+msgid "Blog & archives"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:101
+msgid "Blog Sidebar"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:330
+msgid "Body font"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:403
+msgid "Body line height"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:39
+msgid "Body text"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:52
+msgid "Borders"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:28
+msgid "Brand emerald"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:29
+msgid "Brand emerald (dark)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:30
+msgid "Brand emerald (light wash)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:239
+msgid "Brand palette"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:221
+msgid "Breadcrumb"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:773
+msgid "Button icon name"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:770
+msgid "Button label"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:771
+msgid "Button label (Bengali)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:772
+msgid "Button URL"
+msgstr ""
+
+#: pdo-modern/template-parts/components/contact-cards.php:43
+msgid "Call or message"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:90
+msgid "Call to action"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:575
+msgid "Card grid"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:48
+msgid "Card surface"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:616
+msgid "Cards per row"
+msgstr ""
+
+#: pdo-modern/archive-pdo_news.php:19 pdo-modern/taxonomy-pdo_news_cat.php:19 pdo-modern/taxonomy-pdo_news_tag.php:19
+msgid "Category"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:735
+msgid "Centered logo · menu below"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:122
+msgid "Choose a language"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:31
+msgid "Classic serif"
+msgstr ""
+
+#: pdo-modern/inc/enqueue.php:104
+msgid "Close"
+msgstr ""
+
+#: pdo-modern/template-parts/header/drawer.php:25
+msgid "Close the menu"
+msgstr ""
+
+#: pdo-modern/inc/enqueue.php:106
+msgid "Collapse submenu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:843
+msgid "Colour change only"
+msgstr ""
+
+#: pdo-modern/comments.php:51
+msgid "Comments are closed."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:149
+msgid "Compact logo (sticky header)"
+msgstr ""
+
+#: pdo-modern/footer.php:105
+msgid "Connect With Us"
+msgstr ""
+
+#: pdo-modern/404.php:28 pdo-modern/template-parts/components/no-results.php:25
+msgid "Contact us"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:493
+msgid "Container side padding (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:464
+msgid "Containers & spacing"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:480
+msgid "Content width"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:85
+msgid "Core pillars"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:496
+msgid "Corner radius (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:51
+msgid "Dark section background"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:821
+msgid "Desktop menu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:530
+msgid "Disable the WordPress emoji script"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:594 pdo-modern/template-parts/sections/dynamic-chart.php:65
+msgid "Distribution"
+msgstr ""
+
+#: pdo-modern/single-pdo_document.php:24
+msgid "Document"
+msgstr ""
+
+#: pdo-modern/template-parts/components/card-document.php:58
+msgid "Document available on request."
+msgstr ""
+
+#: pdo-modern/single-pdo_program.php:117
+msgid "Documents"
+msgstr ""
+
+#: pdo-modern/single-pdo_program.php:134 pdo-modern/template-parts/components/card-document.php:49
+msgid "Download"
+msgstr ""
+
+#: pdo-modern/single-pdo_document.php:56
+msgid "Download the document"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1122
+msgid "Drag to reorder the homepage sections"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:61
+msgid "Dropdown background"
+msgstr ""
+
+#: pdo-modern/template-parts/components/card-team.php:53
+msgid "email"
+msgstr ""
+
+#: pdo-modern/template-parts/components/contact-cards.php:51
+msgid "Email"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:151
+msgid "Email / share image"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:69
+msgid "Error"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:233
+msgid "Every colour is emitted as a CSS custom property, so templates never hardcode a hex value."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:638
+msgid "Excerpt length (words)"
+msgstr ""
+
+#: pdo-modern/inc/enqueue.php:105
+msgid "Expand submenu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1072
+msgid "Extra credit line"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer-css.php:177
+msgid "Extra large"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:486
+msgid "Extra wide (1440px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:149 pdo-modern/inc/customizer/customizer.php:150
+msgid "Falls back to the main logo."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:243
+msgid "Feedback states"
+msgstr ""
+
+#: pdo-modern/footer.php:75
+msgid "Flagship Programs"
+msgstr ""
+
+#: pdo-modern/footer.php:83
+msgid "Flagship programs"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:311
+msgid "Font families"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:386
+msgid "Fonts are served from your own server – no Google Fonts request, no CDN. Turn this off to use system fonts only."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:62
+msgid "Footer background"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1023
+msgid "Footer columns"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:113
+msgid "Footer Extra"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:64
+msgid "Footer headings"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1005
+msgid "Footer layout"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:65
+msgid "Footer link hover"
+msgstr ""
+
+#: pdo-modern/footer.php:63
+msgid "Footer navigation"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:63
+msgid "Footer text"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:63
+msgid "Footer – Flagship Programs"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:64
+msgid "Footer – Legal"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:62
+msgid "Footer – Quick Navigation"
+msgstr ""
+
+#: pdo-modern/single-pdo_program.php:168
+msgid "From the field"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:487
+msgid "Full width"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:968
+msgid "Full-screen overlay"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:27
+msgid "Georgia (serif)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:33
+msgid "Gold / highlight"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:495
+msgid "Grid gap (px)"
+msgstr ""
+
+#: pdo-modern/template-parts/components/contact-cards.php:22
+msgid "Head office"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:242
+msgid "Header & footer"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:58
+msgid "Header background"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:730
+msgid "Header layout"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:59
+msgid "Header text"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:348
+msgid "Heading font"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:405
+msgid "Heading letter spacing (em ×100)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:402
+msgid "Heading scale ratio"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:404
+msgid "Heading weight"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:40
+msgid "Headings"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:83
+msgid "Hero"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1159
+msgid "Hide everywhere"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1134
+msgid "Hide individual sections per breakpoint without deleting their content."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1158
+msgid "Hide on desktop"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1156
+msgid "Hide on mobile"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1157
+msgid "Hide on tablet"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:42
+msgid "Hind Siliguri (bundled)"
+msgstr ""
+
+#: pdo-modern/inc/seo.php:301 pdo-modern/inc/template-functions.php:150
+msgid "Home"
+msgstr ""
+
+#: pdo-modern/404.php:25
+msgid "Homepage"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1104
+msgid "Homepage order"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:837
+msgid "Hover effect"
+msgstr ""
+
+#: pdo-modern/template-parts/components/form.php:80
+msgid "I would like to know more about: %s"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:84
+msgid "Impact statistics"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:71
+msgid "Information"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:19
+msgid "Inter (bundled)"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:85
+msgid "Join as Guardian"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:54
+msgid "Kalpurush"
+msgstr ""
+
+#: pdo-modern/single-pdo_program.php:91
+msgid "Key achievements"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:72
+msgid "Keyboard focus ring"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer-css.php:172
+msgid "Large"
+msgstr ""
+
+#: pdo-modern/template-parts/sections/dynamic-fallback.php:48 pdo-modern/template-parts/sections/dynamic-icon_cards.php:42 pdo-modern/template-parts/sections/dynamic-image_cards.php:48 pdo-modern/template-parts/sections/home-pillars.php:79
+msgid "Learn more"
+msgstr ""
+
+#: pdo-modern/template-parts/components/form.php:134
+msgid "Leave this field empty"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:597
+msgid "Left"
+msgstr ""
+
+#: pdo-modern/footer.php:188
+msgid "Legal links"
+msgstr ""
+
+#: pdo-modern/inc/enqueue.php:108
+msgid "Link copied to the clipboard."
+msgstr ""
+
+#: pdo-modern/single-pdo_program.php:107
+msgid "Linked SDGs"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:42
+msgid "Links"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:43
+msgid "Links (hover)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:576
+msgid "List"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:385
+msgid "Load the bundled web fonts"
+msgstr ""
+
+#: pdo-modern/inc/enqueue.php:107
+msgid "Loading…"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:148
+msgid "Logo for dark backgrounds"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:734
+msgid "Logo left · menu right"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:179
+msgid "Logo max height (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:178
+msgid "Logo width (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:181
+msgid "Logo width in the footer (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:180
+msgid "Logo width on mobile (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:142
+msgid "Logos"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:134
+msgid "Logos for each context, their dimensions, and the compact brand lockup."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:714
+msgid "Main header"
+msgstr ""
+
+#: pdo-modern/archive-pdo_news.php:20 pdo-modern/inc/template-functions.php:157 pdo-modern/taxonomy-pdo_news_cat.php:20 pdo-modern/taxonomy-pdo_news_tag.php:20
+msgid "Media & Insights"
+msgstr ""
+
+#: pdo-modern/inc/enqueue.php:103
+msgid "Menu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:861
+msgid "Menu font size (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:737
+msgid "Minimal (logo + menu button)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:150
+msgid "Mobile logo"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:923
+msgid "Mobile menu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:963
+msgid "Mobile menu style"
+msgstr ""
+
+#: pdo-modern/template-parts/header/drawer.php:41
+msgid "Mobile navigation"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:35
+msgid "Monospace"
+msgstr ""
+
+#: pdo-modern/template-parts/components/post-nav.php:17
+msgid "More articles"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:41
+msgid "Muted text"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:484
+msgid "Narrow (1100px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:60
+msgid "Navigation hover"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:35
+msgid "Navy"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:438 pdo-modern/template-parts/components/post-nav.php:27
+msgid "Next"
+msgstr ""
+
+#: pdo-modern/template-parts/pages/media.php:63
+msgid "No articles have been published yet. Please check back soon."
+msgstr ""
+
+#: pdo-modern/archive-pdo_news.php:47 pdo-modern/taxonomy-pdo_news_cat.php:47 pdo-modern/taxonomy-pdo_news_tag.php:47 pdo-modern/template-parts/pages/media.php:56
+msgid "No articles match that category yet."
+msgstr ""
+
+#: pdo-modern/template-parts/pages/transparency.php:225
+msgid "No documents match that filter yet."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:598
+msgid "No sidebar"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer-css.php:167
+msgid "Normal"
+msgstr ""
+
+#: pdo-modern/template-parts/components/no-results.php:12
+msgid "Nothing found here yet"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:46
+msgid "Noto Sans Bengali"
+msgstr ""
+
+#: pdo-modern/template-parts/components/contact-cards.php:64
+msgid "Office hours"
+msgstr ""
+
+#: pdo-modern/template-parts/components/map.php:50 pdo-modern/template-parts/components/map.php:53
+msgid "Office location"
+msgstr ""
+
+#: pdo-modern/single-pdo_document.php:60
+msgid "Open in a new tab"
+msgstr ""
+
+#: pdo-modern/template-parts/components/map.php:68
+msgid "Open in OpenStreetMap"
+msgstr ""
+
+#: pdo-modern/header.php:69
+msgid "Open the menu"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:115
+msgid "Optional widget column rendered inside the footer."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1073
+msgid "Optional. Appended after the copyright notice."
+msgstr ""
+
+#: pdo-modern/404.php:26 pdo-modern/inc/template-functions.php:166 pdo-modern/template-parts/components/no-results.php:24
+msgid "Our Impact"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:47
+msgid "Page background"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:207
+msgid "Page not found"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:447
+msgid "Pagination"
+msgstr ""
+
+#: pdo-modern/template-parts/pages/involved.php:40
+msgid "Partner with us"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:89
+msgid "Partners strip"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:85
+msgid "PDO Card (760×460)"
+msgstr ""
+
+#: pdo-modern/inc/compatibility.php:618
+msgid "PDO Modern needs the “PDO Website Manager” plugin."
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:87
+msgid "PDO Portrait (480×560)"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:86
+msgid "PDO Thumbnail (420×300)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:232
+msgid "PDO · Colors"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:997
+msgid "PDO · Footer"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:653
+msgid "PDO · Header"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:456
+msgid "PDO · Layout"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:813
+msgid "PDO · Navigation"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1095
+msgid "PDO · Sections"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:133
+msgid "PDO · Site Identity"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:303
+msgid "PDO · Typography"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:88
+msgid "Photo gallery"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:842
+msgid "Pill"
+msgstr ""
+
+#: pdo-modern/template-parts/components/form.php:89
+msgid "Please choose…"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:87
+msgid "President teaser"
+msgstr ""
+
+#: pdo-modern/template-parts/components/card-document.php:54
+msgid "Preview"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:437 pdo-modern/template-parts/components/post-nav.php:20
+msgid "Previous"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:60
+msgid "Primary Navigation"
+msgstr ""
+
+#: pdo-modern/template-parts/header/navigation.php:23
+msgid "Primary navigation"
+msgstr ""
+
+#: pdo-modern/single-pdo_program.php:32
+msgid "Program"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:969
+msgid "Push-down panel"
+msgstr ""
+
+#: pdo-modern/footer.php:56
+msgid "Quick Navigation"
+msgstr ""
+
+#: pdo-modern/template-parts/components/card-news.php:60 pdo-modern/template-parts/components/card-post.php:36 pdo-modern/template-parts/components/card-program.php:57
+msgid "Read more"
+msgstr ""
+
+#: pdo-modern/template-parts/pages/transparency.php:47
+msgid "Read the policy"
+msgstr ""
+
+#: pdo-modern/single-pdo_news.php:87
+msgid "Related updates"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:947
+msgid "Reload the preview after changing this value."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:898
+msgid "Render top-level dropdowns as mega menus"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1096
+msgid "Reorder the homepage, hide sections, and control which breakpoints they appear on. The content of each section is edited under “PDO Manager”."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:985
+msgid "Repeat the call to action inside the mobile menu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/class-pdo-range-control.php:81
+msgid "Reset"
+msgstr ""
+
+#: pdo-modern/inc/customizer/class-pdo-range-control.php:80
+msgid "Reset to the default"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1133
+msgid "Responsive visibility"
+msgstr ""
+
+#: pdo-modern/search.php:18
+msgid "Results for “%s”"
+msgstr ""
+
+#: pdo-modern/single-pdo_program.php:81
+msgid "Results so far"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:596
+msgid "Right"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:526
+msgid "Rounded corners"
+msgstr ""
+
+#: pdo-modern/template-parts/pages/impact.php:54
+msgid "Scholarship distribution"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:527
+msgid "Scroll & hover animations"
+msgstr ""
+
+#: pdo-modern/search.php:16 pdo-modern/searchform.php:26
+msgid "Search"
+msgstr ""
+
+#: pdo-modern/searchform.php:22
+msgid "Search programs, reports, news…"
+msgstr ""
+
+#: pdo-modern/header.php:52
+msgid "Search the website"
+msgstr ""
+
+#: pdo-modern/searchform.php:14
+msgid "Search this site"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:202
+msgid "Search: %s"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:34
+msgid "Secondary teal"
+msgstr ""
+
+#: pdo-modern/template-parts/components/form.php:138
+msgid "Selected project: %s"
+msgstr ""
+
+#: pdo-modern/template-parts/header/navigation.php:15
+msgid "Set up the primary menu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:497
+msgid "Shadow strength (%)"
+msgstr ""
+
+#: pdo-modern/inc/compatibility.php:462
+msgid "Share by email"
+msgstr ""
+
+#: pdo-modern/inc/compatibility.php:452
+msgid "Share on Facebook"
+msgstr ""
+
+#: pdo-modern/inc/compatibility.php:457
+msgid "Share on WhatsApp"
+msgstr ""
+
+#: pdo-modern/template-parts/components/share.php:23
+msgid "Share this page"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:747
+msgid "Show a bottom border"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:529
+msgid "Show breadcrumbs on inner pages"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1036
+msgid "Show the contact column"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:897
+msgid "Show the dropdown caret"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:686
+msgid "Show the email address"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1035
+msgid "Show the flagship programs column"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:746
+msgid "Show the header call-to-action button"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:689
+msgid "Show the language switcher"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:687
+msgid "Show the location"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1033
+msgid "Show the organisation column"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:896
+msgid "Show the per-item icons"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:685
+msgid "Show the phone number"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1034
+msgid "Show the quick navigation column"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1039
+msgid "Show the registration badge"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:684
+msgid "Show the registration number"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:745
+msgid "Show the search button"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1037
+msgid "Show the social icons"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:688
+msgid "Show the social links"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:220
+msgid "Show the tagline next to the logo"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:677
+msgid "Show the top bar"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:528
+msgid "Show the “back to top” button"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1038
+msgid "Show the “stay in touch” note"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:103
+msgid "Shown beside the blog, archives and search results."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:744
+msgid "Shrink the header when sticky"
+msgstr ""
+
+#: pdo-modern/sidebar.php:14
+msgid "Sidebar"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:592
+msgid "Sidebar position"
+msgstr ""
+
+#: pdo-modern/template-parts/header/drawer.php:20
+msgid "Site menu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:395
+msgid "Sizes & rhythm"
+msgstr ""
+
+#: pdo-modern/header.php:23
+msgid "Skip to the main content"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:36
+msgid "Slate"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:967
+msgid "Slide-in drawer"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer-css.php:162
+msgid "Small"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:50
+msgid "SolaimanLipi"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:884
+msgid "Space between items (px)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:736
+msgid "Split menu around the logo"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:743
+msgid "Sticky header on scroll"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:53
+msgid "Strong borders"
+msgstr ""
+
+#: pdo-modern/inc/template-functions.php:593
+msgid "Students"
+msgstr ""
+
+#: pdo-modern/template-parts/pages/impact.php:53
+msgid "Students supported"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:68
+msgid "Success"
+msgstr ""
+
+#: pdo-modern/single-pdo_program.php:145
+msgid "Support this program"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:241
+msgid "Surfaces & borders"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:941
+msgid "Switch to the mobile menu below (px)"
+msgstr ""
+
+#: pdo-modern/inc/helpers.php:23
+msgid "System UI"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:240
+msgid "Text & links"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:44
+msgid "Text on dark backgrounds"
+msgstr ""
+
+#: pdo-modern/404.php:18
+msgid "The link may be outdated, or the page may have been moved. Use the search box or one of the shortcuts below."
+msgstr ""
+
+#: pdo-modern/inc/compatibility.php:619
+msgid "The theme renders fine without it, but the organisation content, programs, bilingual texts, forms and dynamic sections are supplied by that plugin."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:86
+msgid "Theory of Change"
+msgstr ""
+
+#: pdo-modern/single-pdo_document.php:77
+msgid "This document is available on request. Please contact us for a copy."
+msgstr ""
+
+#: pdo-modern/template-parts/components/no-results.php:18
+msgid "This section has no published content at the moment. Please check back soon."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:50
+msgid "Tinted section background"
+msgstr ""
+
+#. translators: %s: menu item label.
+#: pdo-modern/inc/class-pdo-nav-walker.php:142
+msgid "Toggle the %s submenu"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:661
+msgid "Top bar"
+msgstr ""
+
+#: pdo-modern/inc/theme-setup.php:61
+msgid "Top Bar (utility links)"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:56
+msgid "Top bar background"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:57
+msgid "Top bar text"
+msgstr ""
+
+#: pdo-modern/template-parts/sections/dynamic-chart.php:64
+msgid "Total"
+msgstr ""
+
+#: pdo-modern/404.php:27 pdo-modern/inc/template-functions.php:175
+msgid "Transparency"
+msgstr ""
+
+#: pdo-modern/template-parts/components/no-results.php:15
+msgid "Try a different wording, or browse the sections below."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:293
+msgid "Turn off for a flat, single-colour look."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:841
+msgid "Underline"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1123
+msgid "Untick a section to hide it everywhere."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:895
+msgid "Uppercase menu labels"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:444
+msgid "Uppercase the small section labels"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:290
+msgid "Use the brand gradient on dark sections"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:151
+msgid "Used as the Open Graph fallback image."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:148
+msgid "Used in the footer and on dark hero variants."
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:494
+msgid "Vertical section spacing (px)"
+msgstr ""
+
+#: pdo-modern/template-parts/sections/home-gallery.php:74
+msgid "View the full gallery"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:1155
+msgid "Visible everywhere"
+msgstr ""
+
+#: pdo-modern/single-pdo_partner.php:46
+msgid "Visit the website"
+msgstr ""
+
+#: pdo-modern/template-parts/pages/involved.php:31
+msgid "Volunteer"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:70
+msgid "Warning"
+msgstr ""
+
+#: pdo-modern/404.php:16
+msgid "We could not find that page"
+msgstr ""
+
+#: pdo-modern/template-parts/components/form.php:35
+msgid "We usually reply within a few working days."
+msgstr ""
+
+#: pdo-modern/template-parts/components/contact-cards.php:37
+msgid "WhatsApp"
+msgstr ""
+
+#: pdo-modern/inc/customizer/customizer.php:485
+msgid "Wide (1280px)"
+msgstr ""
+
+#: pdo-modern/template-parts/components/form.php:154
+msgid "Your details are stored securely and never shared with third parties."
+msgstr ""
+
+#. translators: 1: year, 2: site name.
+#: pdo-modern/footer.php:169
+msgid "© %1$s %2$s. All rights reserved."
+msgstr ""
