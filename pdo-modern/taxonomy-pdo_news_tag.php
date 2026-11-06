@@ -38,7 +38,7 @@ if ( have_posts() ) :
 		<?php
 		while ( have_posts() ) {
 			the_post();
-			get_template_part( 'template-parts/components/card', 'news', array( 'post' => get_post() ) );
+			get_template_part( 'template-parts/components/card', 'news', array( 'post' => get_post(), 'heading' => 2 ) );
 		}
 		?>
 	</div>

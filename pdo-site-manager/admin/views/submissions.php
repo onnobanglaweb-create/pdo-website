@@ -7,6 +7,12 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Defence in depth: add_submenu_page() already gates the screen, but a
+// direct include must never render privileged data.
+if ( ! current_user_can( PDO_SM_Capabilities::SUBMISSIONS ) ) {
+	wp_die( esc_html__( 'You do not have permission to view this screen.', 'pdo-site-manager' ), 403 );
+}
+
 // phpcs:disable WordPress.Security.NonceVerification.Recommended -- read-only filters.
 $pdo_filters = array(
 	'form_type' => isset( $_GET['form_type'] ) ? sanitize_key( wp_unslash( $_GET['form_type'] ) ) : '',

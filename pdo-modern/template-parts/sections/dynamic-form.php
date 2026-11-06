@@ -24,6 +24,6 @@ $pdo_type = in_array( $pdo_type, array( 'contact', 'volunteer', 'partner' ), tru
 pdo_modern_dynamic_open( $pdo_section );
 pdo_modern_dynamic_header( $pdo_section );
 
-get_template_part( 'template-parts/components/form', null, array( 'type' => $pdo_type ) );
+get_template_part( 'template-parts/components/form', null, array( 'type' => $pdo_type, 'heading' => 3 ) );
 
 pdo_modern_section_close();

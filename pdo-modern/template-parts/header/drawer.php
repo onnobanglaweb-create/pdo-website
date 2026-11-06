@@ -21,7 +21,7 @@ $pdo_style = sanitize_html_class( (string) get_theme_mod( 'pdo_mobile_style', 'd
 		<div class="pdo-drawer__head">
 			<?php pdo_modern_logo( 'mobile' ); ?>
 			<button type="button" class="pdo-iconbtn pdo-drawer__close" data-pdo-drawer-close>
-				<?php pdo_icon( 'x', array( 'size' => 20 ) ); ?>
+				<?php pdo_icon( 'close', array( 'size' => 20 ) ); ?>
 				<span class="screen-reader-text"><?php esc_html_e( 'Close the menu', 'pdo-modern' ); ?></span>
 			</button>
 		</div>

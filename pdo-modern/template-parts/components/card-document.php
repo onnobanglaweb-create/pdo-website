@@ -12,6 +12,8 @@ if ( ! $pdo_post ) {
 	return;
 }
 
+$pdo_h = pdo_modern_heading_tag( $args, 3 );
+
 $pdo_id    = (int) ( is_object( $pdo_post ) ? $pdo_post->ID : $pdo_post );
 $pdo_title = pdo_post_title( $pdo_id );
 $pdo_file  = pdo_document_file( $pdo_id );
@@ -24,7 +26,7 @@ $pdo_year  = (string) pdo_raw_meta( $pdo_id, 'year', '' );
 	</span>
 
 	<div class="pdo-doc__body">
-		<h3 class="pdo-doc__title"><?php echo esc_html( $pdo_title ); ?></h3>
+		<<?php echo esc_attr( $pdo_h ); ?> class="pdo-doc__title"><?php echo esc_html( $pdo_title ); ?></<?php echo esc_attr( $pdo_h ); ?>>
 
 		<?php if ( $pdo_desc ) : ?>
 			<p class="pdo-doc__text"><?php echo esc_html( $pdo_desc ); ?></p>

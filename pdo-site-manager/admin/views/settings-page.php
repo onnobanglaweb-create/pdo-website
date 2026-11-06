@@ -15,6 +15,12 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Defence in depth: add_submenu_page() already gates the screen, but a
+// direct include must never render privileged data.
+if ( ! current_user_can( PDO_SM_Capabilities::MANAGE ) ) {
+	wp_die( esc_html__( 'You do not have permission to view this screen.', 'pdo-site-manager' ), 403 );
+}
+
 $pdo_tab    = isset( $tabs[ $current_tab ] ) ? $tabs[ $current_tab ] : array();
 $pdo_panels = isset( $pdo_tab['panels'] ) ? $pdo_tab['panels'] : array();
 

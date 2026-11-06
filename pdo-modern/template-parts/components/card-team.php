@@ -12,6 +12,8 @@ if ( ! $pdo_post ) {
 	return;
 }
 
+$pdo_h = pdo_modern_heading_tag( $args, 3 );
+
 $pdo_id    = (int) ( is_object( $pdo_post ) ? $pdo_post->ID : $pdo_post );
 $pdo_name  = pdo_post_title( $pdo_id );
 $pdo_photo = pdo_post_image( $pdo_id, array( 'size' => 'pdo-thumb', 'alt' => $pdo_name ), 'photo' );
@@ -34,7 +36,7 @@ $pdo_compact = ! empty( $args['compact'] );
 	</div>
 
 	<div class="pdo-person__body">
-		<h3 class="pdo-person__name"><?php echo esc_html( $pdo_name ); ?></h3>
+		<<?php echo esc_attr( $pdo_h ); ?> class="pdo-person__name"><?php echo esc_html( $pdo_name ); ?></<?php echo esc_attr( $pdo_h ); ?>>
 
 		<?php if ( $pdo_role ) : ?>
 			<span class="pdo-person__role"><?php echo esc_html( $pdo_role ); ?></span>

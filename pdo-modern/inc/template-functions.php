@@ -499,6 +499,34 @@ function pdo_modern_post_meta( $post_id = 0, $author = null ) {
 }
 
 /**
+ * Resolve the heading tag a card or list item should use.
+ *
+ * Cards are reused in two very different contexts:
+ *
+ *  - inside a section that already owns an `<h2>` (the home page, the
+ *    dynamic sections) — the card title must then be an `<h3>`;
+ *  - directly under the page `<h1>` on an archive or taxonomy listing —
+ *    the card title is the next level down, so it must be an `<h2>`.
+ *
+ * Callers pass `heading` in the template-part args; everything else keeps
+ * the historical default of 3. Keeping the decision here means the document
+ * outline stays contiguous without duplicating markup per context.
+ *
+ * @param array $args    Template part args.
+ * @param int   $default Level to use when the caller said nothing.
+ * @return string Tag name, e.g. `h2`.
+ */
+function pdo_modern_heading_tag( $args = array(), $default = 3 ) {
+	$level = isset( $args['heading'] ) ? (int) $args['heading'] : (int) $default;
+
+	if ( $level < 1 || $level > 6 ) {
+		$level = (int) $default;
+	}
+
+	return 'h' . $level;
+}
+
+/**
  * Component file to use for a given post.
  *
  * @param int|WP_Post $post Post or post ID.

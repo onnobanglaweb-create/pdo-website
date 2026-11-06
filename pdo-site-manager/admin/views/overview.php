@@ -7,6 +7,12 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Defence in depth: add_submenu_page() already gates the screen, but a
+// direct include must never render privileged data.
+if ( ! current_user_can( PDO_SM_Capabilities::MANAGE ) ) {
+	wp_die( esc_html__( 'You do not have permission to view this screen.', 'pdo-site-manager' ), 403 );
+}
+
 $pdo_counts   = PDO_SM_Dashboard::counts();
 $pdo_org      = PDO_SM_Settings::get_group( 'org' );
 $pdo_pages    = get_option( 'pdo_sm_pages', array() );

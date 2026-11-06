@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later license.
 msgid ""
 msgstr ""
-"Project-Id-Version: PDO Website Manager 1.0.0\n"
+"Project-Id-Version: PDO Website Manager 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/onnobanglaweb-create/pdo-website/issues\n"
-"POT-Creation-Date: 2026-11-06 07:13+0000\n"
+"POT-Creation-Date: 2026-11-06 09:32+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,40 +27,40 @@ msgid "%s (copy)"
 msgstr ""
 
 #. translators: %s: number of drafts.
-#: pdo-site-manager/admin/views/overview.php:59
+#: pdo-site-manager/admin/views/overview.php:65
 msgid "%s draft"
 msgstr ""
 
 #. translators: %s: number of items.
-#: pdo-site-manager/admin/views/submissions.php:159
+#: pdo-site-manager/admin/views/submissions.php:165
 msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s: number of records.
-#: pdo-site-manager/admin/views/setup-wizard.php:78
+#: pdo-site-manager/admin/views/setup-wizard.php:84
 msgid "%s new record(s)"
 msgstr ""
 
 #. translators: %s: number of groups.
-#: pdo-site-manager/admin/views/tools.php:25
+#: pdo-site-manager/admin/views/tools.php:31
 msgid "%s settings group(s) imported."
 msgstr ""
 
 #. translators: %s: number of records.
-#: pdo-site-manager/admin/views/submissions.php:47
+#: pdo-site-manager/admin/views/submissions.php:53
 msgid "%s submission updated."
 msgid_plural "%s submissions updated."
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s: total submissions.
-#: pdo-site-manager/admin/views/overview.php:82
+#: pdo-site-manager/admin/views/overview.php:88
 msgid "%s total"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:205
+#: pdo-site-manager/admin/views/submissions.php:211
 msgid "(no subject)"
 msgstr ""
 
@@ -129,11 +129,11 @@ msgstr ""
 msgid "Achievements"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:123
+#: pdo-site-manager/admin/views/setup-wizard.php:129
 msgid "Activate the PDO Modern theme under Appearance → Themes."
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:95
+#: pdo-site-manager/admin/views/tools.php:101
 msgid "Active theme"
 msgstr ""
 
@@ -181,15 +181,15 @@ msgstr ""
 msgid "Add milestone"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:68
+#: pdo-site-manager/admin/views/overview.php:74
 msgid "Add new"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:216
+#: pdo-site-manager/includes/class-content-types.php:221
 msgid "Add New"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:218 pdo-site-manager/includes/class-taxonomies.php:118
+#: pdo-site-manager/includes/class-content-types.php:223 pdo-site-manager/includes/class-taxonomies.php:118
 msgid "Add New %s"
 msgstr ""
 
@@ -261,16 +261,16 @@ msgstr ""
 msgid "Alignment"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:102
+#: pdo-site-manager/admin/views/submissions.php:108
 msgid "All forms"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:110
+#: pdo-site-manager/admin/views/submissions.php:116
 msgid "All statuses"
 msgstr ""
 
 #. translators: %s: organisation name.
-#: pdo-site-manager/admin/views/overview.php:25
+#: pdo-site-manager/admin/views/overview.php:31
 msgid "All website content for %s lives here, so it survives theme changes and updates."
 msgstr ""
 
@@ -278,7 +278,7 @@ msgstr ""
 msgid "Allow in-page preview"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:73
+#: pdo-site-manager/admin/views/setup-wizard.php:79
 msgid "already present — nothing to do"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgstr ""
 msgid "Animate the counter"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:152
+#: pdo-site-manager/admin/views/submissions.php:158
 msgid "Apply"
 msgstr ""
 
@@ -314,7 +314,7 @@ msgstr ""
 msgid "Associated program"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:89
+#: pdo-site-manager/admin/views/submissions.php:95
 msgid "Back to the list"
 msgstr ""
 
@@ -386,7 +386,7 @@ msgstr ""
 msgid "Bengali translation"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:139
+#: pdo-site-manager/admin/views/overview.php:145
 msgid "Bilingual mode"
 msgstr ""
 
@@ -402,15 +402,15 @@ msgstr ""
 msgid "Blue"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:53
+#: pdo-site-manager/admin/views/setup-wizard.php:59
 msgid "Builds the primary menu with its dropdowns plus the two footer menus, including the Bengali labels."
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:136
+#: pdo-site-manager/admin/views/submissions.php:142
 msgid "Bulk action"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:138
+#: pdo-site-manager/admin/views/submissions.php:144
 msgid "Bulk actions"
 msgstr ""
 
@@ -450,7 +450,7 @@ msgstr ""
 msgid "Card background"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:20
+#: pdo-site-manager/admin/views/setup-wizard.php:26
 msgid "Categories & groups"
 msgstr ""
 
@@ -494,7 +494,7 @@ msgstr ""
 msgid "Choose icon"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:100
+#: pdo-site-manager/admin/views/setup-wizard.php:106
 msgid "Choose what to import"
 msgstr ""
 
@@ -610,35 +610,35 @@ msgstr ""
 msgid "Core values icon"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:25
+#: pdo-site-manager/admin/views/setup-wizard.php:31
 msgid "Creates Home, About, Impact, Transparency, Media, Get Involved and Contact and assigns the matching page templates. Existing pages with the same slug are reused."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:33
+#: pdo-site-manager/admin/views/setup-wizard.php:39
 msgid "Creates the Executive Committee and management records."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:29
+#: pdo-site-manager/admin/views/setup-wizard.php:35
 msgid "Creates the five flagship program records with their statistics and achievements."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:45
+#: pdo-site-manager/admin/views/setup-wizard.php:51
 msgid "Creates the four policy records. No file is attached — upload the real PDF on each record to switch the download button on."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:21
+#: pdo-site-manager/admin/views/setup-wizard.php:27
 msgid "Creates the news categories, program categories, team groups, partner categories and document categories."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:49
+#: pdo-site-manager/admin/views/setup-wizard.php:55
 msgid "Creates the six field-action and policy articles."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:37
+#: pdo-site-manager/admin/views/setup-wizard.php:43
 msgid "Creates the strategic partner records."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:41
+#: pdo-site-manager/admin/views/setup-wizard.php:47
 msgid "Creates the three human impact stories."
 msgstr ""
 
@@ -666,11 +666,11 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:62
+#: pdo-site-manager/admin/views/tools.php:68
 msgid "Data retention"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:93
+#: pdo-site-manager/admin/views/tools.php:99
 msgid "Database schema"
 msgstr ""
 
@@ -694,11 +694,11 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:70
+#: pdo-site-manager/admin/views/tools.php:76
 msgid "Delete all PDO content and settings when the plugin is deleted"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:150
+#: pdo-site-manager/admin/views/submissions.php:156
 msgid "Delete permanently"
 msgstr ""
 
@@ -714,7 +714,7 @@ msgstr ""
 msgid "Design & layout"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:106
+#: pdo-site-manager/admin/views/overview.php:112
 msgid "Design &amp; colors (Customizer)"
 msgstr ""
 
@@ -734,7 +734,7 @@ msgstr ""
 msgid "Detailed explanation"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:139
+#: pdo-site-manager/admin/views/overview.php:145
 msgid "Disabled"
 msgstr ""
 
@@ -762,7 +762,7 @@ msgstr ""
 msgid "Division"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:165
+#: pdo-site-manager/includes/class-content-types.php:169
 msgid "Document"
 msgstr ""
 
@@ -790,7 +790,7 @@ msgstr ""
 msgid "Document library section"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:254
+#: pdo-site-manager/includes/class-content-types.php:259
 msgid "Document title"
 msgstr ""
 
@@ -806,7 +806,7 @@ msgstr ""
 msgid "Download button text"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:40
+#: pdo-site-manager/admin/views/tools.php:46
 msgid "Download JSON"
 msgstr ""
 
@@ -814,11 +814,11 @@ msgstr ""
 msgid "Download PDF"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:36
+#: pdo-site-manager/admin/views/tools.php:42
 msgid "Downloads every PDO settings group as JSON. Posts, images and submissions are not included — use the normal WordPress exporter for those."
 msgstr ""
 
-#: pdo-site-manager/admin/views/reorder.php:38
+#: pdo-site-manager/admin/views/reorder.php:44
 msgid "Drag the rows to set the order used on the website. Changes save automatically."
 msgstr ""
 
@@ -834,31 +834,31 @@ msgstr ""
 msgid "Duplicate"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:187
+#: pdo-site-manager/includes/class-content-types.php:192
 msgid "Dynamic Section"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:187
+#: pdo-site-manager/includes/class-content-types.php:192
 msgid "Dynamic Sections"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:105
+#: pdo-site-manager/admin/views/overview.php:111
 msgid "Dynamic Sections Builder"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:124 pdo-site-manager/admin/views/reorder.php:61
+#: pdo-site-manager/admin/views/overview.php:130 pdo-site-manager/admin/views/reorder.php:67
 msgid "Edit"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:220 pdo-site-manager/includes/class-taxonomies.php:116
+#: pdo-site-manager/includes/class-content-types.php:225 pdo-site-manager/includes/class-taxonomies.php:116
 msgid "Edit %s"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:96
+#: pdo-site-manager/admin/views/overview.php:102
 msgid "Edit page content"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:137 pdo-site-manager/includes/class-schema.php:3068
+#: pdo-site-manager/admin/views/overview.php:143 pdo-site-manager/includes/class-schema.php:3068
 msgid "Email"
 msgstr ""
 
@@ -874,7 +874,7 @@ msgstr ""
 msgid "Enable English / Bengali switching"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:139 pdo-site-manager/includes/class-fields.php:154
+#: pdo-site-manager/admin/views/overview.php:145 pdo-site-manager/includes/class-fields.php:154
 msgid "Enabled"
 msgstr ""
 
@@ -882,7 +882,7 @@ msgstr ""
 msgid "English"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:135
+#: pdo-site-manager/admin/views/overview.php:141
 msgid "Established"
 msgstr ""
 
@@ -902,11 +902,11 @@ msgstr ""
 msgid "Excerpt (বাংলা)"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:126
+#: pdo-site-manager/admin/views/submissions.php:132
 msgid "Export CSV"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:35
+#: pdo-site-manager/admin/views/tools.php:41
 msgid "Export settings"
 msgstr ""
 
@@ -966,15 +966,15 @@ msgstr ""
 msgid "File"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:127
+#: pdo-site-manager/admin/views/setup-wizard.php:133
 msgid "Fill in the Bengali fields — nothing is machine translated."
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:124
+#: pdo-site-manager/admin/views/submissions.php:130
 msgid "Filter"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:34
+#: pdo-site-manager/admin/views/overview.php:40
 msgid "Finish the setup."
 msgstr ""
 
@@ -986,7 +986,7 @@ msgstr ""
 msgid "Footer statistic"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:188 pdo-site-manager/includes/class-sections.php:53
+#: pdo-site-manager/admin/views/submissions.php:194 pdo-site-manager/includes/class-sections.php:53
 msgid "Form"
 msgstr ""
 
@@ -998,7 +998,7 @@ msgstr ""
 msgid "Form notification recipient"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:39 pdo-site-manager/includes/class-dashboard.php:131 pdo-site-manager/includes/class-dashboard.php:132
+#: pdo-site-manager/admin/views/submissions.php:45 pdo-site-manager/includes/class-dashboard.php:131 pdo-site-manager/includes/class-dashboard.php:132
 msgid "Form Submissions"
 msgstr ""
 
@@ -1006,7 +1006,7 @@ msgstr ""
 msgid "Form title"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:100
+#: pdo-site-manager/admin/views/submissions.php:106
 msgid "Form type"
 msgstr ""
 
@@ -1018,7 +1018,7 @@ msgstr ""
 msgid "Framework items"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:116 pdo-site-manager/admin/views/submissions.php:189
+#: pdo-site-manager/admin/views/submissions.php:122 pdo-site-manager/admin/views/submissions.php:195
 msgid "From"
 msgstr ""
 
@@ -1030,7 +1030,7 @@ msgstr ""
 msgid "Full message"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:246
+#: pdo-site-manager/includes/class-content-types.php:251
 msgid "Full name"
 msgstr ""
 
@@ -1114,7 +1114,7 @@ msgstr ""
 msgid "Hero visual panel"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:304 pdo-site-manager/includes/class-fields.php:367 pdo-site-manager/includes/class-meta-boxes.php:35 pdo-site-manager/includes/class-sections.php:305
+#: pdo-site-manager/includes/class-content-types.php:309 pdo-site-manager/includes/class-fields.php:367 pdo-site-manager/includes/class-meta-boxes.php:35 pdo-site-manager/includes/class-sections.php:305
 msgid "Hidden"
 msgstr ""
 
@@ -1238,11 +1238,11 @@ msgstr ""
 msgid "Impact Page Manager"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:40 pdo-site-manager/includes/class-schema.php:2376 pdo-site-manager/includes/class-sections.php:48
+#: pdo-site-manager/admin/views/setup-wizard.php:46 pdo-site-manager/includes/class-schema.php:2376 pdo-site-manager/includes/class-sections.php:48
 msgid "Impact stories"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:144
+#: pdo-site-manager/includes/class-content-types.php:147
 msgid "Impact Stories"
 msgstr ""
 
@@ -1250,19 +1250,19 @@ msgstr ""
 msgid "Impact stories section"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:144
+#: pdo-site-manager/includes/class-content-types.php:147
 msgid "Impact Story"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:55
+#: pdo-site-manager/admin/views/tools.php:61
 msgid "Import"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:63
+#: pdo-site-manager/admin/views/setup-wizard.php:69
 msgid "Import finished."
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:47
+#: pdo-site-manager/admin/views/tools.php:53
 msgid "Import settings"
 msgstr ""
 
@@ -1346,7 +1346,7 @@ msgstr ""
 msgid "Layout"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:32 pdo-site-manager/includes/class-schema.php:2074
+#: pdo-site-manager/admin/views/setup-wizard.php:38 pdo-site-manager/includes/class-schema.php:2074
 msgid "Leadership"
 msgstr ""
 
@@ -1422,7 +1422,7 @@ msgstr ""
 msgid "Main headline"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:67
+#: pdo-site-manager/admin/views/overview.php:73
 msgid "Manage"
 msgstr ""
 
@@ -1444,7 +1444,7 @@ msgid "Map pin label"
 msgstr ""
 
 #. translators: %s: status label.
-#: pdo-site-manager/admin/views/submissions.php:144
+#: pdo-site-manager/admin/views/submissions.php:150
 msgid "Mark as %s"
 msgstr ""
 
@@ -1500,7 +1500,7 @@ msgstr ""
 msgid "Menu icon (optional)"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:59
+#: pdo-site-manager/admin/views/setup-wizard.php:65
 msgid "Migrates the original PDO website into editable WordPress records. Every step is idempotent: running it again never duplicates content and never overwrites something you have edited."
 msgstr ""
 
@@ -1512,7 +1512,7 @@ msgstr ""
 msgid "Milestones heading"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:94
+#: pdo-site-manager/admin/views/tools.php:100
 msgid "Missing — deactivate and reactivate the plugin."
 msgstr ""
 
@@ -1544,7 +1544,7 @@ msgstr ""
 msgid "Name (বাংলা)"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:107 pdo-site-manager/admin/views/setup-wizard.php:52
+#: pdo-site-manager/admin/views/overview.php:113 pdo-site-manager/admin/views/setup-wizard.php:58
 msgid "Navigation menus"
 msgstr ""
 
@@ -1552,11 +1552,11 @@ msgstr ""
 msgid "New"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:222
+#: pdo-site-manager/includes/class-content-types.php:227
 msgid "New %s"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:77
+#: pdo-site-manager/admin/views/overview.php:83
 msgid "New submissions"
 msgstr ""
 
@@ -1564,7 +1564,7 @@ msgstr ""
 msgid "News Article"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:48
+#: pdo-site-manager/admin/views/setup-wizard.php:54
 msgid "News articles"
 msgstr ""
 
@@ -1584,23 +1584,23 @@ msgstr ""
 msgid "News Tags"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:120
+#: pdo-site-manager/admin/views/setup-wizard.php:126
 msgid "Next steps"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:230
+#: pdo-site-manager/includes/class-content-types.php:235
 msgid "No %s found in Trash."
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:228
+#: pdo-site-manager/includes/class-content-types.php:233
 msgid "No %s found."
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:129
+#: pdo-site-manager/admin/views/overview.php:135
 msgid "No pages have been created yet. Run the setup wizard."
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:196
+#: pdo-site-manager/admin/views/submissions.php:202
 msgid "No submissions found."
 msgstr ""
 
@@ -1612,7 +1612,7 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: pdo-site-manager/admin/views/reorder.php:51
+#: pdo-site-manager/admin/views/reorder.php:57
 msgid "Nothing to reorder yet."
 msgstr ""
 
@@ -1636,7 +1636,7 @@ msgstr ""
 msgid "Numeric value (statistics & charts)"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:72
+#: pdo-site-manager/admin/views/tools.php:78
 msgid "Off by default: deactivating or deleting the plugin keeps your content safe."
 msgstr ""
 
@@ -1652,7 +1652,7 @@ msgstr ""
 msgid "Official phone number"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:124
+#: pdo-site-manager/admin/views/setup-wizard.php:130
 msgid "Open Appearance → Customize to set the logos, colors, typography and section order."
 msgstr ""
 
@@ -1660,11 +1660,11 @@ msgstr ""
 msgid "Open file"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:89
+#: pdo-site-manager/admin/views/overview.php:95
 msgid "Open inbox"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:36
+#: pdo-site-manager/admin/views/overview.php:42
 msgid "Open Setup Wizard"
 msgstr ""
 
@@ -1692,7 +1692,7 @@ msgstr ""
 msgid "Or photo URL"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:287 pdo-site-manager/includes/class-schema.php:43
+#: pdo-site-manager/includes/class-content-types.php:292 pdo-site-manager/includes/class-schema.php:43
 msgid "Order"
 msgstr ""
 
@@ -1700,7 +1700,7 @@ msgstr ""
 msgid "Order saved."
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:132
+#: pdo-site-manager/admin/views/overview.php:138
 msgid "Organisation snapshot"
 msgstr ""
 
@@ -1740,7 +1740,7 @@ msgstr ""
 msgid "Page content"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:16
+#: pdo-site-manager/admin/views/setup-wizard.php:22
 msgid "Page content & settings"
 msgstr ""
 
@@ -1772,7 +1772,7 @@ msgstr ""
 msgid "Paragraphs"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:122
+#: pdo-site-manager/includes/class-content-types.php:124
 msgid "Partner"
 msgstr ""
 
@@ -1780,7 +1780,7 @@ msgstr ""
 msgid "Partner details"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:248
+#: pdo-site-manager/includes/class-content-types.php:253
 msgid "Partner name"
 msgstr ""
 
@@ -1796,7 +1796,7 @@ msgstr ""
 msgid "Partner website"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:36 pdo-site-manager/includes/class-content-types.php:122 pdo-site-manager/includes/class-schema.php:1430 pdo-site-manager/includes/class-sections.php:43
+#: pdo-site-manager/admin/views/setup-wizard.php:42 pdo-site-manager/includes/class-content-types.php:124 pdo-site-manager/includes/class-schema.php:1430 pdo-site-manager/includes/class-sections.php:43
 msgid "Partners"
 msgstr ""
 
@@ -1852,15 +1852,15 @@ msgstr ""
 msgid "PDO Primary Menu"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:58
+#: pdo-site-manager/admin/views/setup-wizard.php:64
 msgid "PDO Setup Wizard"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:15
+#: pdo-site-manager/admin/views/tools.php:21
 msgid "PDO Tools"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:20 pdo-site-manager/includes/class-dashboard.php:100
+#: pdo-site-manager/admin/views/overview.php:26 pdo-site-manager/includes/class-dashboard.php:100
 msgid "PDO Website Manager"
 msgstr ""
 
@@ -1876,7 +1876,7 @@ msgstr ""
 msgid "Percentage"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:98
+#: pdo-site-manager/admin/views/tools.php:104
 msgid "Permalinks"
 msgstr ""
 
@@ -1884,7 +1884,7 @@ msgstr ""
 msgid "Permission denied."
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:138 pdo-site-manager/includes/class-schema.php:3069
+#: pdo-site-manager/admin/views/overview.php:144 pdo-site-manager/includes/class-schema.php:3069
 msgid "Phone"
 msgstr ""
 
@@ -1908,7 +1908,7 @@ msgstr ""
 msgid "Photo grid"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:97
+#: pdo-site-manager/admin/views/tools.php:103
 msgid "PHP"
 msgstr ""
 
@@ -1932,7 +1932,7 @@ msgstr ""
 msgid "Placement"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:98
+#: pdo-site-manager/admin/views/tools.php:104
 msgid "Plain — switch to a pretty structure for clean URLs."
 msgstr ""
 
@@ -1952,11 +1952,11 @@ msgstr ""
 msgid "Please review the highlighted fields."
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:92
+#: pdo-site-manager/admin/views/tools.php:98
 msgid "Plugin version"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:165
+#: pdo-site-manager/includes/class-content-types.php:169
 msgid "Policies & Documents"
 msgstr ""
 
@@ -1964,7 +1964,7 @@ msgstr ""
 msgid "Policies & reports"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:44
+#: pdo-site-manager/admin/views/setup-wizard.php:50
 msgid "Policy & report library"
 msgstr ""
 
@@ -2044,7 +2044,7 @@ msgstr ""
 msgid "Program listing"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:250
+#: pdo-site-manager/includes/class-content-types.php:255
 msgid "Program name"
 msgstr ""
 
@@ -2052,7 +2052,7 @@ msgstr ""
 msgid "Program statistics"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:28 pdo-site-manager/includes/class-content-types.php:79 pdo-site-manager/includes/class-schema.php:2340
+#: pdo-site-manager/admin/views/setup-wizard.php:34 pdo-site-manager/includes/class-content-types.php:79 pdo-site-manager/includes/class-schema.php:2340
 msgid "Programs"
 msgstr ""
 
@@ -2088,11 +2088,11 @@ msgstr ""
 msgid "Read"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:191
+#: pdo-site-manager/admin/views/submissions.php:197
 msgid "Received"
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:136
+#: pdo-site-manager/admin/views/overview.php:142
 msgid "Registration"
 msgstr ""
 
@@ -2124,15 +2124,15 @@ msgstr ""
 msgid "Remove this item?"
 msgstr ""
 
-#: pdo-site-manager/admin/views/reorder.php:37 pdo-site-manager/includes/class-dashboard.php:140 pdo-site-manager/includes/class-dashboard.php:141
+#: pdo-site-manager/admin/views/reorder.php:43 pdo-site-manager/includes/class-dashboard.php:140 pdo-site-manager/includes/class-dashboard.php:141
 msgid "Reorder Content"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:125
+#: pdo-site-manager/admin/views/setup-wizard.php:131
 msgid "Replace the demo photographs with your own images in each record."
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:87
+#: pdo-site-manager/admin/views/submissions.php:93
 msgid "Reply by email"
 msgstr ""
 
@@ -2144,7 +2144,7 @@ msgstr ""
 msgid "Response time statement"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:48
+#: pdo-site-manager/admin/views/tools.php:54
 msgid "Restores a previously exported JSON file. Every value is re-sanitised against the schema before it is stored."
 msgstr ""
 
@@ -2164,7 +2164,7 @@ msgstr ""
 msgid "Rose"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:115
+#: pdo-site-manager/admin/views/setup-wizard.php:121
 msgid "Run the import"
 msgstr ""
 
@@ -2172,19 +2172,19 @@ msgstr ""
 msgid "Run the setup wizard once to create the pages, menus and starter content. Nothing that already exists will be overwritten."
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:35
+#: pdo-site-manager/admin/views/overview.php:41
 msgid "Run the setup wizard to create the pages, menus and starter content."
 msgstr ""
 
-#: pdo-site-manager/admin/views/settings-page.php:80
+#: pdo-site-manager/admin/views/settings-page.php:86
 msgid "Save Changes"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:73
+#: pdo-site-manager/admin/views/tools.php:79
 msgid "Save preference"
 msgstr ""
 
-#: pdo-site-manager/admin/views/settings-page.php:81
+#: pdo-site-manager/admin/views/settings-page.php:87
 msgid "Saving writes to the database and reports the verified result."
 msgstr ""
 
@@ -2212,7 +2212,7 @@ msgstr ""
 msgid "SDG references"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:226 pdo-site-manager/includes/class-taxonomies.php:112
+#: pdo-site-manager/includes/class-content-types.php:231 pdo-site-manager/includes/class-taxonomies.php:112
 msgid "Search %s"
 msgstr ""
 
@@ -2220,11 +2220,11 @@ msgstr ""
 msgid "Search icons…"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:122
+#: pdo-site-manager/admin/views/submissions.php:128
 msgid "Search name, email, content…"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:121
+#: pdo-site-manager/admin/views/submissions.php:127
 msgid "Search submissions"
 msgstr ""
 
@@ -2264,7 +2264,7 @@ msgstr ""
 msgid "Section title"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:256
+#: pdo-site-manager/includes/class-content-types.php:261
 msgid "Section title (admin reference)"
 msgstr ""
 
@@ -2276,7 +2276,7 @@ msgstr ""
 msgid "Security check failed. Please reload the page and try again."
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:186
+#: pdo-site-manager/admin/views/submissions.php:192
 msgid "Select all"
 msgstr ""
 
@@ -2288,7 +2288,7 @@ msgstr ""
 msgid "Select image"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:201
+#: pdo-site-manager/admin/views/submissions.php:207
 msgid "Select submission"
 msgstr ""
 
@@ -2300,7 +2300,7 @@ msgstr ""
 msgid "Send Message"
 msgstr ""
 
-#: pdo-site-manager/admin/views/settings-page.php:37
+#: pdo-site-manager/admin/views/settings-page.php:43
 msgid "Settings sections"
 msgstr ""
 
@@ -2428,7 +2428,7 @@ msgstr ""
 msgid "Statistics strip"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:108 pdo-site-manager/admin/views/submissions.php:190
+#: pdo-site-manager/admin/views/submissions.php:114 pdo-site-manager/admin/views/submissions.php:196
 msgid "Status"
 msgstr ""
 
@@ -2444,7 +2444,7 @@ msgstr ""
 msgid "Story details"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:252
+#: pdo-site-manager/includes/class-content-types.php:257
 msgid "Story title"
 msgstr ""
 
@@ -2480,15 +2480,15 @@ msgstr ""
 msgid "Student count label"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:187
+#: pdo-site-manager/admin/views/submissions.php:193
 msgid "Subject"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:63
+#: pdo-site-manager/admin/views/submissions.php:69
 msgid "Submission"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:94
+#: pdo-site-manager/admin/views/tools.php:100
 msgid "Submissions table"
 msgstr ""
 
@@ -2500,7 +2500,7 @@ msgstr ""
 msgid "Submit button label"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:81
+#: pdo-site-manager/admin/views/submissions.php:87
 msgid "Submitted from"
 msgstr ""
 
@@ -2528,7 +2528,7 @@ msgstr ""
 msgid "Supporting statistics"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:80
+#: pdo-site-manager/admin/views/tools.php:86
 msgid "System status"
 msgstr ""
 
@@ -2560,11 +2560,11 @@ msgstr ""
 msgid "Team Groups"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:100
+#: pdo-site-manager/includes/class-content-types.php:101
 msgid "Team Member"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:100
+#: pdo-site-manager/includes/class-content-types.php:101
 msgid "Team Members"
 msgstr ""
 
@@ -2628,7 +2628,7 @@ msgstr ""
 msgid "The organisation name and tagline used across the website, structured data and emails."
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:43
+#: pdo-site-manager/admin/views/overview.php:49
 msgid "The PDO Modern theme is not active. The plugin keeps storing your content, but the front-end layouts ship with that theme."
 msgstr ""
 
@@ -2640,7 +2640,7 @@ msgstr ""
 msgid "The upload failed. Please try again."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:91
+#: pdo-site-manager/admin/views/setup-wizard.php:97
 msgid "The wizard has run before. You can safely run it again to add anything that is missing."
 msgstr ""
 
@@ -2680,7 +2680,7 @@ msgstr ""
 msgid "Title / value"
 msgstr ""
 
-#: pdo-site-manager/admin/views/submissions.php:118
+#: pdo-site-manager/admin/views/submissions.php:124
 msgid "To"
 msgstr ""
 
@@ -2740,7 +2740,7 @@ msgstr ""
 msgid "Upload the real document. If no file and no external URL is provided, the download button is hidden automatically."
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:126
+#: pdo-site-manager/admin/views/setup-wizard.php:132
 msgid "Upload the real policy and audit PDFs on each document record."
 msgstr ""
 
@@ -2792,7 +2792,7 @@ msgstr ""
 msgid "Vertical padding"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:224
+#: pdo-site-manager/includes/class-content-types.php:229
 msgid "View %s"
 msgstr ""
 
@@ -2800,7 +2800,7 @@ msgstr ""
 msgid "Visibility"
 msgstr ""
 
-#: pdo-site-manager/includes/class-content-types.php:288 pdo-site-manager/includes/class-content-types.php:304
+#: pdo-site-manager/includes/class-content-types.php:293 pdo-site-manager/includes/class-content-types.php:309
 msgid "Visible"
 msgstr ""
 
@@ -2868,7 +2868,7 @@ msgstr ""
 msgid "We could not save your message because of a server error. Please try again or email us directly."
 msgstr ""
 
-#: pdo-site-manager/admin/views/overview.php:112 pdo-site-manager/admin/views/setup-wizard.php:24
+#: pdo-site-manager/admin/views/overview.php:118 pdo-site-manager/admin/views/setup-wizard.php:30
 msgid "Website pages"
 msgstr ""
 
@@ -2884,11 +2884,11 @@ msgstr ""
 msgid "Who we are & history"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:96
+#: pdo-site-manager/admin/views/tools.php:102
 msgid "WordPress"
 msgstr ""
 
-#: pdo-site-manager/admin/views/setup-wizard.php:17
+#: pdo-site-manager/admin/views/setup-wizard.php:23
 msgid "Writes the migrated texts, statistics, pillars, milestones and form definitions into the option groups. Groups you have already edited are never touched."
 msgstr ""
 
@@ -2906,6 +2906,10 @@ msgstr ""
 
 #: pdo-site-manager/includes/class-capabilities.php:121
 msgid "You do not have permission to view PDO form submissions."
+msgstr ""
+
+#: pdo-site-manager/admin/views/overview.php:13 pdo-site-manager/admin/views/reorder.php:13 pdo-site-manager/admin/views/settings-page.php:21 pdo-site-manager/admin/views/setup-wizard.php:13 pdo-site-manager/admin/views/submissions.php:13 pdo-site-manager/admin/views/tools.php:13
+msgid "You do not have permission to view this screen."
 msgstr ""
 
 #: pdo-site-manager/includes/class-forms.php:139

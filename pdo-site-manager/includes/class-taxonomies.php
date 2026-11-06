@@ -123,6 +123,9 @@ class PDO_SM_Taxonomies {
 				'show_ui'           => true,
 				'show_admin_column' => true,
 				'show_in_rest'      => true,
+				// Hyphenated so the REST route matches the public rewrite slug
+				// instead of exposing the underscored internal name.
+				'rest_base'         => str_replace( '_', '-', $slug ),
 				'show_in_menu'      => true,
 				'rewrite'           => array(
 					'slug'       => $rewrite,

@@ -12,6 +12,8 @@ if ( ! $pdo_post ) {
 	return;
 }
 
+$pdo_h = pdo_modern_heading_tag( $args, 3 );
+
 $pdo_id      = (int) ( is_object( $pdo_post ) ? $pdo_post->ID : $pdo_post );
 $pdo_name    = pdo_post_title( $pdo_id );
 $pdo_site    = (string) pdo_raw_meta( $pdo_id, 'website', '' );
@@ -39,7 +41,7 @@ $pdo_tag     = $pdo_site ? 'a' : 'div';
 		</span>
 	<?php endif; ?>
 
-	<h3 class="pdo-partner__name"><?php echo esc_html( $pdo_name ); ?></h3>
+	<<?php echo esc_attr( $pdo_h ); ?> class="pdo-partner__name"><?php echo esc_html( $pdo_name ); ?></<?php echo esc_attr( $pdo_h ); ?>>
 
 	<?php if ( $pdo_summary ) : ?>
 		<p class="pdo-partner__text"><?php echo esc_html( $pdo_summary ); ?></p>

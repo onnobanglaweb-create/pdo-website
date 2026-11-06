@@ -4,7 +4,7 @@ Tags: nonprofit, ngo, content management, bilingual, bangladesh
 Requires at least: 6.4
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,11 @@ defaults because every template API call is guarded. Nothing fatals.
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix: eleven icons referenced by templates and schema defaults were missing from the icon registry and rendered as empty boxes (arrow-up, arrow-down, chevron-up, chevron-left, grip, bullseye, flag, building, images, sparkles, target-arrow). The schema default for the About vision/mission icon is no longer erased on save.
+* Fix: REST routes are now consistently hyphenated (pdo-program, pdo-team, pdo-partner, pdo-story, pdo-document and all taxonomies) instead of mixing hyphens and underscores.
+* Hardening: every admin screen now re-checks the current user's capability before rendering.
+
 = 1.0.0 =
 * Initial release.
 * Nine settings groups with 37 tabs covering organisation, all six inner pages
@@ -133,9 +138,12 @@ defaults because every template API call is guarded. Nothing fatals.
 * Bilingual runtime (English / Bengali) with hreflang output.
 * Three hardened form types with a dedicated submissions table and CSV export.
 * Setup wizard, JSON import/export, REST read endpoints.
-* ~30 guarded template API functions and ~80 inline SVG icons.
+* ~30 guarded template API functions and 104 inline SVG icons.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Bug-fix and hardening release. Safe to update in place; no database changes.
 
 = 1.0.0 =
 First public release.

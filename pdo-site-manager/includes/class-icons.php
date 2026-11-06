@@ -153,6 +153,20 @@ class PDO_SM_Icons {
 		$add( 'youtube', 'YouTube', 'contact', '<rect x="3" y="6" width="18" height="12" rx="3"/><path d="m10.4 9.6 4.8 2.4-4.8 2.4z"/>' );
 		$add( 'instagram', 'Instagram', 'contact', '<rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4.4"/><circle cx="12" cy="12" r="3.6"/><path d="M17 7h.01"/>' );
 
+		// Previously referenced by templates but missing from the registry, which
+		// made those buttons render as empty boxes. See docs/DEVELOPMENT.md.
+		$add( 'arrow-up', 'Arrow up', 'general', '<path d="M12 19V5"/><path d="m6 11 6-6 6 6"/>' );
+		$add( 'arrow-down', 'Arrow down', 'general', '<path d="M12 5v14"/><path d="m18 13-6 6-6-6"/>' );
+		$add( 'chevron-up', 'Chevron up', 'general', '<path d="m6 15 6-6 6 6"/>' );
+		$add( 'chevron-left', 'Chevron left', 'general', '<path d="m15 6-6 6 6 6"/>' );
+		$add( 'grip', 'Drag handle', 'general', '<circle cx="9" cy="6" r="1.1"/><circle cx="15" cy="6" r="1.1"/><circle cx="9" cy="12" r="1.1"/><circle cx="15" cy="12" r="1.1"/><circle cx="9" cy="18" r="1.1"/><circle cx="15" cy="18" r="1.1"/>' );
+		$add( 'bullseye', 'Target', 'impact', '<circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.1"/>' );
+		$add( 'flag', 'Flag', 'general', '<path d="M5 21V4.4"/><path d="M5 5.2h10.6l-1.4 3.2 1.4 3.2H5z"/>' );
+		$add( 'building', 'Building', 'general', '<rect x="4.6" y="3.4" width="14.8" height="17.2" rx="1.6"/><path d="M8.4 7.6h2M13.6 7.6h2M8.4 11.4h2M13.6 11.4h2M10.4 20.6v-4.2h3.2v4.2"/>' );
+		$add( 'images', 'Gallery', 'general', '<rect x="3.2" y="6.4" width="13.4" height="11.2" rx="1.8"/><path d="M7.6 17.6 11 13.8l2.4 2.6 1.8-1.8 1.4 1.5"/><circle cx="7.4" cy="10.2" r="1.1"/><path d="M19.2 8.8a1.8 1.8 0 0 1 1.6 1.8v6.6a2.4 2.4 0 0 1-2.4 2.4H8.2"/>' );
+		$add( 'sparkles', 'Sparkles', 'general', '<path d="m12 3.6 1.7 4.3 4.3 1.7-4.3 1.7L12 15.6l-1.7-4.3L6 9.6l4.3-1.7z"/><path d="M18.4 15.2l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>' );
+		$add( 'target-arrow', 'Goal', 'impact', '<circle cx="11" cy="13" r="7.4"/><circle cx="11" cy="13" r="3.2"/><path d="m13.6 10.4 5-5"/><path d="M16.4 4.2h3.4v3.4"/>' );
+
 		/**
 		 * Filter the bundled icon library.
 		 *

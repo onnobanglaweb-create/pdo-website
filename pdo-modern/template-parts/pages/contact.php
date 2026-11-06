@@ -45,7 +45,7 @@ if ( pdo_section_enabled( 'contact', 'form' ) ) :
 					<div class="pdo-card__body">
 						<span class="pdo-card__icon"><?php pdo_icon( 'shield-check', array( 'size' => 20 ) ); ?></span>
 						<?php if ( pdo_text( 'contact', 'legal_title', '' ) ) : ?>
-							<h3 class="pdo-card__title"><?php echo esc_html( pdo_text( 'contact', 'legal_title', '' ) ); ?></h3>
+							<h2 class="pdo-card__title"><?php echo esc_html( pdo_text( 'contact', 'legal_title', '' ) ); ?></h2>
 						<?php endif; ?>
 						<?php if ( pdo_text( 'contact', 'legal_description', '' ) ) : ?>
 							<p class="pdo-card__text"><?php echo esc_html( pdo_text( 'contact', 'legal_description', '' ) ); ?></p>

@@ -12,6 +12,8 @@ if ( ! $pdo_post ) {
 	return;
 }
 
+$pdo_h = pdo_modern_heading_tag( $args, 3 );
+
 $pdo_id     = (int) ( is_object( $pdo_post ) ? $pdo_post->ID : $pdo_post );
 $pdo_title  = pdo_post_title( $pdo_id );
 $pdo_media  = pdo_post_image( $pdo_id, array( 'size' => 'pdo-card', 'alt' => $pdo_title ), 'photo' );
@@ -35,9 +37,9 @@ $pdo_tag    = pdo_meta( $pdo_id, 'tag', '' );
 			<span class="pdo-badge pdo-badge--accent"><?php echo esc_html( $pdo_tag ); ?></span>
 		<?php endif; ?>
 
-		<h3 class="pdo-card__title">
+		<<?php echo esc_attr( $pdo_h ); ?> class="pdo-card__title">
 			<a href="<?php echo esc_url( (string) get_permalink( $pdo_id ) ); ?>"><?php echo esc_html( $pdo_title ); ?></a>
-		</h3>
+		</<?php echo esc_attr( $pdo_h ); ?>>
 
 		<?php if ( $pdo_quote ) : ?>
 			<blockquote class="pdo-story__quote"><?php echo esc_html( $pdo_quote ); ?></blockquote>

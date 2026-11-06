@@ -26,7 +26,7 @@ pdo_modern_section_open( array( 'class' => 'pdo-archive' ) );
 				<?php
 				while ( have_posts() ) {
 					the_post();
-					pdo_modern_render_card( get_post() );
+					pdo_modern_render_card( get_post(), array( 'heading' => 2 ) );
 				}
 				?>
 			</div>

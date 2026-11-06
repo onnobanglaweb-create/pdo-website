@@ -10,6 +10,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+$pdo_fh = pdo_modern_heading_tag( $args, 2 );
+
 $pdo_type = isset( $args['type'] ) ? sanitize_key( $args['type'] ) : 'contact';
 $pdo_cfg  = pdo_form_config( $pdo_type );
 
@@ -43,7 +45,7 @@ $pdo_done   = is_array( $pdo_result ) && ! empty( $pdo_result['success'] );
 			novalidate
 		>
 			<?php if ( ! empty( $pdo_cfg['title'] ) ) : ?>
-				<h3 class="pdo-form__title"><?php echo esc_html( $pdo_cfg['title'] ); ?></h3>
+				<<?php echo esc_attr( $pdo_fh ); ?> class="pdo-form__title"><?php echo esc_html( $pdo_cfg['title'] ); ?></<?php echo esc_attr( $pdo_fh ); ?>>
 			<?php endif; ?>
 
 			<div class="pdo-form__grid">
@@ -142,7 +144,18 @@ $pdo_done   = is_array( $pdo_result ) && ! empty( $pdo_result['success'] );
 			<input type="hidden" name="pdo_project" value="" />
 			<input type="hidden" name="pdo_ts" value="<?php echo esc_attr( (string) time() ); ?>" />
 			<input type="hidden" name="_pdo_redirect" value="<?php echo esc_url( pdo_modern_current_url() ); ?>" />
-			<?php wp_nonce_field( 'pdo_sm_form_' . $pdo_type, '_pdo_nonce' ); ?>
+			<?php
+			// wp_nonce_field() mirrors the field name into the id attribute, which
+			// collides when two forms share a page (Get Involved renders both the
+			// volunteer and the partner form). Emit it ourselves with a unique id.
+			?>
+			<input
+				type="hidden"
+				id="<?php echo esc_attr( '_pdo_nonce_' . $pdo_type ); ?>"
+				name="_pdo_nonce"
+				value="<?php echo esc_attr( wp_create_nonce( 'pdo_sm_form_' . $pdo_type ) ); ?>"
+			/>
+			<?php wp_referer_field(); ?>
 
 			<div class="pdo-form__footer">
 				<button type="submit" class="pdo-btn pdo-btn--primary pdo-btn--lg">

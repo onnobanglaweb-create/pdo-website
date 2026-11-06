@@ -7,6 +7,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+$pdo_h = pdo_modern_heading_tag( $args, 2 );
+
 $pdo_address  = pdo_text( 'org', 'address', '' );
 $pdo_office   = pdo_text( 'org', 'office_name', '' );
 $pdo_phone    = pdo_setting( 'org', 'phone', '' );
@@ -75,7 +77,7 @@ if ( ! $pdo_cards ) {
 		<div class="pdo-card pdo-card--icon" data-pdo-reveal>
 			<div class="pdo-card__body">
 				<span class="pdo-card__icon"><?php pdo_icon( $pdo_card['icon'], array( 'size' => 22 ) ); ?></span>
-				<h3 class="pdo-card__title"><?php echo esc_html( $pdo_card['title'] ); ?></h3>
+				<<?php echo esc_attr( $pdo_h ); ?> class="pdo-card__title"><?php echo esc_html( $pdo_card['title'] ); ?></<?php echo esc_attr( $pdo_h ); ?>>
 				<?php foreach ( $pdo_card['lines'] as $pdo_line ) : ?>
 					<p class="pdo-card__text">
 						<?php if ( ! empty( $pdo_line['url'] ) ) : ?>

@@ -47,7 +47,7 @@ if ( $pdo_query->have_posts() ) :
 		<?php
 		while ( $pdo_query->have_posts() ) :
 			$pdo_query->the_post();
-			get_template_part( 'template-parts/components/card', 'news', array( 'post' => get_post() ) );
+			get_template_part( 'template-parts/components/card', 'news', array( 'post' => get_post(), 'heading' => 2 ) );
 		endwhile;
 		?>
 	</div>

@@ -92,7 +92,7 @@ if ( $pdo_tabs ) :
 					)
 				);
 
-				get_template_part( 'template-parts/components/form', null, array( 'type' => $pdo_key ) );
+				get_template_part( 'template-parts/components/form', null, array( 'type' => $pdo_key, 'heading' => 3 ) );
 				?>
 			</div>
 		<?php endforeach; ?>

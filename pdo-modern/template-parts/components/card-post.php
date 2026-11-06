@@ -12,6 +12,8 @@ if ( ! $pdo_post ) {
 	return;
 }
 
+$pdo_h = pdo_modern_heading_tag( $args, 2 );
+
 $pdo_id = (int) ( is_object( $pdo_post ) ? $pdo_post->ID : $pdo_post );
 ?>
 <article id="post-<?php echo esc_attr( (string) $pdo_id ); ?>" <?php post_class( 'pdo-card' ); ?>>
@@ -24,9 +26,9 @@ $pdo_id = (int) ( is_object( $pdo_post ) ? $pdo_post->ID : $pdo_post );
 	<?php endif; ?>
 
 	<div class="pdo-card__body">
-		<h2 class="pdo-card__title">
+		<<?php echo esc_attr( $pdo_h ); ?> class="pdo-card__title">
 			<a href="<?php echo esc_url( (string) get_permalink( $pdo_id ) ); ?>"><?php echo esc_html( get_the_title( $pdo_id ) ); ?></a>
-		</h2>
+		</<?php echo esc_attr( $pdo_h ); ?>>
 
 		<p class="pdo-card__text"><?php echo esc_html( pdo_modern_trim_words( get_the_excerpt( $pdo_id ), 26 ) ); ?></p>
 
