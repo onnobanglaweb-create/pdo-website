@@ -4,7 +4,7 @@ Tags: nonprofit, ngo, content management, bilingual, bangladesh
 Requires at least: 6.4
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,9 @@ defaults because every template API call is guarded. Nothing fatals.
 
 == Changelog ==
 
+= 1.0.3 =
+* Added Tools -> "Reset Homepage to the original demo content": restores the demo homepage (and the default section order/visibility) after content has been lost. The current Homepage content is backed up first, so the reset can be undone from the restore panel above it.
+
 = 1.0.2 =
 * Critical fix: saving a settings tab could permanently blank content belonging to other tabs (or fields the browser did not submit). Saves are now tab-scoped, start from the resolved values instead of the raw option, and only an unchecked checkbox or an emptied repeater is treated as "cleared" — a field that never reaches the server keeps its existing content.
 * Safety net: every settings save now snapshots the previous values. Tools → "Restore a settings backup" can roll any group back, and restoring is itself reversible.
@@ -148,6 +151,9 @@ defaults because every template API call is guarded. Nothing fatals.
 * ~30 guarded template API functions and 104 inline SVG icons.
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+Adds a one-click Homepage demo-content reset in Tools, with an automatic backup taken first.
 
 = 1.0.2 =
 Fixes a settings-save data-loss bug. Update before editing page content; a backup of your current settings is taken automatically on the next save.

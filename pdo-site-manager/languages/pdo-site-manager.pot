@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later license.
 msgid ""
 msgstr ""
-"Project-Id-Version: PDO Website Manager 1.0.2\n"
+"Project-Id-Version: PDO Website Manager 1.0.3\n"
 "Report-Msgid-Bugs-To: https://github.com/onnobanglaweb-create/pdo-website/issues\n"
-"POT-Creation-Date: 2026-11-06 15:12+0000\n"
+"POT-Creation-Date: 2026-11-06 15:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Activate the PDO Modern theme under Appearance → Themes."
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:140
+#: pdo-site-manager/admin/views/tools.php:155
 msgid "Active theme"
 msgstr ""
 
@@ -666,11 +666,11 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:107
+#: pdo-site-manager/admin/views/tools.php:122
 msgid "Data retention"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:138
+#: pdo-site-manager/admin/views/tools.php:153
 msgid "Database schema"
 msgstr ""
 
@@ -694,7 +694,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:115
+#: pdo-site-manager/admin/views/tools.php:130
 msgid "Delete all PDO content and settings when the plugin is deleted"
 msgstr ""
 
@@ -1516,7 +1516,7 @@ msgstr ""
 msgid "Milestones heading"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:139
+#: pdo-site-manager/admin/views/tools.php:154
 msgid "Missing — deactivate and reactivate the plugin."
 msgstr ""
 
@@ -1644,7 +1644,7 @@ msgstr ""
 msgid "Numeric value (statistics & charts)"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:117
+#: pdo-site-manager/admin/views/tools.php:132
 msgid "Off by default: deactivating or deleting the plugin keeps your content safe."
 msgstr ""
 
@@ -1884,7 +1884,7 @@ msgstr ""
 msgid "Percentage"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:143
+#: pdo-site-manager/admin/views/tools.php:158
 msgid "Permalinks"
 msgstr ""
 
@@ -1916,7 +1916,7 @@ msgstr ""
 msgid "Photo grid"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:142
+#: pdo-site-manager/admin/views/tools.php:157
 msgid "PHP"
 msgstr ""
 
@@ -1940,7 +1940,7 @@ msgstr ""
 msgid "Placement"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:143
+#: pdo-site-manager/admin/views/tools.php:158
 msgid "Plain — switch to a pretty structure for clean URLs."
 msgstr ""
 
@@ -1960,7 +1960,7 @@ msgstr ""
 msgid "Please review the highlighted fields."
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:137
+#: pdo-site-manager/admin/views/tools.php:152
 msgid "Plugin version"
 msgstr ""
 
@@ -2136,8 +2136,16 @@ msgstr ""
 msgid "Reorder Content"
 msgstr ""
 
+#: pdo-site-manager/admin/views/tools.php:112
+msgid "Replace all Homepage content with the original demo content? Your current content is backed up first and can be restored."
+msgstr ""
+
 #: pdo-site-manager/admin/views/setup-wizard.php:131
 msgid "Replace the demo photographs with your own images in each record."
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:108
+msgid "Replaces everything under PDO Manager → Homepage with the demo content the setup wizard originally created, and returns the homepage section order and visibility to their defaults. Use this to recover a homepage whose content was lost or badly mangled."
 msgstr ""
 
 #: pdo-site-manager/admin/views/submissions.php:93
@@ -2146,6 +2154,14 @@ msgstr ""
 
 #: pdo-site-manager/includes/class-schema.php:3089
 msgid "Required"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:115
+msgid "Reset Homepage to demo content"
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:107
+msgid "Reset Homepage to the original demo content"
 msgstr ""
 
 #: pdo-site-manager/includes/class-schema.php:393
@@ -2196,7 +2212,7 @@ msgstr ""
 msgid "Save Changes"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:118
+#: pdo-site-manager/admin/views/tools.php:133
 msgid "Save preference"
 msgstr ""
 
@@ -2504,7 +2520,7 @@ msgstr ""
 msgid "Submission"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:139
+#: pdo-site-manager/admin/views/tools.php:154
 msgid "Submissions table"
 msgstr ""
 
@@ -2544,7 +2560,7 @@ msgstr ""
 msgid "Supporting statistics"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:125
+#: pdo-site-manager/admin/views/tools.php:140
 msgid "System status"
 msgstr ""
 
@@ -2740,7 +2756,7 @@ msgstr ""
 msgid "Unknown form."
 msgstr ""
 
-#: pdo-site-manager/includes/class-settings.php:382 pdo-site-manager/includes/class-settings.php:544
+#: pdo-site-manager/includes/class-settings.php:383 pdo-site-manager/includes/class-settings.php:545
 msgid "Unknown settings group."
 msgstr ""
 
@@ -2900,7 +2916,7 @@ msgstr ""
 msgid "Who we are & history"
 msgstr ""
 
-#: pdo-site-manager/admin/views/tools.php:141
+#: pdo-site-manager/admin/views/tools.php:156
 msgid "WordPress"
 msgstr ""
 
@@ -2926,6 +2942,10 @@ msgstr ""
 
 #: pdo-site-manager/admin/views/overview.php:13 pdo-site-manager/admin/views/reorder.php:13 pdo-site-manager/admin/views/settings-page.php:21 pdo-site-manager/admin/views/setup-wizard.php:13 pdo-site-manager/admin/views/submissions.php:13 pdo-site-manager/admin/views/tools.php:13
 msgid "You do not have permission to view this screen."
+msgstr ""
+
+#: pdo-site-manager/admin/views/tools.php:111
+msgid "Your current Homepage content is backed up first, so you can undo this from “Restore a settings backup” above."
 msgstr ""
 
 #: pdo-site-manager/includes/class-forms.php:139

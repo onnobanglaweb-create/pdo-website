@@ -25,6 +25,7 @@ class PDO_SM_Settings {
 	public function __construct() {
 		add_action( 'admin_post_pdo_sm_save_settings', array( $this, 'handle_save' ) );
 		add_action( 'admin_post_pdo_sm_restore_backup', array( $this, 'handle_restore_backup' ) );
+		add_action( 'admin_post_pdo_sm_reset_home', array( $this, 'handle_reset_home' ) );
 		add_action( 'admin_init', array( $this, 'register_options' ) );
 	}
 
@@ -553,6 +554,44 @@ class PDO_SM_Settings {
 			// Snapshot the state being replaced, so the restore is reversible.
 			self::remember_backup( $group );
 			$ok = self::save_group( $group, $backup['values'] );
+		}
+
+		$redirect = admin_url( 'admin.php?page=pdo-tools' );
+		$redirect = add_query_arg( $ok ? array( 'pdo_saved' => 1 ) : array( 'pdo_error' => 'save' ), $redirect );
+
+		wp_safe_redirect( $redirect );
+		exit;
+	}
+
+	/**
+	 * Reset the Homepage group to the original demo content.
+	 *
+	 * Recovery path for a homepage whose saved content was lost or mangled:
+	 * the current values are snapshotted first (so the reset can be undone
+	 * from Tools → Restore), then the schema defaults — the same content the
+	 * setup wizard seeds — are written back. The Customizer's homepage
+	 * section order and per-section visibility are also returned to their
+	 * defaults, otherwise reset content could stay hidden.
+	 *
+	 * @return void
+	 */
+	public function handle_reset_home() {
+		PDO_SM_Capabilities::assert_manage();
+
+		check_admin_referer( 'pdo_sm_reset_home' );
+
+		// Snapshot first: the reset must be reversible like every other save.
+		self::remember_backup( 'home' );
+
+		$ok = self::save_group( 'home', self::defaults( 'home' ) );
+
+		if ( $ok ) {
+			remove_theme_mod( 'pdo_home_order' );
+
+			$home = PDO_SM_Schema::group( 'home' );
+			foreach ( array_keys( (array) ( $home['tabs'] ?? array() ) ) as $section_key ) {
+				remove_theme_mod( 'pdo_section_hide_' . $section_key );
+			}
 		}
 
 		$redirect = admin_url( 'admin.php?page=pdo-tools' );

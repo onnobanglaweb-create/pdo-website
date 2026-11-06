@@ -104,6 +104,21 @@ $pdo_imported = isset( $_GET['pdo_imported_settings'] ) ? absint( wp_unslash( $_
 
 	<div class="pdo-panel">
 		<div class="pdo-panel__head">
+			<h2><?php esc_html_e( 'Reset Homepage to the original demo content', 'pdo-site-manager' ); ?></h2>
+			<p class="description"><?php esc_html_e( 'Replaces everything under PDO Manager → Homepage with the demo content the setup wizard originally created, and returns the homepage section order and visibility to their defaults. Use this to recover a homepage whose content was lost or badly mangled.', 'pdo-site-manager' ); ?></p>
+		</div>
+		<div class="pdo-panel__body">
+			<p><strong><?php esc_html_e( 'Your current Homepage content is backed up first, so you can undo this from “Restore a settings backup” above.', 'pdo-site-manager' ); ?></strong></p>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" onsubmit="return window.confirm('<?php echo esc_js( __( 'Replace all Homepage content with the original demo content? Your current content is backed up first and can be restored.', 'pdo-site-manager' ) ); ?>');">
+				<input type="hidden" name="action" value="pdo_sm_reset_home" />
+				<?php wp_nonce_field( 'pdo_sm_reset_home' ); ?>
+				<?php submit_button( __( 'Reset Homepage to demo content', 'pdo-site-manager' ), 'delete', 'submit', false ); ?>
+			</form>
+		</div>
+	</div>
+
+	<div class="pdo-panel">
+		<div class="pdo-panel__head">
 			<h2><?php esc_html_e( 'Data retention', 'pdo-site-manager' ); ?></h2>
 		</div>
 		<div class="pdo-panel__body">
