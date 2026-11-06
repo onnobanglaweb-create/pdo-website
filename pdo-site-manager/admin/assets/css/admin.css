@@ -305,6 +305,13 @@
 	gap: 16px;
 }
 
+/* The hidden attribute must always win over the layout rules above,
+   otherwise collapsed repeater rows and inactive language panes show. */
+.pdo-repeater__row-body[hidden],
+.pdo-langtabs__panel[hidden] {
+	display: none !important;
+}
+
 .pdo-repeater__actions {
 	padding: 0 14px 14px;
 	margin: 0;

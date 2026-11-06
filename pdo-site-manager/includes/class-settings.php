@@ -24,6 +24,7 @@ class PDO_SM_Settings {
 	 */
 	public function __construct() {
 		add_action( 'admin_post_pdo_sm_save_settings', array( $this, 'handle_save' ) );
+		add_action( 'admin_post_pdo_sm_restore_backup', array( $this, 'handle_restore_backup' ) );
 		add_action( 'admin_init', array( $this, 'register_options' ) );
 	}
 
@@ -385,19 +386,54 @@ class PDO_SM_Settings {
 
 		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- sanitised field by field against the schema below.
 		$raw = isset( $_POST['pdo'] ) ? wp_unslash( $_POST['pdo'] ) : array();
+		$raw = is_array( $raw ) ? $raw : array();
 
-		// Start from the current values so a tab only overwrites its own fields.
-		$current = get_option( self::option_name( $group ), array() );
-		$current = is_array( $current ) ? $current : array();
-		$merged  = array_merge( $current, is_array( $raw ) ? $raw : array() );
+		/*
+		 * Start from the resolved values (stored values merged over the
+		 * schema defaults), never from the raw option alone. The raw option
+		 * can be incomplete — for example right after the setup wizard or
+		 * after a plugin update adds a field — while the front end has been
+		 * displaying the default for the missing key. Saving from the raw
+		 * option would turn that invisible default into a permanent blank.
+		 */
+		$merged = self::get_group( $group );
 
-		// Unchecked checkboxes and emptied repeaters are absent from $_POST – rebuild them per submitted tab.
-		$submitted_keys = isset( $_POST['pdo_fields'] ) ? array_map( 'sanitize_key', (array) wp_unslash( $_POST['pdo_fields'] ) ) : array();
-		foreach ( $submitted_keys as $submitted_key ) {
-			if ( ! isset( $raw[ $submitted_key ] ) ) {
-				$merged[ $submitted_key ] = null;
+		/*
+		 * Overlay only the fields that belong to the submitted tab. Every
+		 * other tab keeps its current value byte for byte, so a problem in
+		 * one request can never erase the rest of the page.
+		 */
+		foreach ( self::tab_fields( $group, $tab ) as $field ) {
+			if ( empty( $field['key'] ) || 'heading' === $field['type'] ) {
+				continue;
+			}
+
+			$keys = array( $field['key'] );
+			if ( ! empty( $field['bilingual'] ) ) {
+				$keys[] = $field['key'] . '_bn';
+			}
+
+			foreach ( $keys as $field_key ) {
+				if ( array_key_exists( $field_key, $raw ) ) {
+					$merged[ $field_key ] = $raw[ $field_key ];
+					continue;
+				}
+
+				/*
+				 * Unchecked checkboxes and emptied repeaters are legitimately
+				 * absent from $_POST, so absence clears those. Any other
+				 * absent field means the value never reached the server
+				 * (dropped input, disabled control, truncated request): keep
+				 * the existing content instead of deleting it.
+				 */
+				if ( in_array( $field['type'], array( 'checkbox', 'repeater' ), true ) ) {
+					$merged[ $field_key ] = null;
+				}
 			}
 		}
+
+		// Keep the previous state so a bad save can always be rolled back.
+		self::remember_backup( $group );
 
 		$ok = self::save_group( $group, $merged );
 
@@ -410,6 +446,117 @@ class PDO_SM_Settings {
 		if ( $tab ) {
 			$redirect = add_query_arg( 'tab', $tab, $redirect );
 		}
+
+		wp_safe_redirect( $redirect );
+		exit;
+	}
+
+	/**
+	 * Fields belonging to one tab of a group (all fields when the group has
+	 * no tabs or the tab is unknown).
+	 *
+	 * @param string $group Group key.
+	 * @param string $tab   Tab key.
+	 * @return array
+	 */
+	private static function tab_fields( $group, $tab ) {
+		$definition = PDO_SM_Schema::group( $group );
+
+		if ( empty( $definition['tabs'] ) || ! is_array( $definition['tabs'] ) ) {
+			return PDO_SM_Schema::fields( $group );
+		}
+
+		if ( ! $tab || ! isset( $definition['tabs'][ $tab ] ) ) {
+			$tab = (string) key( $definition['tabs'] );
+		}
+
+		$fields = array();
+		foreach ( (array) ( $definition['tabs'][ $tab ]['panels'] ?? array() ) as $panel ) {
+			foreach ( (array) ( $panel['fields'] ?? array() ) as $field ) {
+				$fields[] = $field;
+			}
+		}
+
+		return $fields ? $fields : PDO_SM_Schema::fields( $group );
+	}
+
+	/**
+	 * Option that holds the automatic pre-save backup of a group.
+	 *
+	 * @param string $group Group key.
+	 * @return string
+	 */
+	private static function backup_option_name( $group ) {
+		return 'pdo_sm_backup_' . sanitize_key( $group );
+	}
+
+	/**
+	 * Snapshot the currently stored values of a group before they are
+	 * overwritten, so Tools → Restore can undo a bad save.
+	 *
+	 * @param string $group Group key.
+	 * @return void
+	 */
+	private static function remember_backup( $group ) {
+		$old = get_option( self::option_name( $group ), null );
+
+		if ( ! is_array( $old ) || ! $old ) {
+			return;
+		}
+
+		update_option(
+			self::backup_option_name( $group ),
+			array(
+				'saved_at' => current_time( 'mysql' ),
+				'values'   => $old,
+			),
+			false
+		);
+	}
+
+	/**
+	 * Read the automatic backup of a group.
+	 *
+	 * @param string $group Group key.
+	 * @return array{saved_at:string,values:array}|array Empty array when none.
+	 */
+	public static function backup_group( $group ) {
+		$backup = get_option( self::backup_option_name( $group ), null );
+
+		if ( ! is_array( $backup ) || empty( $backup['values'] ) || ! is_array( $backup['values'] ) ) {
+			return array();
+		}
+
+		return $backup;
+	}
+
+	/**
+	 * Restore a group from its automatic pre-save backup.
+	 *
+	 * @return void
+	 */
+	public function handle_restore_backup() {
+		PDO_SM_Capabilities::assert_manage();
+
+		$group = isset( $_POST['pdo_group'] ) ? sanitize_key( wp_unslash( $_POST['pdo_group'] ) ) : '';
+
+		if ( ! $group || ! PDO_SM_Schema::group( $group ) ) {
+			wp_die( esc_html__( 'Unknown settings group.', 'pdo-site-manager' ), 400 );
+		}
+
+		check_admin_referer( 'pdo_sm_restore_backup_' . $group );
+
+		$backup = self::backup_group( $group );
+		$ok     = false;
+
+		if ( $backup ) {
+			// Snapshot the state being replaced, so the restore is reversible.
+			self::remember_backup( $group );
+			$ok = self::save_group( $group, $backup['values'] );
+		}
+
+		$redirect = admin_url( 'admin.php?page=pdo-tools' );
+		$redirect = add_query_arg( $ok ? array( 'pdo_saved' => 1 ) : array( 'pdo_error' => 'save' ), $redirect );
 
 		wp_safe_redirect( $redirect );
 		exit;

@@ -81,15 +81,17 @@ class PDO_SM_Fields {
 			</label>
 
 			<?php if ( $bilingual ) : ?>
-				<div class="pdo-lang-tabs" data-pdo-langtabs>
-					<button type="button" class="pdo-lang-tab is-active" data-lang="en"><?php esc_html_e( 'English', 'pdo-site-manager' ); ?></button>
-					<button type="button" class="pdo-lang-tab" data-lang="bn"><?php esc_html_e( 'বাংলা', 'pdo-site-manager' ); ?></button>
-				</div>
-				<div class="pdo-lang-pane is-active" data-lang="en">
-					<?php self::render_control( $field, $key, $values, $name_base, $id ); ?>
-				</div>
-				<div class="pdo-lang-pane" data-lang="bn">
-					<?php self::render_control( $field, $key . '_bn', $values, $name_base, $id . '-bn', true ); ?>
+				<div class="pdo-langtabs" data-pdo-langtabs>
+					<div class="pdo-langtabs__nav" role="tablist">
+						<button type="button" class="pdo-langtabs__tab is-active" data-lang="en" role="tab" aria-selected="true"><?php esc_html_e( 'English', 'pdo-site-manager' ); ?></button>
+						<button type="button" class="pdo-langtabs__tab" data-lang="bn" role="tab" aria-selected="false"><?php esc_html_e( 'বাংলা', 'pdo-site-manager' ); ?></button>
+					</div>
+					<div class="pdo-langtabs__panel" data-lang="en">
+						<?php self::render_control( $field, $key, $values, $name_base, $id ); ?>
+					</div>
+					<div class="pdo-langtabs__panel" data-lang="bn" hidden>
+						<?php self::render_control( $field, $key . '_bn', $values, $name_base, $id . '-bn', true ); ?>
+					</div>
 				</div>
 			<?php else : ?>
 				<?php self::render_control( $field, $key, $values, $name_base, $id ); ?>
@@ -182,7 +184,7 @@ class PDO_SM_Fields {
 
 			case 'color':
 				printf(
-					'<input type="text" id="%1$s" name="%2$s" value="%3$s" class="pdo-color-field" data-default-color="%4$s" />',
+					'<input type="text" id="%1$s" name="%2$s" value="%3$s" class="pdo-input pdo-color-input" data-default-color="%4$s" />',
 					esc_attr( $id ),
 					esc_attr( $name ),
 					esc_attr( (string) $value ),

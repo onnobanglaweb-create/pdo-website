@@ -3,7 +3,7 @@
  * Plugin Name:       PDO Website Manager
  * Plugin URI:        https://github.com/onnobanglaweb-create/pdo-website
  * Description:       Content management system for the Peoples Development Organisation (PDO) website. Provides the PDO dashboard, organisation settings, programs, team, partners, impact stories, documents, news, dynamic sections, bilingual content and form submissions. Designed to work with the PDO Modern theme, but all content survives a theme change.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Requires at least: 6.2
  * Requires PHP:      7.4
  * Author:            Peoples Development Organisation
@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'PDO_SM_VERSION', '1.0.1' );
+define( 'PDO_SM_VERSION', '1.0.2' );
 define( 'PDO_SM_FILE', __FILE__ );
 define( 'PDO_SM_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDO_SM_URL', plugin_dir_url( __FILE__ ) );

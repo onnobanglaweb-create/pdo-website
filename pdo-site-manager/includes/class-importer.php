@@ -59,7 +59,7 @@ class PDO_SM_Importer {
 			'media'        => array(
 				'title'    => __( 'Media & Insights', 'pdo-site-manager' ),
 				'slug'     => 'media-insights',
-				'template' => 'templates/page-media.php',
+				'template' => 'templates/page-media-insights.php',
 			),
 			'involved'     => array(
 				'title'    => __( 'Get Involved', 'pdo-site-manager' ),

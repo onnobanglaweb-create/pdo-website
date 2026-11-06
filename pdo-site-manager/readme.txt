@@ -4,7 +4,7 @@ Tags: nonprofit, ngo, content management, bilingual, bangladesh
 Requires at least: 6.4
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,13 @@ defaults because every template API call is guarded. Nothing fatals.
 
 == Changelog ==
 
+= 1.0.2 =
+* Critical fix: saving a settings tab could permanently blank content belonging to other tabs (or fields the browser did not submit). Saves are now tab-scoped, start from the resolved values instead of the raw option, and only an unchecked checkbox or an emptied repeater is treated as "cleared" — a field that never reaches the server keeps its existing content.
+* Safety net: every settings save now snapshots the previous values. Tools → "Restore a settings backup" can roll any group back, and restoring is itself reversible.
+* Fix: the English/Bengali field tabs did not respond (markup did not match the script/stylesheet) and colour fields never opened the colour picker.
+* Fix: collapsed repeater rows could show through because a layout rule overrode the hidden attribute.
+* Fix: the setup wizard assigned two page-template names that do not exist in the theme (Get Involved, Media & Insights).
+
 = 1.0.1 =
 * Fix: eleven icons referenced by templates and schema defaults were missing from the icon registry and rendered as empty boxes (arrow-up, arrow-down, chevron-up, chevron-left, grip, bullseye, flag, building, images, sparkles, target-arrow). The schema default for the About vision/mission icon is no longer erased on save.
 * Fix: REST routes are now consistently hyphenated (pdo-program, pdo-team, pdo-partner, pdo-story, pdo-document and all taxonomies) instead of mixing hyphens and underscores.
@@ -141,6 +148,9 @@ defaults because every template API call is guarded. Nothing fatals.
 * ~30 guarded template API functions and 104 inline SVG icons.
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Fixes a settings-save data-loss bug. Update before editing page content; a backup of your current settings is taken automatically on the next save.
 
 = 1.0.1 =
 Bug-fix and hardening release. Safe to update in place; no database changes.

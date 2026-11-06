@@ -65,6 +65,45 @@ $pdo_imported = isset( $_GET['pdo_imported_settings'] ) ? absint( wp_unslash( $_
 
 	<div class="pdo-panel">
 		<div class="pdo-panel__head">
+			<h2><?php esc_html_e( 'Restore a settings backup', 'pdo-site-manager' ); ?></h2>
+			<p class="description"><?php esc_html_e( 'Every settings save first snapshots the previous values here. If a save ever leaves a page looking wrong, restore the snapshot — the state you replace is itself backed up, so a restore can be undone the same way.', 'pdo-site-manager' ); ?></p>
+		</div>
+		<div class="pdo-panel__body">
+			<?php
+			$pdo_backups = array();
+			foreach ( PDO_SM_Schema::all() as $pdo_group_key => $pdo_group_def ) {
+				$pdo_backup = PDO_SM_Settings::backup_group( $pdo_group_key );
+				if ( $pdo_backup ) {
+					$pdo_backups[ $pdo_group_key ] = array(
+						'label'    => isset( $pdo_group_def['label'] ) ? $pdo_group_def['label'] : $pdo_group_key,
+						'saved_at' => isset( $pdo_backup['saved_at'] ) ? $pdo_backup['saved_at'] : '',
+					);
+				}
+			}
+			?>
+			<?php if ( ! $pdo_backups ) : ?>
+				<p><?php esc_html_e( 'No backups yet. One is created automatically the next time you save any settings screen.', 'pdo-site-manager' ); ?></p>
+			<?php else : ?>
+				<?php foreach ( $pdo_backups as $pdo_group_key => $pdo_backup_info ) : ?>
+					<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" style="display:flex;gap:10px;align-items:center;margin-bottom:8px;">
+						<input type="hidden" name="action" value="pdo_sm_restore_backup" />
+						<input type="hidden" name="pdo_group" value="<?php echo esc_attr( $pdo_group_key ); ?>" />
+						<?php wp_nonce_field( 'pdo_sm_restore_backup_' . $pdo_group_key ); ?>
+						<span>
+							<strong><?php echo esc_html( $pdo_backup_info['label'] ); ?></strong>
+							<?php if ( $pdo_backup_info['saved_at'] ) : ?>
+								<span class="description"><?php echo esc_html( sprintf( /* translators: %s: date and time. */ __( '— snapshot from %s', 'pdo-site-manager' ), $pdo_backup_info['saved_at'] ) ); ?></span>
+							<?php endif; ?>
+						</span>
+						<?php submit_button( __( 'Restore', 'pdo-site-manager' ), 'secondary', 'submit', false ); ?>
+					</form>
+				<?php endforeach; ?>
+			<?php endif; ?>
+		</div>
+	</div>
+
+	<div class="pdo-panel">
+		<div class="pdo-panel__head">
 			<h2><?php esc_html_e( 'Data retention', 'pdo-site-manager' ); ?></h2>
 		</div>
 		<div class="pdo-panel__body">
