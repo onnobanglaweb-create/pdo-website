@@ -70,6 +70,14 @@ class PDO_SM_Exporter {
 			exit;
 		}
 
+		// Settings exports are small JSON documents; refuse anything
+		// oversized before reading it into memory.
+		$size = isset( $_FILES['pdo_settings_file']['size'] ) ? (int) $_FILES['pdo_settings_file']['size'] : 0; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash
+		if ( $size > 2 * MB_IN_BYTES ) {
+			wp_safe_redirect( add_query_arg( 'pdo_error', 'toobig', $redirect ) );
+			exit;
+		}
+
 		// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 		$raw  = file_get_contents( $tmp );
 		$data = json_decode( (string) $raw, true );

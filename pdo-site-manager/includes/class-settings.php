@@ -529,6 +529,85 @@ class PDO_SM_Settings {
 	}
 
 	/**
+	 * Theme modifications that belong to the homepage state.
+	 *
+	 * The Homepage reset clears these together with the plugin settings,
+	 * so a complete homepage backup has to carry them as well — restoring
+	 * only the settings would leave the old section order and visibility
+	 * in place.
+	 *
+	 * @return string[] Theme mod keys.
+	 */
+	private static function home_mod_keys() {
+		$keys = array( 'pdo_home_order' );
+		$home = PDO_SM_Schema::group( 'home' );
+		foreach ( array_keys( (array) ( $home['tabs'] ?? array() ) ) as $section_key ) {
+			$keys[] = 'pdo_section_hide_' . $section_key;
+		}
+		return $keys;
+	}
+
+	/**
+	 * Record the current homepage theme mods in the home backup.
+	 *
+	 * Mods that are not set are recorded as null so a later restore can
+	 * remove mods that were only created after the backup was taken.
+	 * Must be called right after remember_backup( 'home' ), while the
+	 * mods still hold the state that is about to be replaced.
+	 *
+	 * @return void
+	 */
+	public static function snapshot_home_mods() {
+		$backup = get_option( self::backup_option_name( 'home' ), null );
+		if ( ! is_array( $backup ) ) {
+			return;
+		}
+
+		$mods  = get_theme_mods();
+		$mods  = is_array( $mods ) ? $mods : array();
+		$saved = array();
+		foreach ( self::home_mod_keys() as $key ) {
+			$saved[ $key ] = array_key_exists( $key, $mods ) ? $mods[ $key ] : null;
+		}
+
+		$backup['theme_mods'] = $saved;
+		update_option( self::backup_option_name( 'home' ), $backup, false );
+	}
+
+	/**
+	 * Re-apply homepage theme mods recorded in a backup.
+	 *
+	 * @param array $backup Backup payload as returned by backup_group().
+	 * @return bool True when every recorded mod is back in place.
+	 */
+	public static function restore_home_mods( $backup ) {
+		if ( empty( $backup['theme_mods'] ) || ! is_array( $backup['theme_mods'] ) ) {
+			return true; // Older backup without mod data: leave mods alone.
+		}
+
+		foreach ( $backup['theme_mods'] as $key => $value ) {
+			if ( null === $value ) {
+				remove_theme_mod( $key );
+			} else {
+				set_theme_mod( $key, $value );
+			}
+		}
+
+		$mods = get_theme_mods();
+		$mods = is_array( $mods ) ? $mods : array();
+		foreach ( $backup['theme_mods'] as $key => $value ) {
+			if ( null === $value && array_key_exists( $key, $mods ) ) {
+				return false;
+			}
+			if ( null !== $value && ( ! array_key_exists( $key, $mods ) || $mods[ $key ] !== $value ) ) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	/**
 	 * Read the automatic backup of a group.
 	 *
 	 * @param string $group Group key.
@@ -566,7 +645,17 @@ class PDO_SM_Settings {
 		if ( $backup ) {
 			// Snapshot the state being replaced, so the restore is reversible.
 			self::remember_backup( $group );
+			if ( 'home' === $group ) {
+				// The snapshot must carry the current theme mods too, or
+				// undoing this restore would lose the section order.
+				self::snapshot_home_mods();
+			}
 			$ok = self::save_group( $group, $backup['values'] );
+			if ( $ok && 'home' === $group ) {
+				// A homepage restore is only complete once the recorded
+				// theme mods (order + visibility) are back as well.
+				$ok = self::restore_home_mods( $backup );
+			}
 		}
 
 		$redirect = admin_url( 'admin.php?page=pdo-tools' );
@@ -594,7 +683,10 @@ class PDO_SM_Settings {
 		check_admin_referer( 'pdo_sm_reset_home' );
 
 		// Snapshot first: the reset must be reversible like every other save.
+		// The theme mods are part of the homepage state, so they are
+		// recorded in the same backup before anything is cleared.
 		self::remember_backup( 'home' );
+		self::snapshot_home_mods();
 
 		$ok = self::save_group( 'home', self::defaults( 'home' ) );
 

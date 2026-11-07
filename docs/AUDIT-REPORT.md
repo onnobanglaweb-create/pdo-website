@@ -7,6 +7,33 @@ This report separates what was **proven broken and fixed**, what was
 **audited and verified correct**, and what was **not executed**. Nothing
 below claims a test that did not actually run.
 
+## Addendum — 1.0.5 / theme 1.0.3 (2026-11-07, second pass)
+
+| # | Finding | Original problem | Root cause | Repair | Test | Result |
+|---|---------|------------------|------------|--------|------|--------|
+| 7 | Homepage restore incomplete | Restoring a homepage backup restored plugin settings but **not** the Customizer theme mods (section order/visibility) that the reset had cleared | Reset cleared mods as a side effect; backups only ever held the settings option | Backups of `home` now record `pdo_home_order` + all `pdo_section_hide_*` mods (`snapshot_home_mods()`); restore re-applies and *verifies* them, captures the current mods into the undo snapshot, and only reports success when settings **and** mods are back | 5 new integration assertions (record → clear → restore → values verified) | **Fixed, verified** |
+| 8 | Rate-limit race + not configurable | The counter was only incremented *after* a successful store, so simultaneous requests could all pass an untouched counter; failed attempts were free | Check-then-increment-later flow in `PDO_SM_Forms::handle()` | New `PDO_SM_Forms::rate_limit_exceeded()` counts the attempt up front; limits tunable via the `pdo_sm_rate_limit` filter (max/window) | 3 integration assertions (allow, allow, block at max=2) | **Fixed, verified** |
+| 9 | Duplicate form fields lose data | Two configured fields resolving to the same name (or label) silently overwrote each other in the stored payload | `$values`/`$pretty` keyed without collision handling | Storage keys are de-duplicated (`name_index`, `Label (2)`) while the submitted value is still read from the posted name | Code-level fix; runtime shape unchanged for well-formed forms (existing live form probes re-pass) | **Fixed** |
+| 10 | Import size cap missing | The 1.0.4 changelog announced a 2 MB import cap; the shipped `import()` had no size check | The cap never made it into the code | Enforced in `PDO_SM_Exporter::import()` (`pdo_error=toobig`) with a clear Tools notice | **Live HTTP**: invalid JSON → `pdo_error=invalid`; 2.3 MB file → `pdo_error=toobig`; valid partial import → `pdo_imported_settings=1`, value applied, pre-import backup created, then restored | **Fixed, verified live** — closes finding #3 |
+| 11 | Customizer PHP 8 fatal risk | `$wp_customize->get_setting( 'blogname' )->transport = …` fatals if a plugin unregisters the core setting (property assignment on null) | Unguarded dereferences in `pdo_modern_customize_register()` | Both lookups guarded (theme 1.0.3) | Integration suite boots a real `WP_Customize_Manager`: 118 theme settings registered, **every** theme setting has a callable `sanitize_callback` | **Fixed, verified** |
+| 12 | Uninstall (finding #5) | Previously only code-reviewed | — | No code change in this pass | **Executed for real** against a snapshotted database: with the opt-in on, all 24 options (incl. every `pdo_sm_backup_*`), all CPT posts and the submissions table were removed; database snapshot restored and smoke suite re-passed | **Verified live** |
+
+Also verified live in this pass: **theme without plugin** (homepage 200,
+no fatals, guarded fallbacks) and **plugin without theme** (switched to
+Twenty Twenty-Four: homepage 200, CPT permalinks intact, switched back
+cleanly); **JS syntax** — `node --check` passes on `main.js`,
+`customizer-preview.js`, `customizer-controls.js` and the plugin's
+`admin.js`; **admin asset scoping** — plugin admin CSS/JS only enqueue
+on PDO screens (`is_pdo_screen()` guard).
+
+Updated totals: integration suite **49/49 assertions PASS**, smoke
+**23/23**, PHP parse scan **132 files, 0 errors**. The "Not executed"
+list below shrinks accordingly: settings import and uninstall are now
+executed; remaining unexecuted items are real-browser/device and
+screen-reader testing, PHP 7.4 runtime execution, inbox mail delivery,
+and PHPCS/PHPStan (no Composer registry access in this environment —
+the parse scan plus WordPress-API conventions were used instead).
+
 ## Findings and repairs
 
 | # | Finding | Original problem | Root cause | Repair | Test | Result |

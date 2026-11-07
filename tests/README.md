@@ -1,6 +1,6 @@
 # PDO Website — integration tests
 
-`integration.php` contains 41 assertions that run **inside a booted
+`integration.php` contains 49 assertions that run **inside a booted
 WordPress** (plugin + theme active, demo content seeded). They cover:
 
 - Backward compatibility: all 7 custom post types still registered,
@@ -19,6 +19,12 @@ WordPress** (plugin + theme active, demo content seeded). They cover:
   visitor hash is stable.
 - Submissions: insert + payload round-trip through the custom table.
 - Setup wizard: running it twice creates no new pages (idempotent).
+- Homepage backups: theme mods (section order + visibility) are
+  recorded in the backup and restored + verified (1.0.5).
+- Rate limiting: attempts count up front; the limit blocks once the
+  configured maximum is reached (1.0.5).
+- Customizer: every theme setting registered with a real
+  `WP_Customize_Manager` has a callable `sanitize_callback` (1.0.5).
 
 ## Running
 

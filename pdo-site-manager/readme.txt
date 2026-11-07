@@ -4,7 +4,7 @@ Tags: nonprofit, ngo, content management, bilingual, bangladesh
 Requires at least: 6.4
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,13 @@ defaults because every template API call is guarded. Nothing fatals.
 
 == Changelog ==
 
+= 1.0.5 =
+* Complete homepage backups: the Homepage reset and the Tools restore now include the Customizer theme mods (homepage section order and per-section visibility), so restoring a homepage backup brings back the complete previous state — and undoing a restore does too. A restore only reports success when every component is verified back in place.
+* Anti-spam: the form rate limit now counts each attempt before processing it, so a burst of simultaneous requests can no longer slip past an untouched counter. The limit can be tuned with the new `pdo_sm_rate_limit` filter.
+* Forms: duplicate field names or labels in a form configuration can no longer silently overwrite each other's submitted values.
+* Import: the 2 MB settings-import size limit is now actually enforced on the server with a clear error message (announced in 1.0.4 but missing from the shipped code).
+* Tests: the integration suite grows to 49 assertions (homepage theme-mod backup/restore, rate limiting, Customizer sanitizer coverage), and settings import (invalid / oversized / valid files), plugin-off and theme-off compatibility, and the complete uninstall path were verified live.
+
 = 1.0.4 =
 * Fix (with theme 1.0.2): dynamic sections placed in "Every page (above content)" or "Every page (below content)" never appeared — the header rendered none of them and the footer only one of the two placements. All four global placements now render exactly once on every page.
 * Security: settings import is capped at 2 MB and snapshots every affected settings group before overwriting it, so an import can be rolled back from Tools.
@@ -159,6 +166,9 @@ defaults because every template API call is guarded. Nothing fatals.
 * ~30 guarded template API functions and 104 inline SVG icons.
 
 == Upgrade Notice ==
+
+= 1.0.5 =
+Homepage backups now cover theme mods as well; safe to update in place, no migration.
 
 = 1.0.3 =
 Adds a one-click Homepage demo-content reset in Tools, with an automatic backup taken first.

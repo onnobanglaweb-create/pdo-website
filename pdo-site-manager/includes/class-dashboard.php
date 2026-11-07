@@ -389,6 +389,7 @@ class PDO_SM_Dashboard {
 				'nofile'  => __( 'Please choose a file to import.', 'pdo-site-manager' ),
 				'upload'  => __( 'The upload failed. Please try again.', 'pdo-site-manager' ),
 				'invalid' => __( 'That file is not a valid PDO settings export.', 'pdo-site-manager' ),
+				'toobig'  => __( 'That file is too large. A settings export is a small JSON file (maximum 2 MB).', 'pdo-site-manager' ),
 			);
 			printf(
 				'<div class="notice notice-error is-dismissible"><p>%s</p></div>',

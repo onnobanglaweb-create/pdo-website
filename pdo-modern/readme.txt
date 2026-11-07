@@ -3,7 +3,7 @@ Contributors: peoplesdevelopmentorganisation
 Requires at least: 6.2
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: non-profit, education, custom-colors, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, block-styles, wide-blocks, rtl-language-support, accessibility-ready, two-columns, right-sidebar, full-width-template
@@ -96,6 +96,9 @@ The full recipe is in `docs/DEVELOPMENT.md`.
 
 == Changelog ==
 
+= 1.0.3 =
+* Hardening: Customizer registration no longer assumes the core site-title/tagline settings exist. Assigning a property on a missing setting is a fatal error on PHP 8, so both lookups are now guarded (behaviour unchanged when the settings are present, as in a stock Customizer).
+
 = 1.0.2 =
 * Fix: global dynamic sections ("Every page (above content)" and "Every page (below content)") never appeared — the header did not render them at all and the footer rendered only one of the two placements. The header now renders both Global Top placements and the footer both Global Bottom placements, exactly once per page.
 * Fix: removed a duplicate Global Top call from the generic page template that would have rendered those sections twice.
@@ -116,6 +119,12 @@ The full recipe is in `docs/DEVELOPMENT.md`.
 * Translation template with 313 strings.
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+Customizer hardening for PHP 8. Safe to update in place.
+
+= 1.0.2 =
+Global dynamic sections now display as configured. Safe to update in place.
 
 = 1.0.1 =
 Accessibility and markup fixes. Safe to update in place.

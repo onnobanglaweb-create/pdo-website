@@ -146,9 +146,9 @@ class PDO_SM_Forms {
 		}
 
 		// 4. Rate limiting – max 5 submissions per 10 minutes per visitor.
-		$bucket_key = 'pdo_rl_' . PDO_SM_Helpers::visitor_hash();
-		$bucket     = (int) get_transient( $bucket_key );
-		if ( $bucket >= 5 ) {
+		// The attempt is counted before processing, so parallel requests
+		// cannot all slip through an un-incremented counter.
+		if ( self::rate_limit_exceeded() ) {
 			$this->finish( $redirect, $type, false, pdo_t( 'rate_error', __( 'Too many submissions from this device. Please try again later.', 'pdo-site-manager' ) ), array(), array() );
 		}
 
@@ -161,8 +161,14 @@ class PDO_SM_Forms {
 			$name  = self::field_name( $field, $index );
 			$label = PDO_SM_I18n::field( $field, 'label', $name );
 			$type_ = isset( $field['type'] ) ? $field['type'] : 'text';
+			// Duplicate field names in a (mis)configured form must not
+			// silently overwrite each other's stored values.
+			$post_name = $name;
+			if ( isset( $values[ $name ] ) ) {
+				$name = $name . '_' . $index;
+			}
 			// phpcs:ignore WordPress.Security.NonceVerification.Missing -- nonce verified above.
-			$raw = isset( $_POST['pdo_field'][ $name ] ) ? wp_unslash( $_POST['pdo_field'][ $name ] ) : '';
+			$raw = isset( $_POST['pdo_field'][ $post_name ] ) ? wp_unslash( $_POST['pdo_field'][ $post_name ] ) : '';
 
 			switch ( $type_ ) {
 				case 'email':
@@ -220,8 +226,16 @@ class PDO_SM_Forms {
 				$errors[ $name ] = pdo_t( 'required_field', __( 'This field is required.', 'pdo-site-manager' ) );
 			}
 
-			$values[ $name ]  = $value;
-			$pretty[ $label ] = $value;
+			$values[ $name ] = $value;
+			// Keep every answer in the label => value payload even when a
+			// form reuses a label: suffix repeats instead of overwriting.
+			$pretty_label = $label;
+			$label_count  = 2;
+			while ( array_key_exists( $pretty_label, $pretty ) ) {
+				$pretty_label = $label . ' (' . $label_count . ')';
+				++$label_count;
+			}
+			$pretty[ $pretty_label ] = $value;
 		}
 
 		// Optional project context from the Adopt-a-Project cards.
@@ -286,8 +300,6 @@ class PDO_SM_Forms {
 			$this->finish( $redirect, $type, false, __( 'We could not save your message because of a server error. Please try again or email us directly.', 'pdo-site-manager' ), array(), $values );
 		}
 
-		set_transient( $bucket_key, $bucket + 1, 10 * MINUTE_IN_SECONDS );
-
 		/**
 		 * Fires after a submission has been stored.
 		 *
@@ -306,6 +318,36 @@ class PDO_SM_Forms {
 		}
 
 		$this->finish( $redirect, $type, true, $message, array(), array() );
+	}
+
+	/**
+	 * Count this visitor's attempt and report whether the limit is hit.
+	 *
+	 * Incrementing happens up front (not after a successful store), so a
+	 * burst of simultaneous requests cannot all pass an untouched
+	 * counter; failed validation attempts count too, which is the point
+	 * of an anti-abuse limit.
+	 *
+	 * @return bool True when the visitor is over the limit.
+	 */
+	public static function rate_limit_exceeded() {
+		/**
+		 * Filter the form rate limit.
+		 *
+		 * @param array $limit Keys: 'max' attempts per 'window' seconds.
+		 */
+		$limit  = (array) apply_filters( 'pdo_sm_rate_limit', array( 'max' => 5, 'window' => 10 * MINUTE_IN_SECONDS ) );
+		$max    = isset( $limit['max'] ) ? max( 1, (int) $limit['max'] ) : 5;
+		$window = isset( $limit['window'] ) ? max( MINUTE_IN_SECONDS, (int) $limit['window'] ) : 10 * MINUTE_IN_SECONDS;
+
+		$key   = 'pdo_rl_' . PDO_SM_Helpers::visitor_hash();
+		$count = (int) get_transient( $key );
+		if ( $count >= $max ) {
+			return true;
+		}
+
+		set_transient( $key, $count + 1, $window );
+		return false;
 	}
 
 	/**

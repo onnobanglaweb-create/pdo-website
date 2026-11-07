@@ -111,8 +111,16 @@ function pdo_modern_customize_register( $wp_customize ) {
 	/* --------------------------------------------------------------------
 	 * Core refinements
 	 * ----------------------------------------------------------------- */
-	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
+	// Guarded: a plugin may unregister core settings, and assigning a
+	// property on null is a fatal error since PHP 8.
+	$pdo_blogname = $wp_customize->get_setting( 'blogname' );
+	if ( $pdo_blogname ) {
+		$pdo_blogname->transport = 'postMessage';
+	}
+	$pdo_blogdescription = $wp_customize->get_setting( 'blogdescription' );
+	if ( $pdo_blogdescription ) {
+		$pdo_blogdescription->transport = 'postMessage';
+	}
 
 	$wp_customize->selective_refresh->add_partial(
 		'blogname',

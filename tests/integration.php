@@ -169,4 +169,75 @@ $pages_after = count( get_pages( array( 'post_status' => 'publish,draft,private'
 t( 'wizard: second run creates no new pages', $pages_mid === $pages_after );
 t( 'wizard: pages exist after runs', $pages_after >= $pages_before );
 
+// --- Homepage backup: theme mods round-trip (1.0.5) ------------------------------
+$home_backup_before = get_option( 'pdo_sm_backup_home' );
+$mods_before        = get_theme_mods();
+$mods_before        = is_array( $mods_before ) ? $mods_before : array();
+set_theme_mod( 'pdo_home_order', array( 'hero', 'stats' ) );
+set_theme_mod( 'pdo_section_hide_hero', 1 );
+PDO_SM_Settings::backup_now( 'home' );
+PDO_SM_Settings::snapshot_home_mods();
+$home_backup = PDO_SM_Settings::backup_group( 'home' );
+t( 'home-backup: theme mods recorded in backup', isset( $home_backup['theme_mods']['pdo_home_order'] ) && array( 'hero', 'stats' ) === $home_backup['theme_mods']['pdo_home_order'] );
+// Simulate the reset clearing everything.
+remove_theme_mod( 'pdo_home_order' );
+remove_theme_mod( 'pdo_section_hide_hero' );
+t( 'home-backup: mods cleared (reset simulation)', false === get_theme_mod( 'pdo_home_order', false ) );
+t( 'home-backup: restore_home_mods succeeds', PDO_SM_Settings::restore_home_mods( $home_backup ) );
+t( 'home-backup: order restored', array( 'hero', 'stats' ) === get_theme_mod( 'pdo_home_order' ) );
+t( 'home-backup: visibility restored', 1 === (int) get_theme_mod( 'pdo_section_hide_hero', 0 ) );
+// Restore the environment's original mod state.
+foreach ( array( 'pdo_home_order', 'pdo_section_hide_hero' ) as $k ) {
+	if ( array_key_exists( $k, $mods_before ) ) {
+		set_theme_mod( $k, $mods_before[ $k ] );
+	} else {
+		remove_theme_mod( $k );
+	}
+}
+if ( false === $home_backup_before ) {
+	delete_option( 'pdo_sm_backup_home' );
+} else {
+	update_option( 'pdo_sm_backup_home', $home_backup_before, false );
+}
+
+// --- Forms: rate limiting (1.0.5) --------------------------------------------------
+$rl_filter = function () {
+	return array( 'max' => 2, 'window' => 600 );
+};
+delete_transient( 'pdo_rl_' . PDO_SM_Helpers::visitor_hash() );
+add_filter( 'pdo_sm_rate_limit', $rl_filter );
+t( 'rate-limit: attempt 1 allowed', false === PDO_SM_Forms::rate_limit_exceeded() );
+t( 'rate-limit: attempt 2 allowed', false === PDO_SM_Forms::rate_limit_exceeded() );
+t( 'rate-limit: attempt 3 blocked', true === PDO_SM_Forms::rate_limit_exceeded() );
+remove_filter( 'pdo_sm_rate_limit', $rl_filter );
+delete_transient( 'pdo_rl_' . PDO_SM_Helpers::visitor_hash() );
+
+// --- Customizer: every setting sanitised ---------------------------------------------
+if ( ! class_exists( 'WP_Customize_Manager' ) ) {
+	require_once ABSPATH . 'wp-includes/class-wp-customize-manager.php';
+}
+// Mirror a real Customizer boot: core control classes load first, then
+// the theme's custom controls (guarded off during frontend loads).
+require_once ABSPATH . 'wp-includes/class-wp-customize-control.php';
+require PDO_MODERN_DIR . '/inc/customizer/class-pdo-sortable-control.php';
+require PDO_MODERN_DIR . '/inc/customizer/class-pdo-range-control.php';
+require PDO_MODERN_DIR . '/inc/customizer/class-pdo-heading-control.php';
+$cm = new WP_Customize_Manager();
+$cm->register_controls(); // Core registers its default settings first, like wp-admin/customize.php.
+do_action( 'customize_register', $cm ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals
+$cz_settings    = $cm->settings();
+$cz_theme_count = 0;
+$cz_unsanitised = 0;
+foreach ( $cz_settings as $cz_id => $cz_setting ) {
+	if ( 0 !== strpos( (string) $cz_id, 'pdo_' ) ) {
+		continue; // Core settings are core's responsibility.
+	}
+	++$cz_theme_count;
+	if ( ! is_callable( $cz_setting->sanitize_callback ) ) {
+		++$cz_unsanitised;
+	}
+}
+t( 'customizer: theme settings registered (' . $cz_theme_count . ')', $cz_theme_count >= 35 );
+t( 'customizer: every theme setting has a callable sanitize_callback', 0 === $cz_unsanitised );
+
 echo 'RESULT: ' . ( 0 === $GLOBALS['pdo_test_fail'] ? 'ALL PASS' : $GLOBALS['pdo_test_fail'] . ' FAILURES' ) . "\n";
