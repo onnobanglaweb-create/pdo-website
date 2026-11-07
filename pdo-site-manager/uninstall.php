@@ -31,6 +31,16 @@ $options = array(
 	'pdo_sm_setup_complete',
 	'pdo_sm_pages',
 	'pdo_sm_delete_data_on_uninstall',
+	// Automatic pre-save backups (Tools → Restore).
+	'pdo_sm_backup_org',
+	'pdo_sm_backup_home',
+	'pdo_sm_backup_about',
+	'pdo_sm_backup_impact',
+	'pdo_sm_backup_transparency',
+	'pdo_sm_backup_media',
+	'pdo_sm_backup_involved',
+	'pdo_sm_backup_contact',
+	'pdo_sm_backup_i18n',
 );
 
 foreach ( $options as $option ) {

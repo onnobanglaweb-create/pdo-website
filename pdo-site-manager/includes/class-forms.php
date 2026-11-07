@@ -178,6 +178,24 @@ class PDO_SM_Forms {
 				case 'number':
 					$value = is_numeric( $raw ) ? $raw + 0 : '';
 					break;
+				case 'tel':
+				case 'phone':
+					$value = sanitize_text_field( (string) $raw );
+					if ( '' !== $value && ! preg_match( '/^[+0-9][0-9\s\-()]{4,24}$/', $value ) ) {
+						$errors[ $name ] = pdo_t( 'invalid_phone', __( 'Please enter a valid phone number.', 'pdo-site-manager' ) );
+						$value           = '';
+					}
+					break;
+				case 'date':
+					$value = sanitize_text_field( (string) $raw );
+					if ( '' !== $value ) {
+						$parsed = DateTimeImmutable::createFromFormat( 'Y-m-d', $value );
+						if ( ! $parsed || $parsed->format( 'Y-m-d' ) !== $value ) {
+							$errors[ $name ] = pdo_t( 'invalid_date', __( 'Please enter a valid date.', 'pdo-site-manager' ) );
+							$value           = '';
+						}
+					}
+					break;
 				case 'textarea':
 					$value = sanitize_textarea_field( (string) $raw );
 					break;

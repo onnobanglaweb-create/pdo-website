@@ -277,6 +277,31 @@ class PDO_SM_Submissions {
 	}
 
 	/**
+	 * Neutralise a value for CSV export.
+	 *
+	 * Spreadsheet applications execute cells that begin with =, +, - or @
+	 * (after optional whitespace) as formulas, so a submission whose name
+	 * or message starts with one of those characters could run a formula
+	 * on the administrator's machine. Prefixing with an apostrophe makes
+	 * the cell plain text; fputcsv() still handles quoting.
+	 *
+	 * @param mixed $value Raw cell value.
+	 * @return mixed
+	 */
+	private static function csv_safe( $value ) {
+		if ( ! is_string( $value ) || '' === $value ) {
+			return $value;
+		}
+
+		$trimmed = ltrim( $value );
+		if ( '' !== $trimmed && in_array( $trimmed[0], array( '=', '+', '-', '@', "\t", "\r" ), true ) ) {
+			return "'" . $value;
+		}
+
+		return $value;
+	}
+
+	/**
 	 * Stream a CSV export.
 	 *
 	 * @return void
@@ -324,15 +349,15 @@ class PDO_SM_Submissions {
 					array(
 						$row->id,
 						$row->created_at,
-						$row->form_type,
-						$row->status,
-						$row->name,
-						$row->email,
-						$row->phone,
-						$row->subject,
-						$row->lang,
-						$row->source_url,
-						implode( ' | ', $details ),
+						self::csv_safe( $row->form_type ),
+						self::csv_safe( $row->status ),
+						self::csv_safe( $row->name ),
+						self::csv_safe( $row->email ),
+						self::csv_safe( $row->phone ),
+						self::csv_safe( $row->subject ),
+						self::csv_safe( $row->lang ),
+						self::csv_safe( $row->source_url ),
+						self::csv_safe( implode( ' | ', $details ) ),
 					)
 				);
 			}

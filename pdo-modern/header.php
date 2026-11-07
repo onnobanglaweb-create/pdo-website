@@ -25,6 +25,8 @@ defined( 'ABSPATH' ) || exit;
 
 <div id="pdo-page" class="pdo-page">
 
+	<?php pdo_modern_dynamic_sections( 'global_top', 'before' ); ?>
+
 	<?php get_template_part( 'template-parts/header/topbar' ); ?>
 
 	<header
@@ -83,5 +85,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php get_template_part( 'template-parts/header/drawer' ); ?>
 
 	<?php pdo_modern_breadcrumbs(); ?>
+
+	<?php pdo_modern_dynamic_sections( 'global_top', 'after' ); ?>
 
 	<main id="<?php echo esc_attr( pdo_modern_main_id() ); ?>" class="pdo-main" tabindex="-1">

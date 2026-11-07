@@ -15,7 +15,7 @@ $pdo_address = pdo_text( 'org', 'address', '' );
 ?>
 	</main><!-- .pdo-main -->
 
-	<?php pdo_modern_dynamic_sections( 'global_bottom', 'after' ); ?>
+	<?php pdo_modern_dynamic_sections( 'global_bottom', 'before' ); ?>
 
 	<footer id="pdo-colophon" class="pdo-footer">
 		<div class="pdo-container">
@@ -200,6 +200,8 @@ $pdo_address = pdo_text( 'org', 'address', '' );
 			</div>
 		</div>
 	</footer>
+
+	<?php pdo_modern_dynamic_sections( 'global_bottom', 'after' ); ?>
 
 	<?php if ( get_theme_mod( 'pdo_back_to_top', true ) ) : ?>
 		<button type="button" class="pdo-totop" data-pdo-totop hidden>

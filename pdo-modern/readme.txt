@@ -3,7 +3,7 @@ Contributors: peoplesdevelopmentorganisation
 Requires at least: 6.2
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: non-profit, education, custom-colors, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, block-styles, wide-blocks, rtl-language-support, accessibility-ready, two-columns, right-sidebar, full-width-template
@@ -95,6 +95,11 @@ it up automatically and falls back to `dynamic-fallback.php` if it is missing.
 The full recipe is in `docs/DEVELOPMENT.md`.
 
 == Changelog ==
+
+= 1.0.2 =
+* Fix: global dynamic sections ("Every page (above content)" and "Every page (below content)") never appeared — the header did not render them at all and the footer rendered only one of the two placements. The header now renders both Global Top placements and the footer both Global Bottom placements, exactly once per page.
+* Fix: removed a duplicate Global Top call from the generic page template that would have rendered those sections twice.
+* The asset version constant now matches the released theme version (it previously stayed at 1.0.0, which could serve stale CSS/JS after updates).
 
 = 1.0.1 =
 * Fix: heading order on archive, taxonomy and listing pages. Card titles now use h2 directly under the page h1 and h3 inside sections, via a shared heading-level helper.

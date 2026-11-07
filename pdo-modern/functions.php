@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'PDO_MODERN_VERSION', '1.0.0' );
+define( 'PDO_MODERN_VERSION', '1.0.2' );
 define( 'PDO_MODERN_DIR', get_template_directory() );
 define( 'PDO_MODERN_URI', get_template_directory_uri() );
 

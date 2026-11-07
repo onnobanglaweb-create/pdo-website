@@ -85,6 +85,8 @@ class PDO_SM_Exporter {
 			if ( ! PDO_SM_Schema::group( $group ) || ! is_array( $values ) ) {
 				continue;
 			}
+			// Snapshot first so an import can be rolled back from Tools.
+			PDO_SM_Settings::backup_now( $group );
 			if ( PDO_SM_Settings::save_group( $group, $values ) ) {
 				++$imported;
 			}

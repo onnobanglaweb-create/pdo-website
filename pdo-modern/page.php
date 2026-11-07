@@ -9,8 +9,6 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-pdo_modern_dynamic_sections( 'global_top', 'before' );
-
 while ( have_posts() ) :
 	the_post();
 

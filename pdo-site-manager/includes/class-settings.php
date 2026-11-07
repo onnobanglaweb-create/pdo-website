@@ -516,6 +516,19 @@ class PDO_SM_Settings {
 	}
 
 	/**
+	 * Take an automatic backup of a group right now.
+	 *
+	 * Used before bulk operations such as a settings import, so the state
+	 * they replace can be restored from Tools.
+	 *
+	 * @param string $group Group key.
+	 * @return void
+	 */
+	public static function backup_now( $group ) {
+		self::remember_backup( $group );
+	}
+
+	/**
 	 * Read the automatic backup of a group.
 	 *
 	 * @param string $group Group key.

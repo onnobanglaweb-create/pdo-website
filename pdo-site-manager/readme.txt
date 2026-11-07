@@ -124,6 +124,14 @@ defaults because every template API call is guarded. Nothing fatals.
 
 == Changelog ==
 
+= 1.0.4 =
+* Fix (with theme 1.0.2): dynamic sections placed in "Every page (above content)" or "Every page (below content)" never appeared — the header rendered none of them and the footer only one of the two placements. All four global placements now render exactly once on every page.
+* Security: settings import is capped at 2 MB and snapshots every affected settings group before overwriting it, so an import can be rolled back from Tools.
+* Security: CSV submission exports neutralise spreadsheet formula injection (cells beginning with =, +, -, @ or a tab are prefixed so spreadsheet apps treat them as text).
+* Validation: telephone and date form fields are now validated on the server as well as in the browser; invalid values are rejected with a clear message and nothing is stored.
+* Housekeeping: uninstall now also removes the automatic settings backups (pdo_sm_backup_*) when data deletion has been explicitly enabled.
+* Added a WordPress integration test suite (tests/ in the source repository) covering settings isolation, backups and restore, CSV safety, global section rendering and setup-wizard idempotency.
+
 = 1.0.3 =
 * Added Tools -> "Reset Homepage to the original demo content": restores the demo homepage (and the default section order/visibility) after content has been lost. The current Homepage content is backed up first, so the reset can be undone from the restore panel above it.
 
